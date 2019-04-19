@@ -1,0 +1,389 @@
+{{a|{{b|{{c}}}}}}
+{{also|grátis}}
+==English==
+
+===Etymology===
+{{PIE root|en|gʷerH}}
+Borrowed from {{bor|en|la|gratis}}.
+
+===Pronunciation===
+* {{a|UK}} {{IPA|/ˈɡɹɑː.tɪs/|lang=en}}
+* {{a|US}} {{IPA|/ˈɡɹætɪs/|lang=en}}
+
+===Adjective===
+{{en-adj|-}}
+
+# [[free|Free]], without [[charge]].
+
+====Synonyms====
+* {{l|en|free as in beer}} {{qualifier|used in the free software movement to distinguish from ''[[libre]]'', "[[free as in speech]]"}}
+
+====Translations====
+{{trans-see|free of charge}}
+
+===Adverb===
+{{en-adv|-}}
+
+# [[free|Free]], without [[charge]].
+
+====Related terms====
+* {{l|en|gratuity}}
+* {{l|en|gratuitous}}
+
+====Translations====
+{{trans-see|free, without charge|for free}}
+
+===See also===
+* {{l|en|libre}}
+
+===Anagrams===
+* {{anagrams|en|a=agirst|striga|trigas}}
+
+[[Category:en:Economics]]
+
+----
+
+==Afrikaans==
+
+===Adverb===
+{{head|af|adverb}}
+
+# [[free]], without [[charge]]
+
+----
+
+==Catalan==
+
+===Pronunciation===
+* {{ca-IPA}}
+
+===Etymology 1===
+From {{der|ca|la|grātīs}}.
+
+====Adverb====
+{{ca-adv}}
+
+# [[free]], [[for free]]
+#: {{syn|ca|de franc|gratuïtament}}
+
+===Etymology 2===
+
+====Verb====
+{{head|ca|verb form}}
+
+# {{ca-verb form of|p=2|n=sg|t=pres|m=sub|gratar}}
+
+===Further reading===
+* {{R:IEC2}}
+
+----
+
+==Danish==
+
+===Pronunciation===
+* {{IPA|/ɡraːtis/|[ˈɡ̊ʁɑːd̥is]|lang=da}}
+{{rfap|lang=da}}
+
+===Adjective===
+{{da-adj|gratis|gratis}}
+
+# {{l|en|gratis}}, [[free]] {{gloss|obtainable without payment}}
+
+===Adverb===
+{{da-adv}}
+
+# {{l|en|gratis}}, [[free]] {{gloss|without needing to pay}}
+
+----
+
+==Dutch==
+
+===Pronunciation===
+* {{IPA|/ˈɣraːtɪs/|lang=nl}}
+* {{audio|Nl-gratis.ogg|audio|lang=nl}}
+
+===Adjective===
+{{nl-adj|-}}
+
+# [[free]], without [[charge]]
+
+====Inflection====
+{{nl-decl-adj|gratis|-}}
+
+----
+
+==Esperanto==
+
+===Verb===
+{{eo-head}}
+
+# {{eo-form of|grat|is}}
+
+----
+
+==French==
+
+===Etymology===
+Borrowed from {{bor|fr|la|grātīs}}.
+
+===Pronunciation===
+* {{fr-IPA|gratice}}
+
+===Adverb===
+{{fr-adv}}
+
+# [[free]], without [[charge]], {{l|en|gratis}}
+
+====Synonyms====
+* {{l|fr|gratuitement}}
+
+===Adjective===
+{{fr-adj|inv=1}}
+
+# [[free]]; for free, without charge
+
+===Further reading===
+* {{R:TLFi}}
+
+----
+
+==Galician==
+
+===Etymology===
+From {{der|gl|la|gratis}}
+
+===Adjective===
+{{gl-adj|pl=gratis}}
+
+# [[free]], without [[charge]]
+
+====Synonyms====
+* {{l|gl|gratuíto}}
+
+===Adverb===
+{{gl-adv}}
+
+# [[free]], without [[charge]]
+
+====Synonyms====
+* {{l|gl|gratuitamente}}
+
+----
+
+==German==
+
+===Pronunciation===
+* {{IPA|/ˈɡʁaːtɪs/|lang=de}}
+* {{audio|De-gratis.ogg|Audio|lang=de}}
+
+===Adverb===
+{{de-adv}}
+
+# [[free]], without [[charge]]
+
+====Synonyms====
+* {{l|de|umsonst}}
+* {{l|de|kostenlos}}
+* {{l|de|kostenfrei}}
+
+===Further reading===
+* {{R:Duden}}
+
+----
+
+==Indonesian==
+
+===Etymology===
+From {{der|id|nl|gratis}}
+
+===Adjective===
+{{id-adj}}
+
+# [[free]], without [[charge]]
+
+====Derived terms====
+* {{l|id|gratisan}}
+* {{l|id|menggratiskan}}
+
+----
+
+==Italian==
+
+===Etymology===
+From {{der|it|la|gratis}}.
+
+===Pronunciation===
+* {{IPA|/ˈɡratis/|lang=it}}
+
+===Adverb===
+{{it-adv}}
+
+# {{l|en|gratis}}, [[free]]
+#: {{syn|it|gratuitamente}}
+
+===Adjective===
+{{head|it|adjective|invariable}}
+
+# [[free]]
+#: {{syn|it|gratuito}}
+
+===Further reading===
+* {{R:it:Treccani}}
+
+===Anagrams===
+* {{l|it|stragi}}
+
+----
+
+==Latin==
+
+===Etymology===
+{{PIE root|la|gʷerH}}
+Contracted from {{m|la|grātiīs}}.
+
+===Pronunciation===
+* {{la-IPA|grātīs}}
+
+===Adverb===
+{{la-adv|grātīs|-}}
+
+# out of favor or kindness, without recompense or compensation, [[gratuitously]]
+
+====Synonyms====
+* {{l|la|grātuītō}}
+
+====Related terms====
+{{rel3|la|grātē
+|grātēs
+|grātia
+|grātificātiō
+|grātificor
+|grātiīs
+|grātiōsus
+|grātor
+|grātuītus
+|grātulātiō
+|grātulor
+|grātus}}
+
+====Descendants====
+{{top2}}
+* Catalan: {{l|ca|gratis}}
+* → English: {{l|en|gratis}}
+* French: {{l|fr|gratis}}
+* Galician: {{l|gl|gratis}}
+* → German: {{l|de|gratis}}
+{{mid2}}
+* Italian: {{l|it|gratis}}
+* Portuguese: {{l|pt|grátis}}
+* Romanian: {{l|ro|gratis}}
+* Spanish: {{l|es|gratis}}
+{{bottom}}
+
+===References===
+* {{R:du Cange}}
+* {{R:L&S}}
+* {{R:Elementary Lewis}}
+* {{R:Gaffiot}}
+* {{R:M&A}}
+
+----
+
+==Norwegian Bokmål==
+
+===Etymology===
+From {{der|nb|la|gratiis}}
+
+===Adjective===
+{{head|nb|adjective|indeclinable}}
+
+# [[free]] (''obtainable without payment'')
+
+====Derived terms====
+* {{l|nb|gratisavis}}
+
+===References===
+* {{R:The Bokmål Dictionary}}
+
+----
+
+==Norwegian Nynorsk==
+
+===Etymology===
+From {{der|nn|la|gratiis}}
+
+===Adjective===
+{{head|nn|adjective|indeclinable}}
+
+# [[free]] (''obtainable without payment'')
+
+====Derived terms====
+* {{l|nn|gratisavis}}
+
+===References===
+* {{R:The Nynorsk Dictionary}}
+
+----
+
+==Romanian==
+
+===Etymology===
+Borrowed from {{bor|ro|la|gratis}}.
+
+===Pronunciation===
+* {{IPA|[ˈɡra.tis]|lang=ro}}
+
+===Adverb===
+{{ro-adv}}
+
+# [[free of charge]], [[for free]]
+
+===Adjective===
+{{ro-adj|inv}}
+
+# [[free of charge]], [[for free]]
+
+====Declension====
+{{ro-decl-adj|inv}}
+
+----
+
+==Spanish==
+
+===Etymology===
+From {{der|es|la|grātīs}}.
+
+===Pronunciation===
+* {{es-IPA}}
+
+===Adjective===
+{{es-adj|pl=gratis}}
+
+# [[free]], without [[charge]]
+#: {{syn|es|gratuito}}
+
+===Adverb===
+{{es-adv}}
+
+# [[free]], without [[charge]]
+#: {{syn|es|gratuitamente}}
+
+----
+
+==Swedish==
+
+===Pronunciation===
+* {{audio|Sv-gratis.ogg|audio|lang=sv}}
+
+===Adverb===
+{{sv-adv|-}}
+
+# [[free]], without [[charge]]
+
+===Adjective===
+{{head|sv|adjective|not inflected, not comparable}}
+
+# [[free]], without [[charge]]
+
+===Anagrams===
+* {{anagrams|sv|girats|grisat|stigar|trasig|trigas}}

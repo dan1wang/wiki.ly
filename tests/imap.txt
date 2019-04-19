@@ -1,0 +1,170 @@
+{{redirect|IMAP|the NASA spacecraft|Interstellar Mapping and Acceleration Probe|the antipsychotic|Fluspirilene}}
+{{IPstack}}
+
+In computing, the '''Internet Message Access Protocol''' ('''IMAP''') is an [[Internet standard]] [[protocol (computing)|protocol]] used by [[email client]]s to retrieve [[email]] messages from a [[mail server]] over a [[Internet protocol suite|TCP/IP]] connection.<ref name="Network+ Guide to Networks">{{cite book | last = Dean | first = Tamara | title = Network+ Guide to Networks | publisher = Delmar | year = 2010 | location = | page = 519 | url = https://books.google.com/?id=UD0h_GqgbHgC&printsec=frontcover&dq=network%2B+guide+to+networks#v=onepage&q&f=false| isbn = 1423902459 }}</ref> IMAP is defined by RFC 3501.
+
+IMAP was designed with the goal of permitting complete management of an [[email box]] by multiple email clients, therefore clients generally leave messages on the server until the user explicitly deletes them. An IMAP server typically listens on [[port number]] 143. IMAP over [[Secure Sockets Layer|SSL]] ('''IMAPS''') is assigned the port number 993.
+
+Virtually all modern e-mail clients and [[Server (computing)|servers]] support IMAP, which along with the earlier [[POP3]] (Post Office Protocol) are the two most prevalent standard protocols for email retrieval.<ref name="Red Hat">{{cite book | last = Komarinski | first = Mark | title = Red Hat Linux System Administration Handbook | publisher = Prentice Hall | year = 2000 | location = | page =179 | url = https://books.google.com/?id=UD0h_GqgbHgC&printsec=frontcover&dq=network%2B+guide+to+networks#v=onepage&q&f=false| isbn = 1423902459 }}</ref> Many [[webmail]] service providers such as [[Gmail]], [[Outlook.com]] and [[Yahoo! Mail]] also provide support for either IMAP or POP3.
+
+==E-mail protocols==
+The Internet Message Access Protocol is an [[Application Layer]] Internet protocol that allows an [[e-mail client]] to access [[e-mail]] on a remote [[mail server]].  The current version is defined by RFC 3501. An IMAP server typically listens on [[List of TCP and UDP port numbers|well-known port]] 143, while IMAP over [[Secure Sockets Layer|SSL]] (IMAPS) uses 993.
+
+Incoming e-mail messages are sent to an e-mail server that stores messages in the recipient's e-mail box. The user retrieves the messages with an e-mail client that uses one of a number of e-mail retrieval protocols. While some clients and servers preferentially use vendor-specific, [[proprietary protocol]]s,<ref>For example, [[Microsoft]]'s [[Microsoft Outlook|Outlook]] client uses [[MAPI]], a [[Microsoft]] proprietary protocol, to communicate with a [[Microsoft Exchange Server]]. [[IBM]]'s [[Lotus Notes|Notes]] client works in a similar fashion when communicating with a [[IBM Lotus Domino|Domino]] server.</ref> almost all support POP and IMAP for retrieving e-mail - allowing many free choice between many [[comparison of e-mail clients|e-mail clients]] such as [[Pegasus Mail]] or [[Mozilla Thunderbird]] to access these servers, and allows the clients to be used with [[list of mail servers|other servers]].
+
+E-mail clients using IMAP generally leave messages on the server until the user explicitly deletes them. This and other characteristics of IMAP operation allow multiple clients to manage the same mailbox. Most e-mail ''clients'' support IMAP in addition to [[Post Office Protocol|Post Office Protocol (POP)]] to retrieve messages.<ref>{{cite book
+|title=Managing IMAP
+|first=Diana
+|last=Mullet
+|isbn=0-596-00012-X
+|publisher=[[O'Reilly Media|O'Reilly]]
+|year=2000
+|page=25
+}}</ref> IMAP offers access to the mail storage. Clients may store local copies of the messages, but these are considered to be a temporary cache.<ref>See e.g. {{cite web|title=IMAP Client Coding HOWTO|url=http://www.dovecot.org/imap-client-coding-howto.html|author=Timo Sirainen, Dave Cridland}}</ref>
+
+==History==
+IMAP was designed by [[Mark Crispin]] in 1986 as a remote access mailbox protocol, in contrast to the widely used POP, a protocol for simply retrieving the contents of a mailbox.
+
+It went through a number of iterations before the current VERSION 4rev1 (MAPI4), as detailed below:
+
+===Original IMAP===
+The original ''Interim Mail Access Protocol'' was implemented as a [[Xerox]] [[Lisp machine]] client and a [[TOPS-20]] server.
+
+No copies of the original interim protocol specification or its software exist.<ref>{{cite mailing list |url=http://www.ietf.org/mail-archive/web/imap5/current/msg00317.html |title=Re: &#91;imap5&#93; Designing a new replacement protocol for IMAP |date=13 February 2012 |accessdate=26 November 2014 |mailinglist=imap5 |last=Crispin |first=Mark |authorlink=Mark Crispin |quote=Knowledge of the original IMAP (before IMAP2) exists primarily in my mind as all the original IMAP specifications and implementations were replaced with IMAP2. |message-id= alpine.OSX.2.00.1202131243200.38441@hsinghsing.panda.com}}</ref><ref>[http://www.iana.org/assignments/service-names Service Name and Transport Protocol Port Number Registry]. Iana.org (2013-07-12). Retrieved on 2013-07-17.</ref> Although some of its commands and responses were similar to IMAP2, the interim protocol lacked command/response tagging and thus its syntax was incompatible with all other versions of IMAP.
+
+===IMAP2===
+The interim protocol was quickly replaced by the ''Interactive Mail Access Protocol'' (IMAP2), defined in RFC 1064 (in 1988) and later updated by RFC 1176 (in 1990). IMAP2 introduced the command/response tagging and was the first publicly distributed version.
+
+===IMAP3===
+IMAP3 is an extremely rare variant of IMAP.<ref name="rfc2061" /> It was published as RFC 1203 in 1991. It was written specifically as a counter proposal to RFC 1176, which itself proposed modifications to IMAP2.<ref>{{cite web |url=http://tools.ietf.org/html/rfc1203 |title=INTERACTIVE MAIL ACCESS PROTOCOL - VERSION 3 |publisher=IETF |year=1991 |accessdate=2010-08-21}}</ref> IMAP3 was never accepted by the marketplace.<ref>{{cite web |url=http://stason.org/TULARC/networking/lans-mail-protocols/03-IMAP2-IMAP2bis-IMAP3-IMAP4-IMAP4rev1-LAN-Mail-Protoc.html |title=IMAP2, IMAP2bis, IMAP3, IMAP4, IMAP4rev1 (LAN Mail Protocols) |accessdate=2010-08-21}}</ref><ref>{{cite web |url=http://www.tcpipguide.com/free/t_IMAPOverviewHistoryVersionsandStandards-3.htm |title=IMAP Overview, History, Versions and Standards |accessdate=2010-08-21}}</ref> The [[IESG]] reclassified RFC1203 "Interactive Mail Access Protocol - Version 3" as a Historic protocol in 1993. The IMAP Working Group used RFC1176 (IMAP2) rather than RFC1203 (IMAP3) as its starting point.<ref>{{cite web |url=http://www.ietf.org/mail-archive/web/ietf/current/msg01656.html |title=Protocol Action: Interactive Mail Access Protocol — Version 3 to Historic (IETF mail archive) |year=1993 |accessdate=2010-08-21}}</ref><ref>{{cite web |url=http://www.pmdf.process.com/ftp/info-pmdf/aug.1993?httpd=content&type=text/plain;%20charset%3DISO-8859-1 |title=Innosoft and POP/IMAP protocols? (mail archive) |year=1993 |accessdate=2010-08-21}}</ref>
+
+===IMAP2bis===
+With the advent of [[MIME]], IMAP2 was extended to support MIME body structures and add mailbox management functionality (create, delete, rename, message upload) that was absent from IMAP2. This experimental revision was called IMAP2bis; its specification was never published in non-draft form. An internet draft of IMAP2bis was published by the IETF IMAP Working Group in October 1993. This draft was based upon the following earlier specifications: unpublished ''IMAP2bis.TXT'' document, RFC1176, and RFC1064 (IMAP2).<ref>{{cite web |url=http://tools.ietf.org/html/draft-ietf-imap-imap2bis-02 |title=INTERACTIVE MAIL ACCESS PROTOCOL - VERSION 2bis (Internet Draft) |publisher=IETF |year=1993 |accessdate=2010-08-21}}</ref> The ''IMAP2bis.TXT'' draft documented the state of extensions to IMAP2 as of December 1992.<ref>{{cite web |url=http://ftp.zcu.cz/pub/network/imap/old/IMAP2bis.TXT |title=IMAP2BIS -- EXTENSIONS TO THE IMAP2 PROTOCOL (DRAFT) |year=1992 |accessdate=2010-08-21}}</ref> Early versions of [[Pine (e-mail client)|Pine]] were widely distributed with IMAP2bis support<ref name="rfc2061">{{cite web |url=http://tools.ietf.org/html/rfc2061 |title=RFC 2061 - IMAP4 COMPATIBILITY WITH IMAP2BIS |publisher=IETF |year=1996 |accessdate=2010-08-21}}</ref> (Pine 4.00 and later supports IMAP4rev1).
+
+===IMAP4===
+An IMAP Working Group formed in the [[Internet Engineering Task Force|IETF]] in the early 1990s took over responsibility for the IMAP2bis design. The IMAP WG decided to rename IMAP2bis to IMAP4 to avoid confusion.
+
+==Advantages over POP==
+
+===Connected and disconnected modes===
+When using POP, clients typically connect to the e-mail server briefly, only as long as it takes to download new messages. When using IMAP4, clients often stay connected as long as the user interface is active and download message content on demand. For users with many or large messages, this IMAP4 usage pattern can result in faster response times.
+
+===Multiple simultaneous clients===
+The POP protocol requires the currently connected client to be the only client connected to the mailbox. In contrast, the IMAP protocol specifically allows simultaneous access by multiple clients and provides mechanisms for clients to detect changes made to the mailbox by other, concurrently connected, clients. See for example RFC3501 section 5.2 which specifically cites "simultaneous access to the same mailbox by multiple agents" as an example.
+
+===Access to MIME message parts and partial fetch===
+Usually all Internet e-mail is transmitted in [[MIME]] format, allowing messages to have a [[tree structure]] where the leaf nodes are any of a variety of single part content types and the non-leaf nodes are any of a variety of multipart types. The IMAP4 protocol allows clients to retrieve any of the individual MIME parts separately and also to retrieve portions of either individual parts or the entire message. These mechanisms allow clients to retrieve the text portion of a message without retrieving attached files or to [[streaming media|stream]] content as it is being fetched.
+
+===Message state information===
+Through the use of flags defined in the IMAP4 protocol, clients can keep track of message state: for example, whether or not the message has been read, replied to, or deleted. These flags are stored on the server, so different clients accessing the same mailbox at different times can detect state changes made by other clients. POP provides no mechanism for clients to store such state information on the server so if a single user accesses a mailbox with two different POP clients (at different times), state information—such as whether a message has been accessed—cannot be synchronized between the clients. The IMAP4 protocol supports both predefined system flags and client-defined keywords. System flags indicate state information such as whether a message has been read. Keywords, which are not supported by all IMAP servers, allow messages to be given one or more [[Tag (metadata)|tags]] whose meaning is up to the client. IMAP keywords should not be confused with proprietary labels of [[web-based e-mail]] services which are sometimes translated into IMAP folders by the corresponding proprietary servers.
+
+===Multiple mailboxes on the server===
+IMAP4 clients can create, rename, and/or delete mailboxes (usually presented to the user as folders) on the server, and copy messages between mailboxes. Multiple mailbox support also allows servers to provide access to shared and public folders. The ''IMAP4 Access Control List (ACL) Extension'' (RFC 4314) may be used to regulate access rights.
+
+===Server-side searches===
+IMAP4 provides a mechanism for a client to ask the server to search for messages meeting a variety of criteria. This mechanism avoids requiring clients to download every message in the mailbox in order to perform these searches.
+
+===Built-in extension mechanism===
+Reflecting the experience of earlier Internet protocols, IMAP4 defines an explicit mechanism by which it may be extended. Many IMAP4 [[software extension|extension]]s to the base protocol have been proposed and are in common use. IMAP2bis did not have an extension mechanism, and POP now has one defined by RFC 2449.
+
+==Disadvantages==
+While IMAP remedies many of the shortcomings of POP, this inherently introduces additional complexity. Much of this complexity (e.g., multiple clients accessing the same mailbox at the same time) is compensated for by [[server-side]] workarounds such as [[Maildir]] or database backends.
+
+The IMAP specification has been criticised for being insufficiently strict and allowing behaviours that effectively negate its usefulness. For instance, the specification states that each message stored on the server has a "unique id" to allow the clients to identify messages they have already seen between sessions. However, the specification also allows these UIDs to be invalidated with no restrictions, practically defeating their purpose.<ref>{{cite web|url=http://sup.rubyforge.org/svn/trunk/lib/sup/imap.rb |archive-url=https://web.archive.org/web/20071212234041/http://sup.rubyforge.org/svn/trunk/lib/sup/imap.rb |dead-url=yes |archive-date=2007-12-12 |title=IMAP implementation in Sup, an e-mail client written in Ruby |publisher=rubyforge.com |accessdate=2011-02-22 |df= }} </ref>
+
+Unless the mail storage and searching algorithms on the server are carefully implemented, a client can potentially consume large amounts of server resources when searching massive mailboxes.
+
+IMAP4 clients need to maintain a TCP/IP connection to the IMAP server in order to be notified of the arrival of new mail. Notification of mail arrival is done through [[in-band signaling]], which contributes to the complexity of client-side IMAP protocol handling somewhat.<ref>{{cite web|url=http://www.isode.com/whitepapers/imap-idle.html|title=IMAP IDLE: The best approach for 'push' e-mail|publisher=Isode.com|accessdate=2009-07-30}}</ref> A private proposal, [[Push-IMAP|push IMAP]], would extend IMAP to implement [[push e-mail]] by sending the entire message instead of just a notification. However, push IMAP has not been generally accepted and current IETF work has addressed the problem in other ways (see the [[Lemonade Profile]] for more information).
+
+Unlike some proprietary protocols which combine sending and retrieval operations, sending a message and saving a copy in a server-side folder with a base-level IMAP client requires transmitting the message content twice, once to SMTP for delivery and a second time to IMAP to store in a sent mail folder. This is addressed by a set of extensions defined by the IETF [[Lemonade Profile]] for mobile devices: URLAUTH (RFC 4467) and CATENATE (RFC 4469) in IMAP and BURL (RFC 4468) in SMTP-SUBMISSION. In addition to this, [[Courier Mail Server]] offers a non-standard method of sending using IMAP by copying an outgoing message to a dedicated outbox folder.<ref>{{cite web|url=http://www.courier-mta.org/imap/INSTALL.html#imapsend|title=Courier-IMAP: Sending mail via an IMAP connection|publisher=Double Precision, Inc|accessdate=2013-09-24}}</ref>
+
+== Security ==
+To cryptographically protect IMAP connections, IMAPS on TCP port 993 can be used, which utilizes [[Transport Layer Security|TLS]]. As of RFC 8314, this is the recommended mechanism.
+
+Alternatively, [[STARTTLS]] can be used to provide secure communications between the [[Mail user agent|MUA]] communicating with the [[Mail submission agent|MSA]] or [[Mail Transfer Agent|MTA]] implementing the [[Simple Mail Transfer Protocol|SMTP Protocol]].
+
+== Dialog example ==
+
+This is an example IMAP connection as taken from [https://tools.ietf.org/html/rfc3501#section-8 RFC 3501 section 8]:
+
+ <span style="color:blue;">C: <open connection></span>
+ S:   * OK IMAP4rev1 Service Ready
+ <span style="color:blue;">C:   a001 login mrc secret</span>
+ S:   a001 OK LOGIN completed
+ <span style="color:blue;">C:   a002 select inbox</span>
+ S:   * 18 EXISTS
+ S:   * FLAGS (\Answered \Flagged \Deleted \Seen \Draft)
+ S:   * 2 RECENT
+ S:   * OK [UNSEEN 17] Message 17 is the first unseen message
+ S:   * OK [UIDVALIDITY 3857529045] UIDs valid
+ S:   a002 OK [READ-WRITE] SELECT completed
+ <span style="color:blue;">C:   a003 fetch 12 full</span>
+ S:   * 12 FETCH (FLAGS (\Seen) INTERNALDATE "17-Jul-1996 02:44:25 -0700"
+       RFC822.SIZE 4286 ENVELOPE ("Wed, 17 Jul 1996 02:23:25 -0700 (PDT)"
+       "IMAP4rev1 WG mtg summary and minutes"
+       (("Terry Gray" NIL "gray" "cac.washington.edu"))
+       (("Terry Gray" NIL "gray" "cac.washington.edu"))
+       (("Terry Gray" NIL "gray" "cac.washington.edu"))
+       ((NIL NIL "imap" "cac.washington.edu"))
+       ((NIL NIL "minutes" "CNRI.Reston.VA.US")
+       ("John Klensin" NIL "KLENSIN" "MIT.EDU")) NIL NIL
+       "<B27397-0100000@cac.washington.edu>")
+       BODY ("TEXT" "PLAIN" ("CHARSET" "US-ASCII") NIL NIL "7BIT" 3028
+       92))
+ S:   a003 OK FETCH completed
+ <span style="color:blue;">C:   a004 fetch 12 body[header]</span>
+ S:   * 12 FETCH (BODY[HEADER] {342}
+ S:   Date: Wed, 17 Jul 1996 02:23:25 -0700 (PDT)
+ S:   From: Terry Gray <gray@cac.washington.edu>
+ S:   Subject: IMAP4rev1 WG mtg summary and minutes
+ S:   To: imap@cac.washington.edu
+ S:   cc: minutes@CNRI.Reston.VA.US, John Klensin <KLENSIN@MIT.EDU>
+ S:   Message-Id: <B27397-0100000@cac.washington.edu>
+ S:   MIME-Version: 1.0
+ S:   Content-Type: TEXT/PLAIN; CHARSET=US-ASCII
+ S:
+ S:   )
+ S:   a004 OK FETCH completed
+ <span style="color:blue;">C    a005 store 12 +flags \deleted</span>
+ S:   * 12 FETCH (FLAGS (\Seen \Deleted))
+ S:   a005 OK +FLAGS completed
+ <span style="color:blue;">C:   a006 logout</span>
+ S:   * BYE IMAP4rev1 server terminating connection
+ S:   a006 OK LOGOUT completed
+
+==See also==
+<!-- New links in alphabetical order please -->
+* [[List of mail servers]]
+* [[Comparison of e-mail clients]]
+* [[Comparison of mail servers]]
+* [[IMAP IDLE]]
+* [[Post Office Protocol]] (POP)
+* [[Push-IMAP]]
+* [[Simple Mail Access Protocol]]
+* [[Webmail]]
+
+==References==
+{{reflist}}
+
+==Further reading==
+* {{cite web |last=Crispin |first=Mark |title=Ten Commandments of How to Write an IMAP client |year=1988-2016 |publisher=[[University of Washington]] |url=https://www.washington.edu/imap/documentation/commndmt.txt.html |author-link=Mark Crispin}}
+* {{cite book | last=Heinlein | first=P | last2=Hartleben | first2=P | title=The Book of IMAP: Building a Mail Server with Courier and Cyrus | publisher=No Starch Press | year=2008 | isbn=1-59327-177-8}}
+* {{cite book | last=Hughes | first=L | title=Internet e-mail Protocols, Standards and Implementation | publisher=Artech House Publishers | year=1998 | isbn=0-89006-939-5}}
+* {{cite book | last=Johnson | first=K | title=Internet E-mail Protocols: A Developer's Guide | publisher=Addison-Wesley Professional | year=2000 | isbn=0-201-43288-9}}
+* {{cite book |last=Loshin |first=P |chapter= Essential E-mail Standards: RFCs and Protocols Made Practical |title=Programming Internet Mail |publisher=O'Reilly |year=1999 |isbn=1-56592-479-7}}
+
+==External links==
+{{Wiktionary|IMAP}}
+* {{cite web
+ | url = http://www.imapwiki.org/ImapProtocolList
+ | title = IMAP Protocol Mailing List
+}}
+* RFC 3501 — specification of IMAP version 4 revision 1
+* RFC 2683 — IMAP Implementation Suggestions RFC
+* RFC 2177 — IMAP4 IDLE command
+* [http://trojita.flaska.net/msc-thesis.pdf IMAP extensions for mobility-class applications presented and exemplified] in a doctoral thesis
+{{E-mail clients}}
+{{URI scheme}}
+{{Authority control}}
+
+[[Category:Internet mail protocols]]

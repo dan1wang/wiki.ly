@@ -1,0 +1,26 @@
+{
+  "name": "parsoid",
+  "description": "A WikiMedia Parsoid fork for converting Wikitext to structured text object",
+  "version": "0.1.0",
+  "license": "MIT",
+  "dependencies": {
+    "entities": "^1.1.2",
+    "wikipeg": "^2.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-google": "^0.12.0",
+    "eslint-plugin-json": "^1.2.0"
+  },
+  "main": "lib/index.js",
+  "bin": {
+    "parse.js": "bin/parse.js"
+  },
+  "scripts": {
+    "test": "node tests/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dan1wang/wiki.ly"
+  }
+}
