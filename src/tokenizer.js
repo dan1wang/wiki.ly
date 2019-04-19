@@ -14,7 +14,7 @@ const events = require('events');
 const util = require('util');
 const Util = require('./utils/Util.js').Util;
 
-const supportedTags = {
+const HTMLTags = {
   HTML5: [
     'A', 'ABBR', 'ADDRESS', 'AREA', 'ARTICLE',
     'ASIDE', 'AUDIO', 'B', 'BASE', 'BDI', 'BDO', 'BLOCKQUOTE',
@@ -48,10 +48,14 @@ const supportedTags = {
     'S', 'SAMP', 'SCRIPT', 'SELECT', 'SMALL', 'SPAN', 'STRIKE',
     'STRONG', 'SUB', 'SUP', 'TEXTAREA', 'TIME', 'TT',
     'U', 'VAR'],
+  Void: [
+    'AREA', 'BASE', 'BR', 'COL', 'COMMAND', 'EMBED', 'HR', 'IMG',
+    'INPUT', 'KEYGEN', 'LINK', 'META', 'PARAM', 'SOURCE',
+    'TRACK', 'WBR'],
 };
 
 const pegIncludes = {
-  supportedTags: supportedTags,
+  HTMLTags: HTMLTags,
   TokenTypes: require('./tokens/TokenTypes.js'),
   TokenUtils: require('./utils/TokenUtils.js').TokenUtils,
   tu: require('./tokenizer.utils.js'),

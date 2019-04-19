@@ -7,14 +7,6 @@ const Token = require('../tokens/Token.js').Token;
 const KV = require('../tokens/KV.js').KV;
 
 const Util = {
-  // Determine if the named tag is void (can not have content).
-  isVoidElement: function(name) {
-    return [
-      'AREA', 'BASE', 'BR', 'COL', 'COMMAND', 'EMBED', 'HR', 'IMG',
-      'INPUT', 'KEYGEN', 'LINK', 'META', 'PARAM', 'SOURCE',
-      'TRACK', 'WBR'].includes(name.toUpperCase());
-  },
-
   // deep clones by default.
   clone: function(obj, deepClone) {
     if (deepClone === undefined) {
@@ -47,38 +39,10 @@ const Util = {
         || obj instanceof KV) {
       // Allow cloning of Token and KV objects, since that is useful
       const nobj = new obj.constructor();
-      for (const key in obj) {
+      for (const key in obj) {/* eslint-disable-line guard-for-in */
         nobj[key] = Util.clone(obj[key], true);
       }
       return nobj;
-    } else {
-      return obj;
-    }
-  },
-
-  // Just a copy `Util.clone` used in *testing* to reverse the effects of
-  // freezing an object.  Works with more that just "plain objects"
-  unFreeze: function(obj, deepClone) {
-    if (deepClone === undefined) {
-      deepClone = true;
-    }
-    if (Array.isArray(obj)) {
-      if (deepClone) {
-        return obj.map(function(el) {
-          return Util.unFreeze(el, true);
-        });
-      } else {
-        return obj.slice();
-      }
-    } else if (obj instanceof Object) {
-      if (deepClone) {
-        return Object.keys(obj).reduce(function(nobj, key) {
-          nobj[key] = Util.unFreeze(obj[key], true);
-          return nobj;
-        }, new obj.constructor());
-      } else {
-        return Object.assign({}, obj);
-      }
     } else {
       return obj;
     }

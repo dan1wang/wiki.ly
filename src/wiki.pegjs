@@ -17,7 +17,7 @@
     var encodeComment = pegIncludes.encodeComment;
     var PegTokenizer = pegIncludes.PegTokenizer;
     var TokenTypes = pegIncludes.TokenTypes;
-    var supportedTags = pegIncludes.supportedTags;
+    var HTMLTags = pegIncludes.HTMLTags;
     var tu = pegIncludes.tu;
 
     // define some constructor shortcuts
@@ -57,10 +57,7 @@
      */
     var emitChunk = function(tokens) {
         if (env.immutable) {
-            // Tokens placed in the tokenizer's cache have been frozen to
-            // to catch any mutations while testing, which may have led to
-            // subtle, spooky action at a distance.
-            tokens = Util.unFreeze(tokens, true);
+            tokens = Util.clone(tokens, true);
         }
 
         // Shift tsr of all tokens by the pipeline offset
@@ -109,8 +106,8 @@
     var isXMLTag = function(name, block) {
         var uName = name.toUpperCase();
         return block
-            ? (name !== 'VIDEO' && supportedTags.HTML4Block.includes(name))
-            : supportedTags.HTML5.includes(uName) || supportedTags.DepHTML.includes(uName);
+            ? (name !== 'VIDEO' && HTMLTags.HTML4Block.includes(name))
+            : HTMLTags.HTML5.includes(uName) || HTMLTags.DepHTML.includes(uName);
     };
 
     var isExtTag = function(name) {
@@ -1431,7 +1428,7 @@ xmlish_tag_opened
 
         // Extension tags don't necessarily have the same semantics as html tags,
         // so don't treat them as void elements.
-        var isVoidElt = Util.isVoidElement(lcName) && !extTag;
+        var isVoidElt = HTMLTags.Void.includes(lcName.toUpperCase()) && !extTag;
 
         // Support </br>
         if (lcName === 'br' && end) {
