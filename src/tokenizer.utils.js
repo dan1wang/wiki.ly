@@ -304,25 +304,6 @@ const tu = module.exports = {
     }
   },
 
-  enforceParserResourceLimits: function(env, token) {
-    if (token &&
-        (token.constructor === TagTk || token.constructor === SelfclosingTagTk)
-    ) {
-      switch (token.name) {
-        case 'listItem':
-          env.bumpParserResourceUse('listItem');
-          break;
-        case 'template':
-          env.bumpParserResourceUse('transclusion');
-          break;
-        case 'td':
-        case 'th':
-          env.bumpParserResourceUse('tableCell');
-          break;
-      }
-    }
-  },
-
   protectAttrsRegExp: new RegExp(`^(about|data-mw.*|data-parsoid.*|data-x.*|data-object-id|property|rel|typeof)$`, 'i'), /* eslint-disable-line */
   protectAttrs: function(name) {
     return name.replace(this.protectAttrsRegExp, 'data-x-$1');

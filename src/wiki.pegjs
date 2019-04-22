@@ -67,11 +67,6 @@
         var i;
         var n = tokens.length;
 
-        // Enforce parsing resource limits
-        for (i = 0; i < n; i++) {
-            tu.enforceParserResourceLimits(env, tokens[i]);
-        }
-
         // limit the size of individual chunks
         var chunkLimit = 100000;
         if (n > chunkLimit) {

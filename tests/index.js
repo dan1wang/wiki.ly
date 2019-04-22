@@ -24,7 +24,6 @@ const env = {
   },
   immutable: false,
   langConverterEnabled: () => true, // true always
-  bumpParserResourceUse: nop,
   newAboutId: () => '#1', // #1 always
 };
 
