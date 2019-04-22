@@ -24,7 +24,6 @@ const env = {
   },
   immutable: false,
   langConverterEnabled: () => true, // true always
-  newAboutId: () => '#1', // #1 always
 };
 
 function parse(input) {

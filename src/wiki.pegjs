@@ -232,7 +232,6 @@
             return new SelfclosingTagTk('extension', [
                 new KV('typeof', 'mw:Extension'),
                 new KV('name', tagName),
-                new KV('about', env.newAboutId()),
                 new KV('source', dp.src),
                 new KV('options', t.attribs),
             ], dp);
