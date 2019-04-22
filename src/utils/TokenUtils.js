@@ -122,6 +122,7 @@ const TokenUtils = {
   // Trim space and newlines from leading and trailing text tokens.
   tokenTrim: function(tokens) {
     if (!Array.isArray(tokens)) {
+      if (tokens.constructor === String) return tokens.trim();
       return tokens;
     }
 

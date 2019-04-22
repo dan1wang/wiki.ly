@@ -121,7 +121,7 @@ PegTokenizer.prototype.compileTokenizer = function() {
     ],
   };
 
-  function cacheRuleHook(opts) {
+  function jsCacheRuleHook(opts) {
     let keyParts = [
       opts.variantIndex + opts.variantCount * (opts.ruleIndex + opts.ruleCount),
     ];
@@ -164,7 +164,7 @@ ${opts.storeRefs}
     return cacheBits;
   }
 
-  function cacheInitHook(opts) {
+  function jsCacheInitHook(opts) {
     return [
       'const peg$cache = {};',
       'const visitCounts = new Uint8Array(input.length);',
@@ -176,8 +176,8 @@ ${opts.storeRefs}
     trackLineAndColumn: false,
     output: 'source',
     language: 'javascript',
-    cacheRuleHook: cacheRuleHook,
-    cacheInitHook: cacheInitHook,
+    cacheRuleHook: jsCacheRuleHook,
+    cacheInitHook: jsCacheInitHook,
     className: null,
     allowedStartRules: [
       'start',
