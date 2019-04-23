@@ -2,6 +2,7 @@
 * text=auto
 
 *.tokens text eol=lf
+*.txt text eol=lf
 *.js text eol=lf
 *.pegjs text eol=lf
 *.json text eol=lf
