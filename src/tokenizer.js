@@ -102,6 +102,10 @@ PegTokenizer.prototype.compileTokenizer = function() {
   }
 
   const src = readSrc('wiki.pegjs')
+        + readSrc('wikilink.pegjs') // link
+        + readSrc('wikitemplate.pegjs') // template and links
+        + readSrc('wikitag.pegjs') // <tag>
+        + readSrc('wikilist.pegjs')
         + readSrc('wikitable.pegjs')
         + readSrc('wikitext.pegjs');
   const parseTokenizer = PEG.parser.parse(src);
