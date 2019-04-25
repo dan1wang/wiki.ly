@@ -1,0 +1,18 @@
+{"type":"SelfclosingTagTk","name":"extlink","attribs":[{"k":"href","v":"http://2607:f8b0:4003:c00:60"},{"k":"mw:content","v":["ipv6"]},{"k":"spaces","v":" "}],"dataAttribs":{"targetOff":30,"tsr":[0,35],"contentOffsets":[30,34]}}
+{"type":"SelfclosingTagTk","name":"urllink","attribs":[{"k":"href","v":["http://2607:f8b0:4003:c00::60"]}],"dataAttribs":{"tsr":[35,64]}}
+{"type":"NlTk","dataAttribs":{"tsr":[64,65]}}
+{"type":"SelfclosingTagTk","name":"extlink","attribs":[{"k":"href","v":"http://2607:xxxx:xxxx:xxx:60"},{"k":"mw:content","v":["ipv6"]},{"k":"spaces","v":" "}],"dataAttribs":{"targetOff":95,"tsr":[65,100],"contentOffsets":[95,99]}}
+{"type":"SelfclosingTagTk","name":"urllink","attribs":[{"k":"href","v":["http://2607:xxxx:xxxx:xxx::60"]}],"dataAttribs":{"tsr":[100,129]}}
+{"type":"NlTk","dataAttribs":{"tsr":[129,130]}}
+{"type":"SelfclosingTagTk","name":"extlink","attribs":[{"k":"href","v":"mailto:mail@address"},{"k":"mw:content","v":["mail"]},{"k":"spaces","v":" "}],"dataAttribs":{"targetOff":151,"tsr":[130,156],"contentOffsets":[151,155]}}
+{"type":"SelfclosingTagTk","name":"urllink","attribs":[{"k":"href","v":["mailto:mail@address"]}],"dataAttribs":{"tsr":[156,175]}}
+{"type":"NlTk","dataAttribs":{"tsr":[175,176]}}
+{"type":"SelfclosingTagTk","name":"extlink","attribs":[{"k":"href","v":["ftp://yes.com/",{"type":"SelfclosingTagTk","name":"template","attribs":[{"k":"t","v":"","srcOffsets":[193,194]}],"dataAttribs":{"tsr":[191,196],"src":"{{t}}"}}]},{"k":"mw:content","v":["yes"]},{"k":"spaces","v":" "}],"dataAttribs":{"targetOff":197,"tsr":[176,201],"contentOffsets":[197,200]}}
+{"type":"SelfclosingTagTk","name":"urllink","attribs":[{"k":"href","v":["ftp://yes.com/",{"type":"SelfclosingTagTk","name":"template","attribs":[{"k":"t","v":"","srcOffsets":[217,218]}],"dataAttribs":{"tsr":[215,220],"src":"{{t}}"}}]}],"dataAttribs":{"tsr":[201,220]}}
+{"type":"NlTk","dataAttribs":{"tsr":[220,221]}}
+"[ptf://no.com/"
+{"type":"SelfclosingTagTk","name":"template","attribs":[{"k":"t","v":"","srcOffsets":[237,238]}],"dataAttribs":{"tsr":[235,240],"src":"{{t}}"}}
+" no]ptf://no.com/"
+{"type":"SelfclosingTagTk","name":"template","attribs":[{"k":"t","v":"","srcOffsets":[259,260]}],"dataAttribs":{"tsr":[257,262],"src":"{{t}}"}}
+{"type":"NlTk","dataAttribs":{"tsr":[262,263]}}
+{"type":"EOFTk"}

@@ -87,17 +87,6 @@ const Util = {
     );
   },
 
-  // Determine whether the protocol of a link is potentially valid. Use the
-  // environment's per-wiki config to do so.
-  isProtocolValid: function(linkTarget, env) {
-    const wikiConf = env.conf.wiki;
-    if (typeof linkTarget === 'string') {
-      return wikiConf.hasValidProtocol(linkTarget);
-    } else {
-      return true;
-    }
-  },
-
   getExtArgInfo: function(extToken) {
     const name = extToken.getAttribute('name');
     const options = extToken.getAttribute('options');

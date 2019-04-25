@@ -1,0 +1,5 @@
+[http://2607:f8b0:4003:c00:60 ipv6]http://2607:f8b0:4003:c00::60
+[http://2607:xxxx:xxxx:xxx:60 ipv6]http://2607:xxxx:xxxx:xxx::60
+[mailto:mail@address mail]mailto:mail@address
+[ftp://yes.com/{{t}} yes]ftp://yes.com/{{t}}
+[ptf://no.com/{{t}} no]ptf://no.com/{{t}}

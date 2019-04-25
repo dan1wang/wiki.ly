@@ -19,26 +19,20 @@ extlink "extlink"
   = ! <extlink> // extlink cannot be nested
   r:(
         "["
-        addr:(url_protocol urladdr / "")
-        target:(extlink_preprocessor_text<extlink> / "")
-        & {
-          // Protocol must be valid and there ought to be at least one
-          // post-protocol character.  So strip last char off target
-          // before testing protocol.
-          var flat = tu.flattenString([addr, target]);
-          if (Array.isArray(flat)) {
-             // There are templates present, alas.
-             return flat.length > 0;
-          }
-          return Util.isProtocolValid(flat.slice(0, -1), env);
-        }
+        protocol:(url_protocol)
+        addr:(
+          path1:(IPAddress / "")
+          path2:(extlink_preprocessor_text<extlink>/"")
+          { return tu.flattenString([path1, path2]) }
+        )
+        & { return (addr !== "") }
         sp:$( space / unispace )*
         targetOff:( "" { return endOffset(); })
         content:inlineline<extlink>?
         "]" {
             return [
                 new SelfclosingTagTk('extlink', [
-                    new KV('href', tu.flattenString([addr, target])),
+                    new KV('href', tu.flattenString([protocol, addr])),
                     new KV('mw:content', content || ''),
                     new KV('spaces', sp),
                 ], {
@@ -94,14 +88,8 @@ isbn
         { stx: "magiclink", tsr: tsrOffsets() }),
       ];
 }
-
-
-/* Default URL protocols in MediaWiki (see DefaultSettings). Normally
- * these can be configured dynamically. */
-
 url_protocol =
-    & { return Util.isProtocolValid(input.substr(endOffset()), env); }
-    p:$( '//' / [A-Za-z] [-A-Za-z0-9+.]* ':' '//'? ) { return p; }
+   "%PROTOCOLS%"
 
 // no punctuation, and '{<' to trigger directives
 no_punctuation_char = [^ :\]\[\r\n"'<>\x00-\x20\x7f,.&%\u00A0\u1680\u180E\u2000-\u200A\u202F\u205F\u3000{]
@@ -113,7 +101,7 @@ no_punctuation_char = [^ :\]\[\r\n"'<>\x00-\x20\x7f,.&%\u00A0\u1680\u180E\u2000-
 // EXT_LINK_URL_CLASS which aren't included in no_punctuation_char
 url "url"
   = proto:url_protocol
-    addr:(urladdr / "")
+    addr:(IPAddress / "")
     path:(  ( !inline_breaks
               c:no_punctuation_char
               { return c; }
@@ -144,7 +132,7 @@ autourl
   = ! '//' // protocol-relative autolinks not allowed (T32269)
     r:(
     proto:url_protocol
-    addr:(urladdr / "")
+    addr:(IPAddress / "")
     path:(  ( !inline_breaks
               c:no_punctuation_char
               { return c; }
@@ -167,12 +155,10 @@ autourl
     var last = lastItem(url);
     var trim = 0;
     if (last && last.constructor === String) {
-      var strip = ',;\\.:!?';
+      var strip = ',;\\\\\.:!\?'; //,;\.:!?
       if (path.indexOf("(") === -1) {
-        strip += ')';
+        strip += '\\)';
       }
-      // Escape special regexp characters
-      strip = strip.replace(/[\^\\$*+?.()|{}\[\]\/]/g, '\\$&');
       strip = new RegExp('[' + strip + ']*$');
       trim = strip.exec(last)[0].length;
       url[url.length - 1] = last.slice(0, last.length - trim);
@@ -185,9 +171,5 @@ autourl
     return url;
 } ) &{ return r !== null; } {return r; }
 
-// This is extracted from EXT_LINK_ADDR in Parser.php: a simplified
-// expression to match an IPv6 address.  The IPv4 address and "at least
-// one character of a host name" portions are punted to the `path`
-// component of the `autourl` and `url` productions
-urladdr
+IPAddress
   = $( "[" [0-9A-Fa-f:.]+ "]" )

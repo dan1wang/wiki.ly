@@ -11,6 +11,7 @@ const env = {
   log: nop,
   conf: {
     wiki: {
+      protocols: ['ftp://', 'ftps://', 'git://', 'http://', 'https://', 'mailto:'],
       extTags: ['pre', 'nowiki', 'gallery', 'indicator', 'timeline',
         'hiero', 'charinsert', 'ref', 'references', 'inputbox', 'imagemap',
         'source', 'syntaxhighlight', 'poem', 'section', 'score',
@@ -18,7 +19,6 @@ const env = {
         'categorytree'],
       getMagicWordMatcher: () => {return { test: returnFalse };}, /* eslint-disable-line */
       isMagicWord: returnFalse,
-      hasValidProtocol: (prot) => /^http/.test(prot),
     },
     maxDepth: 40,
   },
@@ -49,3 +49,8 @@ inputFile = path.join(__dirname, 'imap.txt');
 input = fs.readFileSync(inputFile, {encoding: 'utf8'});
 output = parse(input).map((t) => JSON.stringify(t)).join('\n') + '\n';
 fs.writeFileSync(path.join(__dirname, 'imap.tokens'), output);
+
+inputFile = path.join(__dirname, 'link.txt');
+input = fs.readFileSync(inputFile, {encoding: 'utf8'});
+output = parse(input).map((t) => JSON.stringify(t)).join('\n') + '\n';
+fs.writeFileSync(path.join(__dirname, 'link.tokens'), output);

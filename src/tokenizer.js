@@ -101,8 +101,11 @@ PegTokenizer.prototype.compileTokenizer = function() {
     return fs.readFileSync(pegSrcPath, 'utf8');
   }
 
+  const protocols =
+      this.env.conf.wiki.protocols.map( (p) => '"' + p + '"').join('/');
+
   const src = readSrc('wiki.pegjs')
-        + readSrc('wikilink.pegjs') // link
+        + readSrc('wikilink.pegjs').replace('"%PROTOCOLS%"', protocols) // link
         + readSrc('wikitemplate.pegjs') // template and links
         + readSrc('wikitag.pegjs') // <tag>
         + readSrc('wikilist.pegjs')
