@@ -1,4 +1,3 @@
-{{a|{{b|{{c}}}}}}
 {{also|grátis}}
 ==English==
 

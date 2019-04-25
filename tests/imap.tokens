@@ -1,0 +1,590 @@
+{"type":"SelfclosingTagTk","name":"template","attribs":[{"k":"redirect","v":"","srcOffsets":[2,10]},{"k":"","v":"IMAP","srcOffsets":[11,11,11,15]},{"k":"","v":"the NASA spacecraft","srcOffsets":[16,16,16,35]},{"k":"","v":"Interstellar Mapping and Acceleration Probe","srcOffsets":[36,36,36,79]},{"k":"","v":"the antipsychotic","srcOffsets":[80,80,80,97]},{"k":"","v":"Fluspirilene","srcOffsets":[98,98,98,110]}],"dataAttribs":{"tsr":[0,112],"src":"{{redirect|IMAP|the NASA spacecraft|Interstellar Mapping and Acceleration Probe|the antipsychotic|Fluspirilene}}"}}
+{"type":"NlTk","dataAttribs":{"tsr":[112,113]}}
+{"type":"SelfclosingTagTk","name":"template","attribs":[{"k":"IPstack","v":"","srcOffsets":[115,122]}],"dataAttribs":{"tsr":[113,124],"src":"{{IPstack}}"}}
+{"type":"NlTk","dataAttribs":{"tsr":[124,125]}}
+{"type":"NlTk","dataAttribs":{"tsr":[125,126]}}
+"In computing, the "
+{"type":"SelfclosingTagTk","name":"mw-quote","attribs":[{"k":"value","v":"'''"},{"k":"preceding-2chars","v":"e "}],"dataAttribs":{"tsr":[144,147]}}
+"Internet Message Access Protocol"
+{"type":"SelfclosingTagTk","name":"mw-quote","attribs":[{"k":"value","v":"'''"},{"k":"preceding-2chars","v":"ol"}],"dataAttribs":{"tsr":[179,182]}}
+" ("
+{"type":"SelfclosingTagTk","name":"mw-quote","attribs":[{"k":"value","v":"'''"},{"k":"preceding-2chars","v":" ("}],"dataAttribs":{"tsr":[184,187]}}
+"IMAP"
+{"type":"SelfclosingTagTk","name":"mw-quote","attribs":[{"k":"value","v":"'''"},{"k":"preceding-2chars","v":"AP"}],"dataAttribs":{"tsr":[191,194]}}
+") is an "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["Internet standard"],"vsrc":"Internet standard"}],"dataAttribs":{"tsr":[202,223],"src":"[[Internet standard]]"}}
+" "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["protocol (computing)"],"vsrc":"protocol (computing)"},{"k":"mw:maybeContent","v":["protocol"],"srcOffsets":[247,255],"vsrc":"protocol"}],"dataAttribs":{"tsr":[224,257],"src":"[[protocol (computing)|protocol]]"}}
+" used by "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["email client"],"vsrc":"email client"}],"dataAttribs":{"tsr":[266,282],"src":"[[email client]]"}}
+"s to retrieve "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["email"],"vsrc":"email"}],"dataAttribs":{"tsr":[296,305],"src":"[[email]]"}}
+" messages from a "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["mail server"],"vsrc":"mail server"}],"dataAttribs":{"tsr":[322,337],"src":"[[mail server]]"}}
+" over a "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["Internet protocol suite"],"vsrc":"Internet protocol suite"},{"k":"mw:maybeContent","v":["TCP/IP"],"srcOffsets":[371,377],"vsrc":"TCP/IP"}],"dataAttribs":{"tsr":[345,379],"src":"[[Internet protocol suite|TCP/IP]]"}}
+" connection."
+{"type":"SelfclosingTagTk","name":"extension","attribs":[{"k":"typeof","v":"mw:Extension"},{"k":"name","v":"ref"},{"k":"source","v":"<ref name=\"Network+ Guide to Networks\">{{cite book | last = Dean | first = Tamara | title = Network+ Guide to Networks | publisher = Delmar | year = 2010 | location = | page = 519 | url = https://books.google.com/?id=UD0h_GqgbHgC&printsec=frontcover&dq=network%2B+guide+to+networks#v=onepage&q&f=false| isbn = 1423902459 }}</ref>"},{"k":"options","v":[{"k":"name","v":"Network+ Guide to Networks","srcOffsets":[396,400,402,428],"vsrc":"Network+ Guide to Networks"}]}],"dataAttribs":{"tsr":[391,720],"stx":"html","src":"<ref name=\"Network+ Guide to Networks\">{{cite book | last = Dean | first = Tamara | title = Network+ Guide to Networks | publisher = Delmar | year = 2010 | location = | page = 519 | url = https://books.google.com/?id=UD0h_GqgbHgC&printsec=frontcover&dq=network%2B+guide+to+networks#v=onepage&q&f=false| isbn = 1423902459 }}</ref>","tagWidths":[39,6]}}
+" IMAP is defined by "
+{"type":"SelfclosingTagTk","name":"extlink","attribs":[{"k":"href","v":"https://tools.ietf.org/html/rfc3501"},{"k":"mw:content","v":"RFC 3501"},{"k":"typeof","v":"mw:ExtLink/RFC"}],"dataAttribs":{"stx":"magiclink","tsr":[740,748]}}
+"."
+{"type":"NlTk","dataAttribs":{"tsr":[749,750]}}
+{"type":"NlTk","dataAttribs":{"tsr":[750,751]}}
+"IMAP was designed with the goal of permitting complete management of an "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["email box"],"vsrc":"email box"}],"dataAttribs":{"tsr":[823,836],"src":"[[email box]]"}}
+" by multiple email clients, therefore clients generally leave messages on the server until the user explicitly deletes them. An IMAP server typically listens on "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["port number"],"vsrc":"port number"}],"dataAttribs":{"tsr":[997,1012],"src":"[[port number]]"}}
+" 143. IMAP over "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["Secure Sockets Layer"],"vsrc":"Secure Sockets Layer"},{"k":"mw:maybeContent","v":["SSL"],"srcOffsets":[1051,1054],"vsrc":"SSL"}],"dataAttribs":{"tsr":[1028,1056],"src":"[[Secure Sockets Layer|SSL]]"}}
+" ("
+{"type":"SelfclosingTagTk","name":"mw-quote","attribs":[{"k":"value","v":"'''"},{"k":"preceding-2chars","v":" ("}],"dataAttribs":{"tsr":[1058,1061]}}
+"IMAPS"
+{"type":"SelfclosingTagTk","name":"mw-quote","attribs":[{"k":"value","v":"'''"},{"k":"preceding-2chars","v":"PS"}],"dataAttribs":{"tsr":[1066,1069]}}
+") is assigned the port number 993."
+{"type":"NlTk","dataAttribs":{"tsr":[1103,1104]}}
+{"type":"NlTk","dataAttribs":{"tsr":[1104,1105]}}
+"Virtually all modern e-mail clients and "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["Server (computing)"],"vsrc":"Server (computing)"},{"k":"mw:maybeContent","v":["servers"],"srcOffsets":[1166,1173],"vsrc":"servers"}],"dataAttribs":{"tsr":[1145,1175],"src":"[[Server (computing)|servers]]"}}
+" support IMAP, which along with the earlier "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["POP3"],"vsrc":"POP3"}],"dataAttribs":{"tsr":[1219,1227],"src":"[[POP3]]"}}
+" (Post Office Protocol) are the two most prevalent standard protocols for email retrieval."
+{"type":"SelfclosingTagTk","name":"extension","attribs":[{"k":"typeof","v":"mw:Extension"},{"k":"name","v":"ref"},{"k":"source","v":"<ref name=\"Red Hat\">{{cite book | last = Komarinski | first = Mark | title = Red Hat Linux System Administration Handbook | publisher = Prentice Hall | year = 2000 | location = | page =179 | url = https://books.google.com/?id=UD0h_GqgbHgC&printsec=frontcover&dq=network%2B+guide+to+networks#v=onepage&q&f=false| isbn = 1423902459 }}</ref>"},{"k":"options","v":[{"k":"name","v":"Red Hat","srcOffsets":[1322,1326,1328,1335],"vsrc":"Red Hat"}]}],"dataAttribs":{"tsr":[1317,1655],"stx":"html","src":"<ref name=\"Red Hat\">{{cite book | last = Komarinski | first = Mark | title = Red Hat Linux System Administration Handbook | publisher = Prentice Hall | year = 2000 | location = | page =179 | url = https://books.google.com/?id=UD0h_GqgbHgC&printsec=frontcover&dq=network%2B+guide+to+networks#v=onepage&q&f=false| isbn = 1423902459 }}</ref>","tagWidths":[20,6]}}
+" Many "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["webmail"],"vsrc":"webmail"}],"dataAttribs":{"tsr":[1661,1672],"src":"[[webmail]]"}}
+" service providers such as "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["Gmail"],"vsrc":"Gmail"}],"dataAttribs":{"tsr":[1699,1708],"src":"[[Gmail]]"}}
+", "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["Outlook.com"],"vsrc":"Outlook.com"}],"dataAttribs":{"tsr":[1710,1725],"src":"[[Outlook.com]]"}}
+" and "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["Yahoo! Mail"],"vsrc":"Yahoo! Mail"}],"dataAttribs":{"tsr":[1730,1745],"src":"[[Yahoo! Mail]]"}}
+" also provide support for either IMAP or POP3."
+{"type":"NlTk","dataAttribs":{"tsr":[1791,1792]}}
+{"type":"NlTk","dataAttribs":{"tsr":[1792,1793]}}
+{"type":"TagTk","name":"h2","attribs":[],"dataAttribs":{"tsr":[1793,1795],"tmp":{"headingIndex":1}}}
+"E-mail protocols"
+{"type":"EndTagTk","name":"h2","attribs":[],"dataAttribs":{"tsr":[1811,1813]}}
+{"type":"NlTk","dataAttribs":{"tsr":[1813,1814]}}
+"The Internet Message Access Protocol is an "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["Application Layer"],"vsrc":"Application Layer"}],"dataAttribs":{"tsr":[1857,1878],"src":"[[Application Layer]]"}}
+" Internet protocol that allows an "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["e-mail client"],"vsrc":"e-mail client"}],"dataAttribs":{"tsr":[1912,1929],"src":"[[e-mail client]]"}}
+" to access "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["e-mail"],"vsrc":"e-mail"}],"dataAttribs":{"tsr":[1940,1950],"src":"[[e-mail]]"}}
+" on a remote "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["mail server"],"vsrc":"mail server"}],"dataAttribs":{"tsr":[1963,1978],"src":"[[mail server]]"}}
+".  The current version is defined by "
+{"type":"SelfclosingTagTk","name":"extlink","attribs":[{"k":"href","v":"https://tools.ietf.org/html/rfc3501"},{"k":"mw:content","v":"RFC 3501"},{"k":"typeof","v":"mw:ExtLink/RFC"}],"dataAttribs":{"stx":"magiclink","tsr":[2015,2023]}}
+". An IMAP server typically listens on "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["List of TCP and UDP port numbers"],"vsrc":"List of TCP and UDP port numbers"},{"k":"mw:maybeContent","v":["well-known port"],"srcOffsets":[2096,2111],"vsrc":"well-known port"}],"dataAttribs":{"tsr":[2061,2113],"src":"[[List of TCP and UDP port numbers|well-known port]]"}}
+" 143, while IMAP over "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["Secure Sockets Layer"],"vsrc":"Secure Sockets Layer"},{"k":"mw:maybeContent","v":["SSL"],"srcOffsets":[2158,2161],"vsrc":"SSL"}],"dataAttribs":{"tsr":[2135,2163],"src":"[[Secure Sockets Layer|SSL]]"}}
+" (IMAPS) uses 993."
+{"type":"NlTk","dataAttribs":{"tsr":[2181,2182]}}
+{"type":"NlTk","dataAttribs":{"tsr":[2182,2183]}}
+"Incoming e-mail messages are sent to an e-mail server that stores messages in the recipient's e-mail box. The user retrieves the messages with an e-mail client that uses one of a number of e-mail retrieval protocols. While some clients and servers preferentially use vendor-specific, "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["proprietary protocol"],"vsrc":"proprietary protocol"}],"dataAttribs":{"tsr":[2467,2491],"src":"[[proprietary protocol]]"}}
+"s,"
+{"type":"SelfclosingTagTk","name":"extension","attribs":[{"k":"typeof","v":"mw:Extension"},{"k":"name","v":"ref"},{"k":"source","v":"<ref>For example, [[Microsoft]]'s [[Microsoft Outlook|Outlook]] client uses [[MAPI]], a [[Microsoft]] proprietary protocol, to communicate with a [[Microsoft Exchange Server]]. [[IBM]]'s [[Lotus Notes|Notes]] client works in a similar fashion when communicating with a [[IBM Lotus Domino|Domino]] server.</ref>"},{"k":"options","v":[]}],"dataAttribs":{"tsr":[2493,2803],"stx":"html","src":"<ref>For example, [[Microsoft]]'s [[Microsoft Outlook|Outlook]] client uses [[MAPI]], a [[Microsoft]] proprietary protocol, to communicate with a [[Microsoft Exchange Server]]. [[IBM]]'s [[Lotus Notes|Notes]] client works in a similar fashion when communicating with a [[IBM Lotus Domino|Domino]] server.</ref>","tagWidths":[5,6]}}
+" almost all support POP and IMAP for retrieving e-mail - allowing many free choice between many "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["comparison of e-mail clients"],"vsrc":"comparison of e-mail clients"},{"k":"mw:maybeContent","v":["e-mail clients"],"srcOffsets":[2930,2944],"vsrc":"e-mail clients"}],"dataAttribs":{"tsr":[2899,2946],"src":"[[comparison of e-mail clients|e-mail clients]]"}}
+" such as "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["Pegasus Mail"],"vsrc":"Pegasus Mail"}],"dataAttribs":{"tsr":[2955,2971],"src":"[[Pegasus Mail]]"}}
+" or "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["Mozilla Thunderbird"],"vsrc":"Mozilla Thunderbird"}],"dataAttribs":{"tsr":[2975,2998],"src":"[[Mozilla Thunderbird]]"}}
+" to access these servers, and allows the clients to be used with "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["list of mail servers"],"vsrc":"list of mail servers"},{"k":"mw:maybeContent","v":["other servers"],"srcOffsets":[3086,3099],"vsrc":"other servers"}],"dataAttribs":{"tsr":[3063,3101],"src":"[[list of mail servers|other servers]]"}}
+"."
+{"type":"NlTk","dataAttribs":{"tsr":[3102,3103]}}
+{"type":"NlTk","dataAttribs":{"tsr":[3103,3104]}}
+"E-mail clients using IMAP generally leave messages on the server until the user explicitly deletes them. This and other characteristics of IMAP operation allow multiple clients to manage the same mailbox. Most e-mail "
+{"type":"SelfclosingTagTk","name":"mw-quote","attribs":[{"k":"value","v":"''"}],"dataAttribs":{"tsr":[3321,3323]}}
+"clients"
+{"type":"SelfclosingTagTk","name":"mw-quote","attribs":[{"k":"value","v":"''"}],"dataAttribs":{"tsr":[3330,3332]}}
+" support IMAP in addition to "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["Post Office Protocol"],"vsrc":"Post Office Protocol"},{"k":"mw:maybeContent","v":["Post Office Protocol (POP)"],"srcOffsets":[3384,3410],"vsrc":"Post Office Protocol (POP)"}],"dataAttribs":{"tsr":[3361,3412],"src":"[[Post Office Protocol|Post Office Protocol (POP)]]"}}
+" to retrieve messages."
+{"type":"SelfclosingTagTk","name":"extension","attribs":[{"k":"typeof","v":"mw:Extension"},{"k":"name","v":"ref"},{"k":"source","v":"<ref>{{cite book\n|title=Managing IMAP\n|first=Diana\n|last=Mullet\n|isbn=0-596-00012-X\n|publisher=[[O'Reilly Media|O'Reilly]]\n|year=2000\n|page=25\n}}</ref>"},{"k":"options","v":[]}],"dataAttribs":{"tsr":[3434,3585],"stx":"html","src":"<ref>{{cite book\n|title=Managing IMAP\n|first=Diana\n|last=Mullet\n|isbn=0-596-00012-X\n|publisher=[[O'Reilly Media|O'Reilly]]\n|year=2000\n|page=25\n}}</ref>","tagWidths":[5,6]}}
+" IMAP offers access to the mail storage. Clients may store local copies of the messages, but these are considered to be a temporary cache."
+{"type":"SelfclosingTagTk","name":"extension","attribs":[{"k":"typeof","v":"mw:Extension"},{"k":"name","v":"ref"},{"k":"source","v":"<ref>See e.g. {{cite web|title=IMAP Client Coding HOWTO|url=http://www.dovecot.org/imap-client-coding-howto.html|author=Timo Sirainen, Dave Cridland}}</ref>"},{"k":"options","v":[]}],"dataAttribs":{"tsr":[3723,3879],"stx":"html","src":"<ref>See e.g. {{cite web|title=IMAP Client Coding HOWTO|url=http://www.dovecot.org/imap-client-coding-howto.html|author=Timo Sirainen, Dave Cridland}}</ref>","tagWidths":[5,6]}}
+{"type":"NlTk","dataAttribs":{"tsr":[3879,3880]}}
+{"type":"NlTk","dataAttribs":{"tsr":[3880,3881]}}
+{"type":"TagTk","name":"h2","attribs":[],"dataAttribs":{"tsr":[3881,3883],"tmp":{"headingIndex":2}}}
+"History"
+{"type":"EndTagTk","name":"h2","attribs":[],"dataAttribs":{"tsr":[3890,3892]}}
+{"type":"NlTk","dataAttribs":{"tsr":[3892,3893]}}
+"IMAP was designed by "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["Mark Crispin"],"vsrc":"Mark Crispin"}],"dataAttribs":{"tsr":[3914,3930],"src":"[[Mark Crispin]]"}}
+" in 1986 as a remote access mailbox protocol, in contrast to the widely used POP, a protocol for simply retrieving the contents of a mailbox."
+{"type":"NlTk","dataAttribs":{"tsr":[4071,4072]}}
+{"type":"NlTk","dataAttribs":{"tsr":[4072,4073]}}
+"It went through a number of iterations before the current VERSION 4rev1 (MAPI4), as detailed below:"
+{"type":"NlTk","dataAttribs":{"tsr":[4172,4173]}}
+{"type":"NlTk","dataAttribs":{"tsr":[4173,4174]}}
+{"type":"TagTk","name":"h3","attribs":[],"dataAttribs":{"tsr":[4174,4177],"tmp":{"headingIndex":3}}}
+"Original IMAP"
+{"type":"EndTagTk","name":"h3","attribs":[],"dataAttribs":{"tsr":[4190,4193]}}
+{"type":"NlTk","dataAttribs":{"tsr":[4193,4194]}}
+"The original "
+{"type":"SelfclosingTagTk","name":"mw-quote","attribs":[{"k":"value","v":"''"}],"dataAttribs":{"tsr":[4207,4209]}}
+"Interim Mail Access Protocol"
+{"type":"SelfclosingTagTk","name":"mw-quote","attribs":[{"k":"value","v":"''"}],"dataAttribs":{"tsr":[4237,4239]}}
+" was implemented as a "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["Xerox"],"vsrc":"Xerox"}],"dataAttribs":{"tsr":[4261,4270],"src":"[[Xerox]]"}}
+" "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["Lisp machine"],"vsrc":"Lisp machine"}],"dataAttribs":{"tsr":[4271,4287],"src":"[[Lisp machine]]"}}
+" client and a "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["TOPS-20"],"vsrc":"TOPS-20"}],"dataAttribs":{"tsr":[4301,4312],"src":"[[TOPS-20]]"}}
+" server."
+{"type":"NlTk","dataAttribs":{"tsr":[4320,4321]}}
+{"type":"NlTk","dataAttribs":{"tsr":[4321,4322]}}
+"No copies of the original interim protocol specification or its software exist."
+{"type":"SelfclosingTagTk","name":"extension","attribs":[{"k":"typeof","v":"mw:Extension"},{"k":"name","v":"ref"},{"k":"source","v":"<ref>{{cite mailing list |url=http://www.ietf.org/mail-archive/web/imap5/current/msg00317.html |title=Re: &#91;imap5&#93; Designing a new replacement protocol for IMAP |date=13 February 2012 |accessdate=26 November 2014 |mailinglist=imap5 |last=Crispin |first=Mark |authorlink=Mark Crispin |quote=Knowledge of the original IMAP (before IMAP2) exists primarily in my mind as all the original IMAP specifications and implementations were replaced with IMAP2. |message-id= alpine.OSX.2.00.1202131243200.38441@hsinghsing.panda.com}}</ref>"},{"k":"options","v":[]}],"dataAttribs":{"tsr":[4401,4935],"stx":"html","src":"<ref>{{cite mailing list |url=http://www.ietf.org/mail-archive/web/imap5/current/msg00317.html |title=Re: &#91;imap5&#93; Designing a new replacement protocol for IMAP |date=13 February 2012 |accessdate=26 November 2014 |mailinglist=imap5 |last=Crispin |first=Mark |authorlink=Mark Crispin |quote=Knowledge of the original IMAP (before IMAP2) exists primarily in my mind as all the original IMAP specifications and implementations were replaced with IMAP2. |message-id= alpine.OSX.2.00.1202131243200.38441@hsinghsing.panda.com}}</ref>","tagWidths":[5,6]}}
+{"type":"SelfclosingTagTk","name":"extension","attribs":[{"k":"typeof","v":"mw:Extension"},{"k":"name","v":"ref"},{"k":"source","v":"<ref>[http://www.iana.org/assignments/service-names Service Name and Transport Protocol Port Number Registry]. Iana.org (2013-07-12). Retrieved on 2013-07-17.</ref>"},{"k":"options","v":[]}],"dataAttribs":{"tsr":[4935,5099],"stx":"html","src":"<ref>[http://www.iana.org/assignments/service-names Service Name and Transport Protocol Port Number Registry]. Iana.org (2013-07-12). Retrieved on 2013-07-17.</ref>","tagWidths":[5,6]}}
+" Although some of its commands and responses were similar to IMAP2, the interim protocol lacked command/response tagging and thus its syntax was incompatible with all other versions of IMAP."
+{"type":"NlTk","dataAttribs":{"tsr":[5289,5290]}}
+{"type":"NlTk","dataAttribs":{"tsr":[5290,5291]}}
+{"type":"TagTk","name":"h3","attribs":[],"dataAttribs":{"tsr":[5291,5294],"tmp":{"headingIndex":4}}}
+"IMAP2"
+{"type":"EndTagTk","name":"h3","attribs":[],"dataAttribs":{"tsr":[5299,5302]}}
+{"type":"NlTk","dataAttribs":{"tsr":[5302,5303]}}
+"The interim protocol was quickly replaced by the "
+{"type":"SelfclosingTagTk","name":"mw-quote","attribs":[{"k":"value","v":"''"}],"dataAttribs":{"tsr":[5352,5354]}}
+"Interactive Mail Access Protocol"
+{"type":"SelfclosingTagTk","name":"mw-quote","attribs":[{"k":"value","v":"''"}],"dataAttribs":{"tsr":[5386,5388]}}
+" (IMAP2), defined in "
+{"type":"SelfclosingTagTk","name":"extlink","attribs":[{"k":"href","v":"https://tools.ietf.org/html/rfc1064"},{"k":"mw:content","v":"RFC 1064"},{"k":"typeof","v":"mw:ExtLink/RFC"}],"dataAttribs":{"stx":"magiclink","tsr":[5409,5417]}}
+" (in 1988) and later updated by "
+{"type":"SelfclosingTagTk","name":"extlink","attribs":[{"k":"href","v":"https://tools.ietf.org/html/rfc1176"},{"k":"mw:content","v":"RFC 1176"},{"k":"typeof","v":"mw:ExtLink/RFC"}],"dataAttribs":{"stx":"magiclink","tsr":[5449,5457]}}
+" (in 1990). IMAP2 introduced the command/response tagging and was the first publicly distributed version."
+{"type":"NlTk","dataAttribs":{"tsr":[5562,5563]}}
+{"type":"NlTk","dataAttribs":{"tsr":[5563,5564]}}
+{"type":"TagTk","name":"h3","attribs":[],"dataAttribs":{"tsr":[5564,5567],"tmp":{"headingIndex":5}}}
+"IMAP3"
+{"type":"EndTagTk","name":"h3","attribs":[],"dataAttribs":{"tsr":[5572,5575]}}
+{"type":"NlTk","dataAttribs":{"tsr":[5575,5576]}}
+"IMAP3 is an extremely rare variant of IMAP."
+{"type":"SelfclosingTagTk","name":"extension","attribs":[{"k":"typeof","v":"mw:Extension"},{"k":"name","v":"ref"},{"k":"source","v":"<ref name=\"rfc2061\" />"},{"k":"options","v":[{"k":"name","v":"rfc2061","srcOffsets":[5624,5628,5630,5637],"vsrc":"rfc2061"}]}],"dataAttribs":{"tsr":[5619,5641],"stx":"html","selfClose":true,"src":"<ref name=\"rfc2061\" />","tagWidths":[22,0]}}
+" It was published as "
+{"type":"SelfclosingTagTk","name":"extlink","attribs":[{"k":"href","v":"https://tools.ietf.org/html/rfc1203"},{"k":"mw:content","v":"RFC 1203"},{"k":"typeof","v":"mw:ExtLink/RFC"}],"dataAttribs":{"stx":"magiclink","tsr":[5662,5670]}}
+" in 1991. It was written specifically as a counter proposal to "
+{"type":"SelfclosingTagTk","name":"extlink","attribs":[{"k":"href","v":"https://tools.ietf.org/html/rfc1176"},{"k":"mw:content","v":"RFC 1176"},{"k":"typeof","v":"mw:ExtLink/RFC"}],"dataAttribs":{"stx":"magiclink","tsr":[5733,5741]}}
+", which itself proposed modifications to IMAP2."
+{"type":"SelfclosingTagTk","name":"extension","attribs":[{"k":"typeof","v":"mw:Extension"},{"k":"name","v":"ref"},{"k":"source","v":"<ref>{{cite web |url=http://tools.ietf.org/html/rfc1203 |title=INTERACTIVE MAIL ACCESS PROTOCOL - VERSION 3 |publisher=IETF |year=1991 |accessdate=2010-08-21}}</ref>"},{"k":"options","v":[]}],"dataAttribs":{"tsr":[5788,5953],"stx":"html","src":"<ref>{{cite web |url=http://tools.ietf.org/html/rfc1203 |title=INTERACTIVE MAIL ACCESS PROTOCOL - VERSION 3 |publisher=IETF |year=1991 |accessdate=2010-08-21}}</ref>","tagWidths":[5,6]}}
+" IMAP3 was never accepted by the marketplace."
+{"type":"SelfclosingTagTk","name":"extension","attribs":[{"k":"typeof","v":"mw:Extension"},{"k":"name","v":"ref"},{"k":"source","v":"<ref>{{cite web |url=http://stason.org/TULARC/networking/lans-mail-protocols/03-IMAP2-IMAP2bis-IMAP3-IMAP4-IMAP4rev1-LAN-Mail-Protoc.html |title=IMAP2, IMAP2bis, IMAP3, IMAP4, IMAP4rev1 (LAN Mail Protocols) |accessdate=2010-08-21}}</ref>"},{"k":"options","v":[]}],"dataAttribs":{"tsr":[5998,6235],"stx":"html","src":"<ref>{{cite web |url=http://stason.org/TULARC/networking/lans-mail-protocols/03-IMAP2-IMAP2bis-IMAP3-IMAP4-IMAP4rev1-LAN-Mail-Protoc.html |title=IMAP2, IMAP2bis, IMAP3, IMAP4, IMAP4rev1 (LAN Mail Protocols) |accessdate=2010-08-21}}</ref>","tagWidths":[5,6]}}
+{"type":"SelfclosingTagTk","name":"extension","attribs":[{"k":"typeof","v":"mw:Extension"},{"k":"name","v":"ref"},{"k":"source","v":"<ref>{{cite web |url=http://www.tcpipguide.com/free/t_IMAPOverviewHistoryVersionsandStandards-3.htm |title=IMAP Overview, History, Versions and Standards |accessdate=2010-08-21}}</ref>"},{"k":"options","v":[]}],"dataAttribs":{"tsr":[6235,6419],"stx":"html","src":"<ref>{{cite web |url=http://www.tcpipguide.com/free/t_IMAPOverviewHistoryVersionsandStandards-3.htm |title=IMAP Overview, History, Versions and Standards |accessdate=2010-08-21}}</ref>","tagWidths":[5,6]}}
+" The "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["IESG"],"vsrc":"IESG"}],"dataAttribs":{"tsr":[6424,6432],"src":"[[IESG]]"}}
+" reclassified RFC1203 \"Interactive Mail Access Protocol - Version 3\" as a Historic protocol in 1993. The IMAP Working Group used RFC1176 (IMAP2) rather than RFC1203 (IMAP3) as its starting point."
+{"type":"SelfclosingTagTk","name":"extension","attribs":[{"k":"typeof","v":"mw:Extension"},{"k":"name","v":"ref"},{"k":"source","v":"<ref>{{cite web |url=http://www.ietf.org/mail-archive/web/ietf/current/msg01656.html |title=Protocol Action: Interactive Mail Access Protocol — Version 3 to Historic (IETF mail archive) |year=1993 |accessdate=2010-08-21}}</ref>"},{"k":"options","v":[]}],"dataAttribs":{"tsr":[6627,6854],"stx":"html","src":"<ref>{{cite web |url=http://www.ietf.org/mail-archive/web/ietf/current/msg01656.html |title=Protocol Action: Interactive Mail Access Protocol — Version 3 to Historic (IETF mail archive) |year=1993 |accessdate=2010-08-21}}</ref>","tagWidths":[5,6]}}
+{"type":"SelfclosingTagTk","name":"extension","attribs":[{"k":"typeof","v":"mw:Extension"},{"k":"name","v":"ref"},{"k":"source","v":"<ref>{{cite web |url=http://www.pmdf.process.com/ftp/info-pmdf/aug.1993?httpd=content&type=text/plain;%20charset%3DISO-8859-1 |title=Innosoft and POP/IMAP protocols? (mail archive) |year=1993 |accessdate=2010-08-21}}</ref>"},{"k":"options","v":[]}],"dataAttribs":{"tsr":[6854,7076],"stx":"html","src":"<ref>{{cite web |url=http://www.pmdf.process.com/ftp/info-pmdf/aug.1993?httpd=content&type=text/plain;%20charset%3DISO-8859-1 |title=Innosoft and POP/IMAP protocols? (mail archive) |year=1993 |accessdate=2010-08-21}}</ref>","tagWidths":[5,6]}}
+{"type":"NlTk","dataAttribs":{"tsr":[7076,7077]}}
+{"type":"NlTk","dataAttribs":{"tsr":[7077,7078]}}
+{"type":"TagTk","name":"h3","attribs":[],"dataAttribs":{"tsr":[7078,7081],"tmp":{"headingIndex":6}}}
+"IMAP2bis"
+{"type":"EndTagTk","name":"h3","attribs":[],"dataAttribs":{"tsr":[7089,7092]}}
+{"type":"NlTk","dataAttribs":{"tsr":[7092,7093]}}
+"With the advent of "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["MIME"],"vsrc":"MIME"}],"dataAttribs":{"tsr":[7112,7120],"src":"[[MIME]]"}}
+", IMAP2 was extended to support MIME body structures and add mailbox management functionality (create, delete, rename, message upload) that was absent from IMAP2. This experimental revision was called IMAP2bis; its specification was never published in non-draft form. An internet draft of IMAP2bis was published by the IETF IMAP Working Group in October 1993. This draft was based upon the following earlier specifications: unpublished "
+{"type":"SelfclosingTagTk","name":"mw-quote","attribs":[{"k":"value","v":"''"}],"dataAttribs":{"tsr":[7556,7558]}}
+"IMAP2bis.TXT"
+{"type":"SelfclosingTagTk","name":"mw-quote","attribs":[{"k":"value","v":"''"}],"dataAttribs":{"tsr":[7570,7572]}}
+" document, RFC1176, and RFC1064 (IMAP2)."
+{"type":"SelfclosingTagTk","name":"extension","attribs":[{"k":"typeof","v":"mw:Extension"},{"k":"name","v":"ref"},{"k":"source","v":"<ref>{{cite web |url=http://tools.ietf.org/html/draft-ietf-imap-imap2bis-02 |title=INTERACTIVE MAIL ACCESS PROTOCOL - VERSION 2bis (Internet Draft) |publisher=IETF |year=1993 |accessdate=2010-08-21}}</ref>"},{"k":"options","v":[]}],"dataAttribs":{"tsr":[7612,7817],"stx":"html","src":"<ref>{{cite web |url=http://tools.ietf.org/html/draft-ietf-imap-imap2bis-02 |title=INTERACTIVE MAIL ACCESS PROTOCOL - VERSION 2bis (Internet Draft) |publisher=IETF |year=1993 |accessdate=2010-08-21}}</ref>","tagWidths":[5,6]}}
+" The "
+{"type":"SelfclosingTagTk","name":"mw-quote","attribs":[{"k":"value","v":"''"}],"dataAttribs":{"tsr":[7822,7824]}}
+"IMAP2bis.TXT"
+{"type":"SelfclosingTagTk","name":"mw-quote","attribs":[{"k":"value","v":"''"}],"dataAttribs":{"tsr":[7836,7838]}}
+" draft documented the state of extensions to IMAP2 as of December 1992."
+{"type":"SelfclosingTagTk","name":"extension","attribs":[{"k":"typeof","v":"mw:Extension"},{"k":"name","v":"ref"},{"k":"source","v":"<ref>{{cite web |url=http://ftp.zcu.cz/pub/network/imap/old/IMAP2bis.TXT |title=IMAP2BIS -- EXTENSIONS TO THE IMAP2 PROTOCOL (DRAFT) |year=1992 |accessdate=2010-08-21}}</ref>"},{"k":"options","v":[]}],"dataAttribs":{"tsr":[7909,8083],"stx":"html","src":"<ref>{{cite web |url=http://ftp.zcu.cz/pub/network/imap/old/IMAP2bis.TXT |title=IMAP2BIS -- EXTENSIONS TO THE IMAP2 PROTOCOL (DRAFT) |year=1992 |accessdate=2010-08-21}}</ref>","tagWidths":[5,6]}}
+" Early versions of "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["Pine (e-mail client)"],"vsrc":"Pine (e-mail client)"},{"k":"mw:maybeContent","v":["Pine"],"srcOffsets":[8125,8129],"vsrc":"Pine"}],"dataAttribs":{"tsr":[8102,8131],"src":"[[Pine (e-mail client)|Pine]]"}}
+" were widely distributed with IMAP2bis support"
+{"type":"SelfclosingTagTk","name":"extension","attribs":[{"k":"typeof","v":"mw:Extension"},{"k":"name","v":"ref"},{"k":"source","v":"<ref name=\"rfc2061\">{{cite web |url=http://tools.ietf.org/html/rfc2061 |title=RFC 2061 - IMAP4 COMPATIBILITY WITH IMAP2BIS |publisher=IETF |year=1996 |accessdate=2010-08-21}}</ref>"},{"k":"options","v":[{"k":"name","v":"rfc2061","srcOffsets":[8182,8186,8188,8195],"vsrc":"rfc2061"}]}],"dataAttribs":{"tsr":[8177,8357],"stx":"html","src":"<ref name=\"rfc2061\">{{cite web |url=http://tools.ietf.org/html/rfc2061 |title=RFC 2061 - IMAP4 COMPATIBILITY WITH IMAP2BIS |publisher=IETF |year=1996 |accessdate=2010-08-21}}</ref>","tagWidths":[20,6]}}
+" (Pine 4.00 and later supports IMAP4rev1)."
+{"type":"NlTk","dataAttribs":{"tsr":[8399,8400]}}
+{"type":"NlTk","dataAttribs":{"tsr":[8400,8401]}}
+{"type":"TagTk","name":"h3","attribs":[],"dataAttribs":{"tsr":[8401,8404],"tmp":{"headingIndex":7}}}
+"IMAP4"
+{"type":"EndTagTk","name":"h3","attribs":[],"dataAttribs":{"tsr":[8409,8412]}}
+{"type":"NlTk","dataAttribs":{"tsr":[8412,8413]}}
+"An IMAP Working Group formed in the "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["Internet Engineering Task Force"],"vsrc":"Internet Engineering Task Force"},{"k":"mw:maybeContent","v":["IETF"],"srcOffsets":[8483,8487],"vsrc":"IETF"}],"dataAttribs":{"tsr":[8449,8489],"src":"[[Internet Engineering Task Force|IETF]]"}}
+" in the early 1990s took over responsibility for the IMAP2bis design. The IMAP WG decided to rename IMAP2bis to IMAP4 to avoid confusion."
+{"type":"NlTk","dataAttribs":{"tsr":[8626,8627]}}
+{"type":"NlTk","dataAttribs":{"tsr":[8627,8628]}}
+{"type":"TagTk","name":"h2","attribs":[],"dataAttribs":{"tsr":[8628,8630],"tmp":{"headingIndex":8}}}
+"Advantages over POP"
+{"type":"EndTagTk","name":"h2","attribs":[],"dataAttribs":{"tsr":[8649,8651]}}
+{"type":"NlTk","dataAttribs":{"tsr":[8651,8652]}}
+{"type":"NlTk","dataAttribs":{"tsr":[8652,8653]}}
+{"type":"TagTk","name":"h3","attribs":[],"dataAttribs":{"tsr":[8653,8656],"tmp":{"headingIndex":9}}}
+"Connected and disconnected modes"
+{"type":"EndTagTk","name":"h3","attribs":[],"dataAttribs":{"tsr":[8688,8691]}}
+{"type":"NlTk","dataAttribs":{"tsr":[8691,8692]}}
+"When using POP, clients typically connect to the e-mail server briefly, only as long as it takes to download new messages. When using IMAP4, clients often stay connected as long as the user interface is active and download message content on demand. For users with many or large messages, this IMAP4 usage pattern can result in faster response times."
+{"type":"NlTk","dataAttribs":{"tsr":[9042,9043]}}
+{"type":"NlTk","dataAttribs":{"tsr":[9043,9044]}}
+{"type":"TagTk","name":"h3","attribs":[],"dataAttribs":{"tsr":[9044,9047],"tmp":{"headingIndex":10}}}
+"Multiple simultaneous clients"
+{"type":"EndTagTk","name":"h3","attribs":[],"dataAttribs":{"tsr":[9076,9079]}}
+{"type":"NlTk","dataAttribs":{"tsr":[9079,9080]}}
+"The POP protocol requires the currently connected client to be the only client connected to the mailbox. In contrast, the IMAP protocol specifically allows simultaneous access by multiple clients and provides mechanisms for clients to detect changes made to the mailbox by other, concurrently connected, clients. See for example RFC3501 section 5.2 which specifically cites \"simultaneous access to the same mailbox by multiple agents\" as an example."
+{"type":"NlTk","dataAttribs":{"tsr":[9529,9530]}}
+{"type":"NlTk","dataAttribs":{"tsr":[9530,9531]}}
+{"type":"TagTk","name":"h3","attribs":[],"dataAttribs":{"tsr":[9531,9534],"tmp":{"headingIndex":11}}}
+"Access to MIME message parts and partial fetch"
+{"type":"EndTagTk","name":"h3","attribs":[],"dataAttribs":{"tsr":[9580,9583]}}
+{"type":"NlTk","dataAttribs":{"tsr":[9583,9584]}}
+"Usually all Internet e-mail is transmitted in "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["MIME"],"vsrc":"MIME"}],"dataAttribs":{"tsr":[9630,9638],"src":"[[MIME]]"}}
+" format, allowing messages to have a "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["tree structure"],"vsrc":"tree structure"}],"dataAttribs":{"tsr":[9675,9693],"src":"[[tree structure]]"}}
+" where the leaf nodes are any of a variety of single part content types and the non-leaf nodes are any of a variety of multipart types. The IMAP4 protocol allows clients to retrieve any of the individual MIME parts separately and also to retrieve portions of either individual parts or the entire message. These mechanisms allow clients to retrieve the text portion of a message without retrieving attached files or to "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["streaming media"],"vsrc":"streaming media"},{"k":"mw:maybeContent","v":["stream"],"srcOffsets":[10130,10136],"vsrc":"stream"}],"dataAttribs":{"tsr":[10112,10138],"src":"[[streaming media|stream]]"}}
+" content as it is being fetched."
+{"type":"NlTk","dataAttribs":{"tsr":[10170,10171]}}
+{"type":"NlTk","dataAttribs":{"tsr":[10171,10172]}}
+{"type":"TagTk","name":"h3","attribs":[],"dataAttribs":{"tsr":[10172,10175],"tmp":{"headingIndex":12}}}
+"Message state information"
+{"type":"EndTagTk","name":"h3","attribs":[],"dataAttribs":{"tsr":[10200,10203]}}
+{"type":"NlTk","dataAttribs":{"tsr":[10203,10204]}}
+"Through the use of flags defined in the IMAP4 protocol, clients can keep track of message state: for example, whether or not the message has been read, replied to, or deleted. These flags are stored on the server, so different clients accessing the same mailbox at different times can detect state changes made by other clients. POP provides no mechanism for clients to store such state information on the server so if a single user accesses a mailbox with two different POP clients (at different times), state information—such as whether a message has been accessed—cannot be synchronized between the clients. The IMAP4 protocol supports both predefined system flags and client-defined keywords. System flags indicate state information such as whether a message has been read. Keywords, which are not supported by all IMAP servers, allow messages to be given one or more "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["Tag (metadata)"],"vsrc":"Tag (metadata)"},{"k":"mw:maybeContent","v":["tags"],"srcOffsets":[11093,11097],"vsrc":"tags"}],"dataAttribs":{"tsr":[11076,11099],"src":"[[Tag (metadata)|tags]]"}}
+" whose meaning is up to the client. IMAP keywords should not be confused with proprietary labels of "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["web-based e-mail"],"vsrc":"web-based e-mail"}],"dataAttribs":{"tsr":[11199,11219],"src":"[[web-based e-mail]]"}}
+" services which are sometimes translated into IMAP folders by the corresponding proprietary servers."
+{"type":"NlTk","dataAttribs":{"tsr":[11319,11320]}}
+{"type":"NlTk","dataAttribs":{"tsr":[11320,11321]}}
+{"type":"TagTk","name":"h3","attribs":[],"dataAttribs":{"tsr":[11321,11324],"tmp":{"headingIndex":13}}}
+"Multiple mailboxes on the server"
+{"type":"EndTagTk","name":"h3","attribs":[],"dataAttribs":{"tsr":[11356,11359]}}
+{"type":"NlTk","dataAttribs":{"tsr":[11359,11360]}}
+"IMAP4 clients can create, rename, and/or delete mailboxes (usually presented to the user as folders) on the server, and copy messages between mailboxes. Multiple mailbox support also allows servers to provide access to shared and public folders. The "
+{"type":"SelfclosingTagTk","name":"mw-quote","attribs":[{"k":"value","v":"''"}],"dataAttribs":{"tsr":[11610,11612]}}
+"IMAP4 Access Control List (ACL) Extension"
+{"type":"SelfclosingTagTk","name":"mw-quote","attribs":[{"k":"value","v":"''"}],"dataAttribs":{"tsr":[11653,11655]}}
+" ("
+{"type":"SelfclosingTagTk","name":"extlink","attribs":[{"k":"href","v":"https://tools.ietf.org/html/rfc4314"},{"k":"mw:content","v":"RFC 4314"},{"k":"typeof","v":"mw:ExtLink/RFC"}],"dataAttribs":{"stx":"magiclink","tsr":[11657,11665]}}
+") may be used to regulate access rights."
+{"type":"NlTk","dataAttribs":{"tsr":[11705,11706]}}
+{"type":"NlTk","dataAttribs":{"tsr":[11706,11707]}}
+{"type":"TagTk","name":"h3","attribs":[],"dataAttribs":{"tsr":[11707,11710],"tmp":{"headingIndex":14}}}
+"Server-side searches"
+{"type":"EndTagTk","name":"h3","attribs":[],"dataAttribs":{"tsr":[11730,11733]}}
+{"type":"NlTk","dataAttribs":{"tsr":[11733,11734]}}
+"IMAP4 provides a mechanism for a client to ask the server to search for messages meeting a variety of criteria. This mechanism avoids requiring clients to download every message in the mailbox in order to perform these searches."
+{"type":"NlTk","dataAttribs":{"tsr":[11962,11963]}}
+{"type":"NlTk","dataAttribs":{"tsr":[11963,11964]}}
+{"type":"TagTk","name":"h3","attribs":[],"dataAttribs":{"tsr":[11964,11967],"tmp":{"headingIndex":15}}}
+"Built-in extension mechanism"
+{"type":"EndTagTk","name":"h3","attribs":[],"dataAttribs":{"tsr":[11995,11998]}}
+{"type":"NlTk","dataAttribs":{"tsr":[11998,11999]}}
+"Reflecting the experience of earlier Internet protocols, IMAP4 defines an explicit mechanism by which it may be extended. Many IMAP4 "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["software extension"],"vsrc":"software extension"},{"k":"mw:maybeContent","v":["extension"],"srcOffsets":[12153,12162],"vsrc":"extension"}],"dataAttribs":{"tsr":[12132,12164],"src":"[[software extension|extension]]"}}
+"s to the base protocol have been proposed and are in common use. IMAP2bis did not have an extension mechanism, and POP now has one defined by "
+{"type":"SelfclosingTagTk","name":"extlink","attribs":[{"k":"href","v":"https://tools.ietf.org/html/rfc2449"},{"k":"mw:content","v":"RFC 2449"},{"k":"typeof","v":"mw:ExtLink/RFC"}],"dataAttribs":{"stx":"magiclink","tsr":[12306,12314]}}
+"."
+{"type":"NlTk","dataAttribs":{"tsr":[12315,12316]}}
+{"type":"NlTk","dataAttribs":{"tsr":[12316,12317]}}
+{"type":"TagTk","name":"h2","attribs":[],"dataAttribs":{"tsr":[12317,12319],"tmp":{"headingIndex":16}}}
+"Disadvantages"
+{"type":"EndTagTk","name":"h2","attribs":[],"dataAttribs":{"tsr":[12332,12334]}}
+{"type":"NlTk","dataAttribs":{"tsr":[12334,12335]}}
+"While IMAP remedies many of the shortcomings of POP, this inherently introduces additional complexity. Much of this complexity (e.g., multiple clients accessing the same mailbox at the same time) is compensated for by "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["server-side"],"vsrc":"server-side"}],"dataAttribs":{"tsr":[12553,12568],"src":"[[server-side]]"}}
+" workarounds such as "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["Maildir"],"vsrc":"Maildir"}],"dataAttribs":{"tsr":[12589,12600],"src":"[[Maildir]]"}}
+" or database backends."
+{"type":"NlTk","dataAttribs":{"tsr":[12622,12623]}}
+{"type":"NlTk","dataAttribs":{"tsr":[12623,12624]}}
+"The IMAP specification has been criticised for being insufficiently strict and allowing behaviours that effectively negate its usefulness. For instance, the specification states that each message stored on the server has a \"unique id\" to allow the clients to identify messages they have already seen between sessions. However, the specification also allows these UIDs to be invalidated with no restrictions, practically defeating their purpose."
+{"type":"SelfclosingTagTk","name":"extension","attribs":[{"k":"typeof","v":"mw:Extension"},{"k":"name","v":"ref"},{"k":"source","v":"<ref>{{cite web|url=http://sup.rubyforge.org/svn/trunk/lib/sup/imap.rb |archive-url=https://web.archive.org/web/20071212234041/http://sup.rubyforge.org/svn/trunk/lib/sup/imap.rb |dead-url=yes |archive-date=2007-12-12 |title=IMAP implementation in Sup, an e-mail client written in Ruby |publisher=rubyforge.com |accessdate=2011-02-22 |df= }} </ref>"},{"k":"options","v":[]}],"dataAttribs":{"tsr":[13068,13415],"stx":"html","src":"<ref>{{cite web|url=http://sup.rubyforge.org/svn/trunk/lib/sup/imap.rb |archive-url=https://web.archive.org/web/20071212234041/http://sup.rubyforge.org/svn/trunk/lib/sup/imap.rb |dead-url=yes |archive-date=2007-12-12 |title=IMAP implementation in Sup, an e-mail client written in Ruby |publisher=rubyforge.com |accessdate=2011-02-22 |df= }} </ref>","tagWidths":[5,6]}}
+{"type":"NlTk","dataAttribs":{"tsr":[13415,13416]}}
+{"type":"NlTk","dataAttribs":{"tsr":[13416,13417]}}
+"Unless the mail storage and searching algorithms on the server are carefully implemented, a client can potentially consume large amounts of server resources when searching massive mailboxes."
+{"type":"NlTk","dataAttribs":{"tsr":[13607,13608]}}
+{"type":"NlTk","dataAttribs":{"tsr":[13608,13609]}}
+"IMAP4 clients need to maintain a TCP/IP connection to the IMAP server in order to be notified of the arrival of new mail. Notification of mail arrival is done through "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["in-band signaling"],"vsrc":"in-band signaling"}],"dataAttribs":{"tsr":[13776,13797],"src":"[[in-band signaling]]"}}
+", which contributes to the complexity of client-side IMAP protocol handling somewhat."
+{"type":"SelfclosingTagTk","name":"extension","attribs":[{"k":"typeof","v":"mw:Extension"},{"k":"name","v":"ref"},{"k":"source","v":"<ref>{{cite web|url=http://www.isode.com/whitepapers/imap-idle.html|title=IMAP IDLE: The best approach for 'push' e-mail|publisher=Isode.com|accessdate=2009-07-30}}</ref>"},{"k":"options","v":[]}],"dataAttribs":{"tsr":[13882,14052],"stx":"html","src":"<ref>{{cite web|url=http://www.isode.com/whitepapers/imap-idle.html|title=IMAP IDLE: The best approach for 'push' e-mail|publisher=Isode.com|accessdate=2009-07-30}}</ref>","tagWidths":[5,6]}}
+" A private proposal, "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["Push-IMAP"],"vsrc":"Push-IMAP"},{"k":"mw:maybeContent","v":["push IMAP"],"srcOffsets":[14085,14094],"vsrc":"push IMAP"}],"dataAttribs":{"tsr":[14073,14096],"src":"[[Push-IMAP|push IMAP]]"}}
+", would extend IMAP to implement "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["push e-mail"],"vsrc":"push e-mail"}],"dataAttribs":{"tsr":[14129,14144],"src":"[[push e-mail]]"}}
+" by sending the entire message instead of just a notification. However, push IMAP has not been generally accepted and current IETF work has addressed the problem in other ways (see the "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["Lemonade Profile"],"vsrc":"Lemonade Profile"}],"dataAttribs":{"tsr":[14329,14349],"src":"[[Lemonade Profile]]"}}
+" for more information)."
+{"type":"NlTk","dataAttribs":{"tsr":[14372,14373]}}
+{"type":"NlTk","dataAttribs":{"tsr":[14373,14374]}}
+"Unlike some proprietary protocols which combine sending and retrieval operations, sending a message and saving a copy in a server-side folder with a base-level IMAP client requires transmitting the message content twice, once to SMTP for delivery and a second time to IMAP to store in a sent mail folder. This is addressed by a set of extensions defined by the IETF "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["Lemonade Profile"],"vsrc":"Lemonade Profile"}],"dataAttribs":{"tsr":[14740,14760],"src":"[[Lemonade Profile]]"}}
+" for mobile devices: URLAUTH ("
+{"type":"SelfclosingTagTk","name":"extlink","attribs":[{"k":"href","v":"https://tools.ietf.org/html/rfc4467"},{"k":"mw:content","v":"RFC 4467"},{"k":"typeof","v":"mw:ExtLink/RFC"}],"dataAttribs":{"stx":"magiclink","tsr":[14790,14798]}}
+") and CATENATE ("
+{"type":"SelfclosingTagTk","name":"extlink","attribs":[{"k":"href","v":"https://tools.ietf.org/html/rfc4469"},{"k":"mw:content","v":"RFC 4469"},{"k":"typeof","v":"mw:ExtLink/RFC"}],"dataAttribs":{"stx":"magiclink","tsr":[14814,14822]}}
+") in IMAP and BURL ("
+{"type":"SelfclosingTagTk","name":"extlink","attribs":[{"k":"href","v":"https://tools.ietf.org/html/rfc4468"},{"k":"mw:content","v":"RFC 4468"},{"k":"typeof","v":"mw:ExtLink/RFC"}],"dataAttribs":{"stx":"magiclink","tsr":[14842,14850]}}
+") in SMTP-SUBMISSION. In addition to this, "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["Courier Mail Server"],"vsrc":"Courier Mail Server"}],"dataAttribs":{"tsr":[14893,14916],"src":"[[Courier Mail Server]]"}}
+" offers a non-standard method of sending using IMAP by copying an outgoing message to a dedicated outbox folder."
+{"type":"SelfclosingTagTk","name":"extension","attribs":[{"k":"typeof","v":"mw:Extension"},{"k":"name","v":"ref"},{"k":"source","v":"<ref>{{cite web|url=http://www.courier-mta.org/imap/INSTALL.html#imapsend|title=Courier-IMAP: Sending mail via an IMAP connection|publisher=Double Precision, Inc|accessdate=2013-09-24}}</ref>"},{"k":"options","v":[]}],"dataAttribs":{"tsr":[15028,15219],"stx":"html","src":"<ref>{{cite web|url=http://www.courier-mta.org/imap/INSTALL.html#imapsend|title=Courier-IMAP: Sending mail via an IMAP connection|publisher=Double Precision, Inc|accessdate=2013-09-24}}</ref>","tagWidths":[5,6]}}
+{"type":"NlTk","dataAttribs":{"tsr":[15219,15220]}}
+{"type":"NlTk","dataAttribs":{"tsr":[15220,15221]}}
+{"type":"TagTk","name":"h2","attribs":[],"dataAttribs":{"tsr":[15221,15223],"tmp":{"headingIndex":17}}}
+" Security "
+{"type":"EndTagTk","name":"h2","attribs":[],"dataAttribs":{"tsr":[15233,15235]}}
+{"type":"NlTk","dataAttribs":{"tsr":[15235,15236]}}
+"To cryptographically protect IMAP connections, IMAPS on TCP port 993 can be used, which utilizes "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["Transport Layer Security"],"vsrc":"Transport Layer Security"},{"k":"mw:maybeContent","v":["TLS"],"srcOffsets":[15360,15363],"vsrc":"TLS"}],"dataAttribs":{"tsr":[15333,15365],"src":"[[Transport Layer Security|TLS]]"}}
+". As of "
+{"type":"SelfclosingTagTk","name":"extlink","attribs":[{"k":"href","v":"https://tools.ietf.org/html/rfc8314"},{"k":"mw:content","v":"RFC 8314"},{"k":"typeof","v":"mw:ExtLink/RFC"}],"dataAttribs":{"stx":"magiclink","tsr":[15373,15381]}}
+", this is the recommended mechanism."
+{"type":"NlTk","dataAttribs":{"tsr":[15417,15418]}}
+{"type":"NlTk","dataAttribs":{"tsr":[15418,15419]}}
+"Alternatively, "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["STARTTLS"],"vsrc":"STARTTLS"}],"dataAttribs":{"tsr":[15434,15446],"src":"[[STARTTLS]]"}}
+" can be used to provide secure communications between the "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["Mail user agent"],"vsrc":"Mail user agent"},{"k":"mw:maybeContent","v":["MUA"],"srcOffsets":[15522,15525],"vsrc":"MUA"}],"dataAttribs":{"tsr":[15504,15527],"src":"[[Mail user agent|MUA]]"}}
+" communicating with the "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["Mail submission agent"],"vsrc":"Mail submission agent"},{"k":"mw:maybeContent","v":["MSA"],"srcOffsets":[15575,15578],"vsrc":"MSA"}],"dataAttribs":{"tsr":[15551,15580],"src":"[[Mail submission agent|MSA]]"}}
+" or "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["Mail Transfer Agent"],"vsrc":"Mail Transfer Agent"},{"k":"mw:maybeContent","v":["MTA"],"srcOffsets":[15606,15609],"vsrc":"MTA"}],"dataAttribs":{"tsr":[15584,15611],"src":"[[Mail Transfer Agent|MTA]]"}}
+" implementing the "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["Simple Mail Transfer Protocol"],"vsrc":"Simple Mail Transfer Protocol"},{"k":"mw:maybeContent","v":["SMTP Protocol"],"srcOffsets":[15661,15674],"vsrc":"SMTP Protocol"}],"dataAttribs":{"tsr":[15629,15676],"src":"[[Simple Mail Transfer Protocol|SMTP Protocol]]"}}
+"."
+{"type":"NlTk","dataAttribs":{"tsr":[15677,15678]}}
+{"type":"NlTk","dataAttribs":{"tsr":[15678,15679]}}
+{"type":"TagTk","name":"h2","attribs":[],"dataAttribs":{"tsr":[15679,15681],"tmp":{"headingIndex":18}}}
+" Dialog example "
+{"type":"EndTagTk","name":"h2","attribs":[],"dataAttribs":{"tsr":[15697,15699]}}
+{"type":"NlTk","dataAttribs":{"tsr":[15699,15700]}}
+{"type":"NlTk","dataAttribs":{"tsr":[15700,15701]}}
+"This is an example IMAP connection as taken from "
+{"type":"SelfclosingTagTk","name":"extlink","attribs":[{"k":"href","v":"https://tools.ietf.org/html/rfc3501#section-8"},{"k":"mw:content","v":["RFC 3501 section 8"]},{"k":"spaces","v":" "}],"dataAttribs":{"targetOff":15797,"tsr":[15750,15816],"contentOffsets":[15797,15815]}}
+":"
+{"type":"NlTk","dataAttribs":{"tsr":[15817,15818]}}
+{"type":"NlTk","dataAttribs":{"tsr":[15818,15819]}}
+" "
+{"type":"TagTk","name":"span","attribs":[{"k":"style","v":"color:blue;","srcOffsets":[15826,15831,15833,15844],"vsrc":"color:blue;"}],"dataAttribs":{"tsr":[15820,15846],"stx":"html"}}
+"C: <open connection>"
+{"type":"EndTagTk","name":"span","attribs":[],"dataAttribs":{"tsr":[15866,15873],"stx":"html"}}
+{"type":"NlTk","dataAttribs":{"tsr":[15873,15874]}}
+" S:   * OK IMAP4rev1 Service Ready"
+{"type":"NlTk","dataAttribs":{"tsr":[15908,15909]}}
+" "
+{"type":"TagTk","name":"span","attribs":[{"k":"style","v":"color:blue;","srcOffsets":[15916,15921,15923,15934],"vsrc":"color:blue;"}],"dataAttribs":{"tsr":[15910,15936],"stx":"html"}}
+"C:   a001 login mrc secret"
+{"type":"EndTagTk","name":"span","attribs":[],"dataAttribs":{"tsr":[15962,15969],"stx":"html"}}
+{"type":"NlTk","dataAttribs":{"tsr":[15969,15970]}}
+" S:   a001 OK LOGIN completed"
+{"type":"NlTk","dataAttribs":{"tsr":[15999,16000]}}
+" "
+{"type":"TagTk","name":"span","attribs":[{"k":"style","v":"color:blue;","srcOffsets":[16007,16012,16014,16025],"vsrc":"color:blue;"}],"dataAttribs":{"tsr":[16001,16027],"stx":"html"}}
+"C:   a002 select inbox"
+{"type":"EndTagTk","name":"span","attribs":[],"dataAttribs":{"tsr":[16049,16056],"stx":"html"}}
+{"type":"NlTk","dataAttribs":{"tsr":[16056,16057]}}
+" S:   * 18 EXISTS"
+{"type":"NlTk","dataAttribs":{"tsr":[16074,16075]}}
+" S:   * FLAGS (\\Answered \\Flagged \\Deleted \\Seen \\Draft)"
+{"type":"NlTk","dataAttribs":{"tsr":[16131,16132]}}
+" S:   * 2 RECENT"
+{"type":"NlTk","dataAttribs":{"tsr":[16148,16149]}}
+" S:   * OK [UNSEEN 17] Message 17 is the first unseen message"
+{"type":"NlTk","dataAttribs":{"tsr":[16210,16211]}}
+" S:   * OK [UIDVALIDITY 3857529045] UIDs valid"
+{"type":"NlTk","dataAttribs":{"tsr":[16257,16258]}}
+" S:   a002 OK [READ-WRITE] SELECT completed"
+{"type":"NlTk","dataAttribs":{"tsr":[16301,16302]}}
+" "
+{"type":"TagTk","name":"span","attribs":[{"k":"style","v":"color:blue;","srcOffsets":[16309,16314,16316,16327],"vsrc":"color:blue;"}],"dataAttribs":{"tsr":[16303,16329],"stx":"html"}}
+"C:   a003 fetch 12 full"
+{"type":"EndTagTk","name":"span","attribs":[],"dataAttribs":{"tsr":[16352,16359],"stx":"html"}}
+{"type":"NlTk","dataAttribs":{"tsr":[16359,16360]}}
+" S:   * 12 FETCH (FLAGS (\\Seen) INTERNALDATE \"17-Jul-1996 02:44:25 -0700\""
+{"type":"NlTk","dataAttribs":{"tsr":[16433,16434]}}
+"       RFC822.SIZE 4286 ENVELOPE (\"Wed, 17 Jul 1996 02:23:25 -0700 (PDT)\""
+{"type":"NlTk","dataAttribs":{"tsr":[16507,16508]}}
+"       \"IMAP4rev1 WG mtg summary and minutes\""
+{"type":"NlTk","dataAttribs":{"tsr":[16553,16554]}}
+"       ((\"Terry Gray\" NIL \"gray\" \"cac.washington.edu\"))"
+{"type":"NlTk","dataAttribs":{"tsr":[16609,16610]}}
+"       ((\"Terry Gray\" NIL \"gray\" \"cac.washington.edu\"))"
+{"type":"NlTk","dataAttribs":{"tsr":[16665,16666]}}
+"       ((\"Terry Gray\" NIL \"gray\" \"cac.washington.edu\"))"
+{"type":"NlTk","dataAttribs":{"tsr":[16721,16722]}}
+"       ((NIL NIL \"imap\" \"cac.washington.edu\"))"
+{"type":"NlTk","dataAttribs":{"tsr":[16768,16769]}}
+"       ((NIL NIL \"minutes\" \"CNRI.Reston.VA.US\")"
+{"type":"NlTk","dataAttribs":{"tsr":[16816,16817]}}
+"       (\"John Klensin\" NIL \"KLENSIN\" \"MIT.EDU\")) NIL NIL"
+{"type":"NlTk","dataAttribs":{"tsr":[16873,16874]}}
+"       \"<B27397-0100000@cac.washington.edu>\")"
+{"type":"NlTk","dataAttribs":{"tsr":[16919,16920]}}
+"       BODY (\"TEXT\" \"PLAIN\" (\"CHARSET\" \"US-ASCII\") NIL NIL \"7BIT\" 3028"
+{"type":"NlTk","dataAttribs":{"tsr":[16990,16991]}}
+"       92))"
+{"type":"NlTk","dataAttribs":{"tsr":[17002,17003]}}
+" S:   a003 OK FETCH completed"
+{"type":"NlTk","dataAttribs":{"tsr":[17032,17033]}}
+" "
+{"type":"TagTk","name":"span","attribs":[{"k":"style","v":"color:blue;","srcOffsets":[17040,17045,17047,17058],"vsrc":"color:blue;"}],"dataAttribs":{"tsr":[17034,17060],"stx":"html"}}
+"C:   a004 fetch 12 body[header]"
+{"type":"EndTagTk","name":"span","attribs":[],"dataAttribs":{"tsr":[17091,17098],"stx":"html"}}
+{"type":"NlTk","dataAttribs":{"tsr":[17098,17099]}}
+" S:   * 12 FETCH (BODY[HEADER] {342}"
+{"type":"NlTk","dataAttribs":{"tsr":[17135,17136]}}
+" S:   Date: Wed, 17 Jul 1996 02:23:25 -0700 (PDT)"
+{"type":"NlTk","dataAttribs":{"tsr":[17185,17186]}}
+" S:   From: Terry Gray <gray@cac.washington.edu>"
+{"type":"NlTk","dataAttribs":{"tsr":[17234,17235]}}
+" S:   Subject: IMAP4rev1 WG mtg summary and minutes"
+{"type":"NlTk","dataAttribs":{"tsr":[17286,17287]}}
+" S:   To: imap@cac.washington.edu"
+{"type":"NlTk","dataAttribs":{"tsr":[17320,17321]}}
+" S:   cc: minutes@CNRI.Reston.VA.US, John Klensin <KLENSIN@MIT.EDU>"
+{"type":"NlTk","dataAttribs":{"tsr":[17388,17389]}}
+" S:   Message-Id: <B27397-0100000@cac.washington.edu>"
+{"type":"NlTk","dataAttribs":{"tsr":[17442,17443]}}
+" S:   MIME-Version: 1.0"
+{"type":"NlTk","dataAttribs":{"tsr":[17466,17467]}}
+" S:   Content-Type: TEXT/PLAIN; CHARSET=US-ASCII"
+{"type":"NlTk","dataAttribs":{"tsr":[17515,17516]}}
+" S:"
+{"type":"NlTk","dataAttribs":{"tsr":[17519,17520]}}
+" S:   )"
+{"type":"NlTk","dataAttribs":{"tsr":[17527,17528]}}
+" S:   a004 OK FETCH completed"
+{"type":"NlTk","dataAttribs":{"tsr":[17557,17558]}}
+" "
+{"type":"TagTk","name":"span","attribs":[{"k":"style","v":"color:blue;","srcOffsets":[17565,17570,17572,17583],"vsrc":"color:blue;"}],"dataAttribs":{"tsr":[17559,17585],"stx":"html"}}
+"C    a005 store 12 +flags \\deleted"
+{"type":"EndTagTk","name":"span","attribs":[],"dataAttribs":{"tsr":[17619,17626],"stx":"html"}}
+{"type":"NlTk","dataAttribs":{"tsr":[17626,17627]}}
+" S:   * 12 FETCH (FLAGS (\\Seen \\Deleted))"
+{"type":"NlTk","dataAttribs":{"tsr":[17668,17669]}}
+" S:   a005 OK +FLAGS completed"
+{"type":"NlTk","dataAttribs":{"tsr":[17699,17700]}}
+" "
+{"type":"TagTk","name":"span","attribs":[{"k":"style","v":"color:blue;","srcOffsets":[17707,17712,17714,17725],"vsrc":"color:blue;"}],"dataAttribs":{"tsr":[17701,17727],"stx":"html"}}
+"C:   a006 logout"
+{"type":"EndTagTk","name":"span","attribs":[],"dataAttribs":{"tsr":[17743,17750],"stx":"html"}}
+{"type":"NlTk","dataAttribs":{"tsr":[17750,17751]}}
+" S:   * BYE IMAP4rev1 server terminating connection"
+{"type":"NlTk","dataAttribs":{"tsr":[17802,17803]}}
+" S:   a006 OK LOGOUT completed"
+{"type":"NlTk","dataAttribs":{"tsr":[17833,17834]}}
+{"type":"NlTk","dataAttribs":{"tsr":[17834,17835]}}
+{"type":"TagTk","name":"h2","attribs":[],"dataAttribs":{"tsr":[17835,17837],"tmp":{"headingIndex":19}}}
+"See also"
+{"type":"EndTagTk","name":"h2","attribs":[],"dataAttribs":{"tsr":[17845,17847]}}
+{"type":"NlTk","dataAttribs":{"tsr":[17847,17848]}}
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:EmptyLine"}],"dataAttribs":{"tokens":[{"type":"CommentTk","value":" New links in alphabetical order please ","dataAttribs":{"tsr":[17848,17895]}},"\n"],"tsr":[17848,17896]}}
+{"type":"TagTk","name":"listItem","attribs":[{"k":"bullets","v":["*"]}],"dataAttribs":{"tsr":[17896,17897]}}
+" "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["List of mail servers"],"vsrc":"List of mail servers"}],"dataAttribs":{"tsr":[17898,17922],"src":"[[List of mail servers]]"}}
+{"type":"NlTk","dataAttribs":{"tsr":[17922,17923]}}
+{"type":"TagTk","name":"listItem","attribs":[{"k":"bullets","v":["*"]}],"dataAttribs":{"tsr":[17923,17924]}}
+" "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["Comparison of e-mail clients"],"vsrc":"Comparison of e-mail clients"}],"dataAttribs":{"tsr":[17925,17957],"src":"[[Comparison of e-mail clients]]"}}
+{"type":"NlTk","dataAttribs":{"tsr":[17957,17958]}}
+{"type":"TagTk","name":"listItem","attribs":[{"k":"bullets","v":["*"]}],"dataAttribs":{"tsr":[17958,17959]}}
+" "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["Comparison of mail servers"],"vsrc":"Comparison of mail servers"}],"dataAttribs":{"tsr":[17960,17990],"src":"[[Comparison of mail servers]]"}}
+{"type":"NlTk","dataAttribs":{"tsr":[17990,17991]}}
+{"type":"TagTk","name":"listItem","attribs":[{"k":"bullets","v":["*"]}],"dataAttribs":{"tsr":[17991,17992]}}
+" "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["IMAP IDLE"],"vsrc":"IMAP IDLE"}],"dataAttribs":{"tsr":[17993,18006],"src":"[[IMAP IDLE]]"}}
+{"type":"NlTk","dataAttribs":{"tsr":[18006,18007]}}
+{"type":"TagTk","name":"listItem","attribs":[{"k":"bullets","v":["*"]}],"dataAttribs":{"tsr":[18007,18008]}}
+" "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["Post Office Protocol"],"vsrc":"Post Office Protocol"}],"dataAttribs":{"tsr":[18009,18033],"src":"[[Post Office Protocol]]"}}
+" (POP)"
+{"type":"NlTk","dataAttribs":{"tsr":[18039,18040]}}
+{"type":"TagTk","name":"listItem","attribs":[{"k":"bullets","v":["*"]}],"dataAttribs":{"tsr":[18040,18041]}}
+" "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["Push-IMAP"],"vsrc":"Push-IMAP"}],"dataAttribs":{"tsr":[18042,18055],"src":"[[Push-IMAP]]"}}
+{"type":"NlTk","dataAttribs":{"tsr":[18055,18056]}}
+{"type":"TagTk","name":"listItem","attribs":[{"k":"bullets","v":["*"]}],"dataAttribs":{"tsr":[18056,18057]}}
+" "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["Simple Mail Access Protocol"],"vsrc":"Simple Mail Access Protocol"}],"dataAttribs":{"tsr":[18058,18089],"src":"[[Simple Mail Access Protocol]]"}}
+{"type":"NlTk","dataAttribs":{"tsr":[18089,18090]}}
+{"type":"TagTk","name":"listItem","attribs":[{"k":"bullets","v":["*"]}],"dataAttribs":{"tsr":[18090,18091]}}
+" "
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["Webmail"],"vsrc":"Webmail"}],"dataAttribs":{"tsr":[18092,18103],"src":"[[Webmail]]"}}
+{"type":"NlTk","dataAttribs":{"tsr":[18103,18104]}}
+{"type":"NlTk","dataAttribs":{"tsr":[18104,18105]}}
+{"type":"TagTk","name":"h2","attribs":[],"dataAttribs":{"tsr":[18105,18107],"tmp":{"headingIndex":20}}}
+"References"
+{"type":"EndTagTk","name":"h2","attribs":[],"dataAttribs":{"tsr":[18117,18119]}}
+{"type":"NlTk","dataAttribs":{"tsr":[18119,18120]}}
+{"type":"SelfclosingTagTk","name":"template","attribs":[{"k":"reflist","v":"","srcOffsets":[18122,18129]}],"dataAttribs":{"tsr":[18120,18131],"src":"{{reflist}}"}}
+{"type":"NlTk","dataAttribs":{"tsr":[18131,18132]}}
+{"type":"NlTk","dataAttribs":{"tsr":[18132,18133]}}
+{"type":"TagTk","name":"h2","attribs":[],"dataAttribs":{"tsr":[18133,18135],"tmp":{"headingIndex":21}}}
+"Further reading"
+{"type":"EndTagTk","name":"h2","attribs":[],"dataAttribs":{"tsr":[18150,18152]}}
+{"type":"NlTk","dataAttribs":{"tsr":[18152,18153]}}
+{"type":"TagTk","name":"listItem","attribs":[{"k":"bullets","v":["*"]}],"dataAttribs":{"tsr":[18153,18154]}}
+" "
+{"type":"SelfclosingTagTk","name":"template","attribs":[{"k":"cite web ","v":"","srcOffsets":[18157,18166]},{"k":"last","v":"Crispin ","srcOffsets":[18167,18171,18172,18180]},{"k":"first","v":"Mark ","srcOffsets":[18181,18186,18187,18192]},{"k":"title","v":"Ten Commandments of How to Write an IMAP client ","srcOffsets":[18193,18198,18199,18247]},{"k":"year","v":"1988-2016 ","srcOffsets":[18248,18252,18253,18263]},{"k":"publisher","v":[{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["University of Washington"],"vsrc":"University of Washington"}],"dataAttribs":{"tsr":[18274,18302],"src":"[[University of Washington]]"}}," "],"srcOffsets":[18264,18273,18274,18303]},{"k":"url","v":[{"type":"SelfclosingTagTk","name":"urllink","attribs":[{"k":"href","v":["https://www.washington.edu/imap/documentation/commndmt.txt.html"]}],"dataAttribs":{"tsr":[18308,18371]}}," "],"srcOffsets":[18304,18307,18308,18372]},{"k":"author-link","v":"Mark Crispin","srcOffsets":[18373,18384,18385,18397]}],"dataAttribs":{"tsr":[18155,18399],"src":"{{cite web |last=Crispin |first=Mark |title=Ten Commandments of How to Write an IMAP client |year=1988-2016 |publisher=[[University of Washington]] |url=https://www.washington.edu/imap/documentation/commndmt.txt.html |author-link=Mark Crispin}}"}}
+{"type":"NlTk","dataAttribs":{"tsr":[18399,18400]}}
+{"type":"TagTk","name":"listItem","attribs":[{"k":"bullets","v":["*"]}],"dataAttribs":{"tsr":[18400,18401]}}
+" "
+{"type":"SelfclosingTagTk","name":"template","attribs":[{"k":"cite book ","v":"","srcOffsets":[18404,18414]},{"k":" last","v":"Heinlein ","srcOffsets":[18415,18420,18421,18430]},{"k":" first","v":"P ","srcOffsets":[18431,18437,18438,18440]},{"k":" last2","v":"Hartleben ","srcOffsets":[18441,18447,18448,18458]},{"k":" first2","v":"P ","srcOffsets":[18459,18466,18467,18469]},{"k":" title","v":"The Book of IMAP: Building a Mail Server with Courier and Cyrus ","srcOffsets":[18470,18476,18477,18541]},{"k":" publisher","v":"No Starch Press ","srcOffsets":[18542,18552,18553,18569]},{"k":" year","v":"2008 ","srcOffsets":[18570,18575,18576,18581]},{"k":" isbn","v":"1-59327-177-8","srcOffsets":[18582,18587,18588,18601]}],"dataAttribs":{"tsr":[18402,18603],"src":"{{cite book | last=Heinlein | first=P | last2=Hartleben | first2=P | title=The Book of IMAP: Building a Mail Server with Courier and Cyrus | publisher=No Starch Press | year=2008 | isbn=1-59327-177-8}}"}}
+{"type":"NlTk","dataAttribs":{"tsr":[18603,18604]}}
+{"type":"TagTk","name":"listItem","attribs":[{"k":"bullets","v":["*"]}],"dataAttribs":{"tsr":[18604,18605]}}
+" "
+{"type":"SelfclosingTagTk","name":"template","attribs":[{"k":"cite book ","v":"","srcOffsets":[18608,18618]},{"k":" last","v":"Hughes ","srcOffsets":[18619,18624,18625,18632]},{"k":" first","v":"L ","srcOffsets":[18633,18639,18640,18642]},{"k":" title","v":"Internet e-mail Protocols, Standards and Implementation ","srcOffsets":[18643,18649,18650,18706]},{"k":" publisher","v":"Artech House Publishers ","srcOffsets":[18707,18717,18718,18742]},{"k":" year","v":"1998 ","srcOffsets":[18743,18748,18749,18754]},{"k":" isbn","v":"0-89006-939-5","srcOffsets":[18755,18760,18761,18774]}],"dataAttribs":{"tsr":[18606,18776],"src":"{{cite book | last=Hughes | first=L | title=Internet e-mail Protocols, Standards and Implementation | publisher=Artech House Publishers | year=1998 | isbn=0-89006-939-5}}"}}
+{"type":"NlTk","dataAttribs":{"tsr":[18776,18777]}}
+{"type":"TagTk","name":"listItem","attribs":[{"k":"bullets","v":["*"]}],"dataAttribs":{"tsr":[18777,18778]}}
+" "
+{"type":"SelfclosingTagTk","name":"template","attribs":[{"k":"cite book ","v":"","srcOffsets":[18781,18791]},{"k":" last","v":"Johnson ","srcOffsets":[18792,18797,18798,18806]},{"k":" first","v":"K ","srcOffsets":[18807,18813,18814,18816]},{"k":" title","v":"Internet E-mail Protocols: A Developer's Guide ","srcOffsets":[18817,18823,18824,18871]},{"k":" publisher","v":"Addison-Wesley Professional ","srcOffsets":[18872,18882,18883,18911]},{"k":" year","v":"2000 ","srcOffsets":[18912,18917,18918,18923]},{"k":" isbn","v":"0-201-43288-9","srcOffsets":[18924,18929,18930,18943]}],"dataAttribs":{"tsr":[18779,18945],"src":"{{cite book | last=Johnson | first=K | title=Internet E-mail Protocols: A Developer's Guide | publisher=Addison-Wesley Professional | year=2000 | isbn=0-201-43288-9}}"}}
+{"type":"NlTk","dataAttribs":{"tsr":[18945,18946]}}
+{"type":"TagTk","name":"listItem","attribs":[{"k":"bullets","v":["*"]}],"dataAttribs":{"tsr":[18946,18947]}}
+" "
+{"type":"SelfclosingTagTk","name":"template","attribs":[{"k":"cite book ","v":"","srcOffsets":[18950,18960]},{"k":"last","v":"Loshin ","srcOffsets":[18961,18965,18966,18973]},{"k":"first","v":"P ","srcOffsets":[18974,18979,18980,18982]},{"k":"chapter","v":"Essential E-mail Standards: RFCs and Protocols Made Practical ","srcOffsets":[18983,18990,18991,19054]},{"k":"title","v":"Programming Internet Mail ","srcOffsets":[19055,19060,19061,19087]},{"k":"publisher","v":"O'Reilly ","srcOffsets":[19088,19097,19098,19107]},{"k":"year","v":"1999 ","srcOffsets":[19108,19112,19113,19118]},{"k":"isbn","v":"1-56592-479-7","srcOffsets":[19119,19123,19124,19137]}],"dataAttribs":{"tsr":[18948,19139],"src":"{{cite book |last=Loshin |first=P |chapter= Essential E-mail Standards: RFCs and Protocols Made Practical |title=Programming Internet Mail |publisher=O'Reilly |year=1999 |isbn=1-56592-479-7}}"}}
+{"type":"NlTk","dataAttribs":{"tsr":[19139,19140]}}
+{"type":"NlTk","dataAttribs":{"tsr":[19140,19141]}}
+{"type":"TagTk","name":"h2","attribs":[],"dataAttribs":{"tsr":[19141,19143],"tmp":{"headingIndex":22}}}
+"External links"
+{"type":"EndTagTk","name":"h2","attribs":[],"dataAttribs":{"tsr":[19157,19159]}}
+{"type":"NlTk","dataAttribs":{"tsr":[19159,19160]}}
+{"type":"SelfclosingTagTk","name":"template","attribs":[{"k":"Wiktionary","v":"","srcOffsets":[19162,19172]},{"k":"","v":"IMAP","srcOffsets":[19173,19173,19173,19177]}],"dataAttribs":{"tsr":[19160,19179],"src":"{{Wiktionary|IMAP}}"}}
+{"type":"NlTk","dataAttribs":{"tsr":[19179,19180]}}
+{"type":"TagTk","name":"listItem","attribs":[{"k":"bullets","v":["*"]}],"dataAttribs":{"tsr":[19180,19181]}}
+" "
+{"type":"SelfclosingTagTk","name":"template","attribs":[{"k":["cite web",{"type":"NlTk","dataAttribs":{"tsr":[19192,19193]}}," "],"v":"","srcOffsets":[19184,19194]},{"k":" url ","v":[{"type":"SelfclosingTagTk","name":"urllink","attribs":[{"k":"href","v":["http://www.imapwiki.org/ImapProtocolList"]}],"dataAttribs":{"tsr":[19202,19242]}},{"type":"NlTk","dataAttribs":{"tsr":[19242,19243]}}," "],"srcOffsets":[19195,19200,19201,19244]},{"k":" title ","v":["IMAP Protocol Mailing List",{"type":"NlTk","dataAttribs":{"tsr":[19280,19281]}}],"srcOffsets":[19245,19252,19253,19281]}],"dataAttribs":{"tsr":[19182,19283],"src":"{{cite web\n | url = http://www.imapwiki.org/ImapProtocolList\n | title = IMAP Protocol Mailing List\n}}"}}
+{"type":"NlTk","dataAttribs":{"tsr":[19283,19284]}}
+{"type":"TagTk","name":"listItem","attribs":[{"k":"bullets","v":["*"]}],"dataAttribs":{"tsr":[19284,19285]}}
+" "
+{"type":"SelfclosingTagTk","name":"extlink","attribs":[{"k":"href","v":"https://tools.ietf.org/html/rfc3501"},{"k":"mw:content","v":"RFC 3501"},{"k":"typeof","v":"mw:ExtLink/RFC"}],"dataAttribs":{"stx":"magiclink","tsr":[19286,19294]}}
+" — specification of IMAP version 4 revision 1"
+{"type":"NlTk","dataAttribs":{"tsr":[19339,19340]}}
+{"type":"TagTk","name":"listItem","attribs":[{"k":"bullets","v":["*"]}],"dataAttribs":{"tsr":[19340,19341]}}
+" "
+{"type":"SelfclosingTagTk","name":"extlink","attribs":[{"k":"href","v":"https://tools.ietf.org/html/rfc2683"},{"k":"mw:content","v":"RFC 2683"},{"k":"typeof","v":"mw:ExtLink/RFC"}],"dataAttribs":{"stx":"magiclink","tsr":[19342,19350]}}
+" — IMAP Implementation Suggestions RFC"
+{"type":"NlTk","dataAttribs":{"tsr":[19388,19389]}}
+{"type":"TagTk","name":"listItem","attribs":[{"k":"bullets","v":["*"]}],"dataAttribs":{"tsr":[19389,19390]}}
+" "
+{"type":"SelfclosingTagTk","name":"extlink","attribs":[{"k":"href","v":"https://tools.ietf.org/html/rfc2177"},{"k":"mw:content","v":"RFC 2177"},{"k":"typeof","v":"mw:ExtLink/RFC"}],"dataAttribs":{"stx":"magiclink","tsr":[19391,19399]}}
+" — IMAP4 IDLE command"
+{"type":"NlTk","dataAttribs":{"tsr":[19420,19421]}}
+{"type":"TagTk","name":"listItem","attribs":[{"k":"bullets","v":["*"]}],"dataAttribs":{"tsr":[19421,19422]}}
+" "
+{"type":"SelfclosingTagTk","name":"extlink","attribs":[{"k":"href","v":"http://trojita.flaska.net/msc-thesis.pdf"},{"k":"mw:content","v":["IMAP extensions for mobility-class applications presented and exemplified"]},{"k":"spaces","v":" "}],"dataAttribs":{"targetOff":19465,"tsr":[19423,19539],"contentOffsets":[19465,19538]}}
+" in a doctoral thesis"
+{"type":"NlTk","dataAttribs":{"tsr":[19560,19561]}}
+{"type":"SelfclosingTagTk","name":"template","attribs":[{"k":"E-mail clients","v":"","srcOffsets":[19563,19577]}],"dataAttribs":{"tsr":[19561,19579],"src":"{{E-mail clients}}"}}
+{"type":"NlTk","dataAttribs":{"tsr":[19579,19580]}}
+{"type":"SelfclosingTagTk","name":"template","attribs":[{"k":"URI scheme","v":"","srcOffsets":[19582,19592]}],"dataAttribs":{"tsr":[19580,19594],"src":"{{URI scheme}}"}}
+{"type":"NlTk","dataAttribs":{"tsr":[19594,19595]}}
+{"type":"SelfclosingTagTk","name":"template","attribs":[{"k":"Authority control","v":"","srcOffsets":[19597,19614]}],"dataAttribs":{"tsr":[19595,19616],"src":"{{Authority control}}"}}
+{"type":"NlTk","dataAttribs":{"tsr":[19616,19617]}}
+{"type":"NlTk","dataAttribs":{"tsr":[19617,19618]}}
+{"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["Category:Internet mail protocols"],"vsrc":"Category:Internet mail protocols"}],"dataAttribs":{"tsr":[19618,19654],"src":"[[Category:Internet mail protocols]]"}}
+{"type":"NlTk","dataAttribs":{"tsr":[19654,19655]}}
+{"type":"EOFTk"}
