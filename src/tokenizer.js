@@ -100,17 +100,30 @@ PegTokenizer.prototype.compileTokenizer = function() {
     const pegSrcPath = path.join(__dirname, fName);
     return fs.readFileSync(pegSrcPath, 'utf8');
   }
+  function pegOrExpression(words, caseSensitive) {
+    const re = /['"\\]/g;
+    const replacer = '\\$&';
+    return words.map( (w) => {
+      return `"${w.replace(re, replacer)}"${(caseSensitive?'':'i')}`;
+    }).join('/');
+  }
 
   const protocols =
-      this.env.conf.wiki.protocols.map( (p) => '"' + p + '"').join('/');
+    pegOrExpression(this.env.conf.wiki.protocols, false);
+  const redirects =
+    pegOrExpression(
+        this.env.conf.wiki.redirectWords,
+        this.env.conf.wiki.redirectWordsIsCaseSensitive
+    );
 
-  const src = readSrc('wiki.pegjs')
+  const src = readSrc('wiki.pegjs').replace('"%REDIRECTS%"', redirects) // link
         + readSrc('wikilink.pegjs').replace('"%PROTOCOLS%"', protocols) // link
         + readSrc('wikitemplate.pegjs') // template and links
         + readSrc('wikitag.pegjs') // <tag>
         + readSrc('wikilist.pegjs')
         + readSrc('wikitable.pegjs')
         + readSrc('wikitext.pegjs');
+  // fs.writeFileSync('src.pegjs', src);
   const parseTokenizer = PEG.parser.parse(src);
 
   const compiler = PEG.compiler;

@@ -296,9 +296,7 @@ table_attributes "table_attributes"
  * The leading whitespace allowed is due to the PHP trim() function.
  */
 redirect_word
-  = $([ \t\n\r\0\x0b]*
-    rw:$(!space_or_newline ![:\[] .)+
-    & { return env.conf.wiki.getMagicWordMatcher('redirect').test(rw); })
+  = $([ \t\n\r\0\x0b]* ("%REDIRECTS%"))
 
 /*
  * This rule exists to support tokenizing the document in chunks.
