@@ -60,9 +60,7 @@ text_char = [^-'<~[{\n\r:;\]}|!=]
           /  [^-'<~[{\n\r:;\]}|!=]
         )+
 
-raw_htmlentity = m:$("&" [#0-9a-zA-Z]+ ";") {
-    return Util.decodeWtEntities(m);
-}
+raw_htmlentity = encoded:$("&" [#0-9a-zA-Z]+ ";") { return decodeEntity(encoded) }
 
 htmlentity = cc:raw_htmlentity {
     // if this is an invalid entity, don't tag it with 'mw:Entity'
