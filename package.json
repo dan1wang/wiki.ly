@@ -4,7 +4,6 @@
   "version": "0.1.0",
   "license": "MIT",
   "dependencies": {
-    "entities": "^1.1.2",
     "wikipeg": "^2.0.1"
   },
   "devDependencies": {
