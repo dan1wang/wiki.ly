@@ -42,20 +42,18 @@ function parse(input) {
   });
   return tokens;
 }
-let inputFile = path.join(__dirname, 'gratis.txt');
-let input = fs.readFileSync(inputFile, {encoding: 'utf8'});
-let output = parse(input).map((t) => JSON.stringify(t)).join('\n') + '\n';
-fs.writeFileSync(path.join(__dirname, 'gratis.tokens'), output);
 
-inputFile = path.join(__dirname, 'imap.txt');
-input = fs.readFileSync(inputFile, {encoding: 'utf8'});
-output = parse(input).map((t) => JSON.stringify(t)).join('\n') + '\n';
-fs.writeFileSync(path.join(__dirname, 'imap.tokens'), output);
-
-inputFile = path.join(__dirname, 'link.txt');
-input = fs.readFileSync(inputFile, {encoding: 'utf8'});
-output = parse(input).map((t) => JSON.stringify(t)).join('\n') + '\n';
-fs.writeFileSync(path.join(__dirname, 'link.tokens'), output);
+const pathText = path.join(__dirname, '/text');
+const pathToken = path.join(__dirname, '/tokens');
+fs.readdirSync(pathText).forEach((fName) => {
+  const inputFilePath = path.join(pathText, '/', fName);
+  const outputFilePath = path.join(
+      pathToken, '/', fName.replace(/\..*$/, '') + '.tokens'
+  );
+  const input = fs.readFileSync(inputFilePath, {encoding: 'utf8'});
+  const output = parse(input).map((t) => JSON.stringify(t)).join('\n') + '\n';
+  fs.writeFileSync(outputFilePath, output);
+});
 
 // #REDIRECT only works if preceeded by nothing except spaces and line feeds.
 // Otherwise, it should evalutes as a list item
