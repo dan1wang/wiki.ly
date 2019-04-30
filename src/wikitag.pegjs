@@ -19,8 +19,8 @@ nowiki
 nowiki_text
   = extToken:nowiki
   {
-    var txt = Util.getExtArgInfo(extToken).dict.body.extsrc;
-    return Util.decodeWtEntities(txt);
+    var txt = Util.extractExtBody(extToken);
+    return decodeEntities(txt);
   }
 
 /* Generic XML-like tags

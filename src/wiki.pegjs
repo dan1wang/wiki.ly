@@ -307,6 +307,9 @@
         }
       }
     }
+    function decodeEntities(text) {
+      return text.replace(/&[#0-9a-zA-Z]+;/g, decodeEntity);
+    }
 
     // define some constructor shortcuts
     const { KV, TagTk, EndTagTk, SelfclosingTagTk, NlTk, EOFTk, CommentTk } = TokenTypes;
