@@ -14,7 +14,6 @@
 
     var TokenUtils = pegIncludes.TokenUtils;
     var Util = pegIncludes.Util;
-    var encodeComment = pegIncludes.encodeComment;
     var PegTokenizer = pegIncludes.PegTokenizer;
     var TokenTypes = pegIncludes.TokenTypes;
     var HTMLTags = pegIncludes.HTMLTags;
@@ -882,8 +881,7 @@ heading = & "=" // guard, to make sure '='+ will match.
 
 comment
     = '<!--' c:$(!"-->" .)* ('-->' / eof) {
-        var data = encodeComment(c);
-        return [new CommentTk(data, { tsr: tsrOffsets() })];
+        return [new CommentTk(c, { tsr: tsrOffsets() })];
     }
 
 

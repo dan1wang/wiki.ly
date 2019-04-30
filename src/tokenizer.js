@@ -60,22 +60,7 @@ const pegIncludes = {
   TokenUtils: require('./utils/TokenUtils.js').TokenUtils,
   tu: require('./tokenizer.utils.js'),
   Util: Util,
-  encodeComment: encodeComment,
 };
-
-/**
- * Map a wikitext-escaped comment to an HTML DOM-escaped comment.
- * @param {string} comment Wikitext-escaped comment.
- * @return {string} DOM-escaped comment.
- */
-function encodeComment(comment) {
-  // Undo wikitext escaping to obtain "true value" of comment.
-  const trueValue = comment.replace(/--&(amp;)*gt;/g, Util.decodeWtEntities);
-  // Now encode '-', '>' and '&' in the "true value" as HTML entities,
-  // so that they can be safely embedded in an HTML comment.
-  // This part doesn't have to map strings 1-to-1.
-  return trueValue.replace(/[->&]/g, Util.entityEncodeAll);
-}
 
 /**
  * @class
