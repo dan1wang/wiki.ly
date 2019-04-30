@@ -94,31 +94,6 @@ const TokenUtils = {
     }
   },
 
-  // Convert an array of key-value pairs into a hash of keys to values. For
-  // duplicate keys, the last entry wins.
-  kvToHash: function(kvs, convertValuesToString, useSrc) {
-    if (!kvs) {
-      console.warn('Invalid kvs!: ' + JSON.stringify(kvs, null, 2));
-      return Object.create(null);
-    }
-    const res = Object.create(null);
-    for (let i = 0, l = kvs.length; i < l; i++) {
-      const kv = kvs[i];
-      const key = this.tokensToString(kv.k).trim();
-      // SSS FIXME: Temporary fix to handle extensions which use
-      // entities in attribute values. We need more robust handling
-      // of non-string template attribute values in general.
-      const val =
-        (useSrc && kv.vsrc !== undefined)
-        ? kv.vsrc
-        : convertValuesToString
-          ? this.tokensToString(kv.v)
-          : kv.v;
-      res[key.toLowerCase()] = this.tokenTrim(val);
-    }
-    return res;
-  },
-
   // Trim space and newlines from leading and trailing text tokens.
   tokenTrim: function(tokens) {
     if (!Array.isArray(tokens)) {
@@ -218,49 +193,6 @@ const TokenUtils = {
         content,
         new EndTagTk('span', [], endAttribs),
       ];
-    }
-  },
-
-  kvsFromArray(a) {
-    return a.map(function(e) {
-      return new KV(e.k, e.v, e.srcOffsets || null, e.ksrc, e.vsrc);
-    });
-  },
-
-  /**
-   * Get a token from a JSON string
-   *
-   * @param {Object} jsTk
-   * @return {Token}
-   */
-  getToken(jsTk) {
-    if (!jsTk || !jsTk.type) {
-      return jsTk;
-    }
-
-    switch (jsTk.type) {
-      case 'SelfclosingTagTk':
-        return new SelfclosingTagTk(
-            jsTk.name,
-            this.kvsFromArray(jsTk.attribs),
-            jsTk.dataAttribs);
-      case 'TagTk':
-        return new TagTk(
-            jsTk.name,
-            this.kvsFromArray(jsTk.attribs),
-            jsTk.dataAttribs);
-      case 'EndTagTk':
-        return new EndTagTk(
-            jsTk.name,
-            this.kvsFromArray(jsTk.attribs),
-            jsTk.dataAttribs);
-      case 'NlTk': return new NlTk(null, jsTk.dataAttribs);
-      case 'EOFTk': return new EOFTk();
-      case 'CommentTk': return new CommentTk(jsTk.value, jsTk.dataAttribs);
-      default:
-        // Looks like data-parsoid can have a 'type' property in some cases
-        // We can change that usage and then throw an exception here.
-        return jsTk;
     }
   },
 };

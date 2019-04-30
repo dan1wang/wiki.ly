@@ -481,7 +481,7 @@
 "See also"
 {"type":"EndTagTk","name":"h2","attribs":[],"dataAttribs":{"tsr":[17845,17847]}}
 {"type":"NlTk","dataAttribs":{"tsr":[17847,17848]}}
-{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:EmptyLine"}],"dataAttribs":{"tokens":[{"type":"CommentTk","value":" New links in alphabetical order please ","dataAttribs":{"tsr":[17848,17895]}},"\n"],"tsr":[17848,17896]}}
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:EmptyLine"}],"dataAttribs":{"tokens":[{"value":" New links in alphabetical order please ","type":"CommentTk","dataAttribs":{"tsr":[17848,17895]}},"\n"],"tsr":[17848,17896]}}
 {"type":"TagTk","name":"listItem","attribs":[{"k":"bullets","v":["*"]}],"dataAttribs":{"tsr":[17896,17897]}}
 " "
 {"type":"SelfclosingTagTk","name":"wikilink","attribs":[{"k":"href","v":["List of mail servers"],"vsrc":"List of mail servers"}],"dataAttribs":{"tsr":[17898,17922],"src":"[[List of mail servers]]"}}

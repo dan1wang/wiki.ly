@@ -1,7 +1,6 @@
 /* eslint-disable no-console, require-jsdoc */
 'use strict';
 
-const TokenUtils = require('./TokenUtils.js').TokenUtils;
 const Token = require('../tokens/Token.js').Token;
 const KV = require('../tokens/KV.js').KV;
 
@@ -53,17 +52,6 @@ const Util = {
     return src.substring(tagWidths[0], src.length - tagWidths[1]);
   },
 
-  getExtArgInfo: function(extToken) {
-    const name = extToken.getAttribute('name');
-    const options = extToken.getAttribute('options');
-    return {
-      dict: {
-        name: name,
-        attrs: TokenUtils.kvToHash(options, true),
-        body: {extsrc: Util.extractExtBody(extToken)},
-      },
-    };
-  },
 };
 
 if (typeof module === 'object') {
