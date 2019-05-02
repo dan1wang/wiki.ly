@@ -19,20 +19,24 @@ extlink "extlink"
   = ! <extlink> // extlink cannot be nested
   r:(
         "["
-        protocol:(url_protocol)
         addr:(
-          path1:(IPAddress / "")
-          path2:(extlink_preprocessor_text<extlink>/"")
-          { return tu.flattenString([path1, path2]) }
+          literal:(url_protocol (IPAddress/"") extlink_preprocessor_text<extlink>) /
+          parameterized:(
+            p:extlink_preprocessor_text<extlink> / ""
+            & {
+              var flat = tu.flattenString(p);
+              // There are templates present
+              return ((Array.isArray(flat)) && (flat.length > 0));
+            }
+          )
         )
-        & { return (addr !== "") }
         sp:$( space / unispace )*
         targetOff:( "" { return endOffset(); })
         content:inlineline<extlink>?
         "]" {
             return [
                 new SelfclosingTagTk('extlink', [
-                    new KV('href', tu.flattenString([protocol, addr])),
+                    new KV('href', tu.flattenString(addr)),
                     new KV('mw:content', content || ''),
                     new KV('spaces', sp),
                 ], {
