@@ -778,10 +778,12 @@ inline_breaks
     )
 
 inlineline
-  = c:(urltext
-          / !inline_breaks
-            r:(inline_element / [^\r\n]) { return r; })+ {
-      return tu.flattenStringlist(c);
+  = c:(
+    urltext
+    / !inline_breaks
+    r:(inline_element / [^\r\n]) { return r; }
+  )+ {
+    return tu.flattenStringlist(c);
   }
 
 inline_element

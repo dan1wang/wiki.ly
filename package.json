@@ -1,5 +1,5 @@
 {
-  "name": "parsoid",
+  "name": "wiki.ly",
   "description": "A WikiMedia Parsoid fork for converting Wikitext to structured text object",
   "version": "0.1.0",
   "license": "MIT",
