@@ -48,8 +48,8 @@ const Util = {
 
   extractExtBody: function(token) {
     const src = token.getAttribute('source');
-    const tagWidths = token.dataAttribs.tagWidths;
-    return src.substring(tagWidths[0], src.length - tagWidths[1]);
+    const extTagWidths = token.dataAttribs.extTagWidths;
+    return src.substring(extTagWidths[0], src.length - extTagWidths[1]);
   },
 
 };

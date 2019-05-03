@@ -428,7 +428,7 @@
             return t;  // not text()
         case SelfclosingTagTk:
             dp.src = input.substring(dp.tsr[0], dp.tsr[1]);
-            dp.tagWidths = [dp.tsr[1] - dp.tsr[0], 0];
+            dp.extTagWidths = [dp.tsr[1] - dp.tsr[0], 0];
             if (isIncludeTag) {
                 return t;
             }
@@ -441,7 +441,7 @@
 
             if (!tagContent) {
                 dp.src = input.substring(dp.tsr[0], dp.tsr[1]);
-                dp.tagWidths = [dp.tsr[1] - dp.tsr[0], 0];
+                dp.extTagWidths = [dp.tsr[1] - dp.tsr[0], 0];
                 if (isIncludeTag) {
                     return t;
                 } else {
@@ -500,9 +500,9 @@
 
             // Extension content source
             dp.src = extSrc;
-            dp.tagWidths = [endOffset() - tsr0, endTagWidth];
+            dp.extTagWidths = [endOffset() - tsr0, endTagWidth];
 
-            skipLen = extSrc.length - dp.tagWidths[0] - dp.tagWidths[1];
+            skipLen = extSrc.length - dp.extTagWidths[0] - dp.extTagWidths[1];
 
             // If the xml-tag is a known installed (not native) extension,
             // skip the end-tag as well.
@@ -527,12 +527,12 @@
             ], dp);
         } else if (isIncludeTag) {
             // Parse ext-content, strip eof, and shift tsr
-            var extContent = dp.src.substring(dp.tagWidths[0], dp.src.length - dp.tagWidths[1]);
+            var extContent = dp.src.substring(dp.extTagWidths[0], dp.src.length - dp.extTagWidths[1]);
             var extContentToks = (new PegTokenizer(env)).tokenizeSync(extContent);
-            if (dp.tagWidths[1] > 0) {
+            if (dp.extTagWidths[1] > 0) {
                 extContentToks = TokenUtils.stripEOFTkfromTokens(extContentToks);
             }
-            TokenUtils.shiftTokenTSR(extContentToks, dp.tsr[0] + dp.tagWidths[0]);
+            TokenUtils.shiftTokenTSR(extContentToks, dp.tsr[0] + dp.extTagWidths[0]);
             return [t].concat(extContentToks);
         } else {
             assert(false, 'Should not be reachable.');

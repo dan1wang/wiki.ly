@@ -41,15 +41,10 @@ const TokenUtils = {
       // small string fragments and the complicated use cases
       // below should not materialize.
 
-      // target offset
-      if (offset && da.targetOff) {
-        da.targetOff += offset;
-      }
-
       // content offsets for ext-links
-      if (offset && da.contentOffsets) {
-        da.contentOffsets[0] += offset;
-        da.contentOffsets[1] += offset;
+      if (offset && da.extLinkContentOffsets) {
+        da.extLinkContentOffsets[0] += offset;
+        da.extLinkContentOffsets[1] += offset;
       }
 
       //  Process attributes

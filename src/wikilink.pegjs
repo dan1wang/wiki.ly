@@ -40,9 +40,8 @@ extlink "extlink"
                     new KV('mw:content', content || ''),
                     new KV('spaces', sp),
                 ], {
-                    targetOff: targetOff,
                     tsr: tsrOffsets(),
-                    contentOffsets: [targetOff, endOffset() - 1],
+                    extLinkContentOffsets: [targetOff, endOffset() - 1],
                 }),
             ];
         }

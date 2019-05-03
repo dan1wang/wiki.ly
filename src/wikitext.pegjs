@@ -195,7 +195,7 @@ include_limits =
     // Last line should be empty (except for comments)
     if (lname !== "includeonly" && sol_il && il.constructor === TagTk) {
         var dp = il.dataAttribs;
-        var inclContent = dp.src.substring(dp.tagWidths[0], dp.src.length - dp.tagWidths[1]);
+        var inclContent = dp.src.substring(dp.extTagWidths[0], dp.src.length - dp.extTagWidths[1]);
         var last = lastItem(inclContent.split('\n'));
         if (!/^(<!--([^-]|-(?!->))*-->)*$/.test(last)) {
             return false;
