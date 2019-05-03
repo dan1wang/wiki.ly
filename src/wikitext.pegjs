@@ -39,26 +39,14 @@ text_char = [^-'<~[{\n\r:;\]}|!=]
  * ;    separator in lang_variant
  */
 
- urltext = (
-            & [/A-Za-z] al:autolink { return al; }
-          / & "&" he:htmlentity { return he; }
-          // Convert trailing space into &nbsp;
-          // XXX: This should be moved to a serializer
-          // This is a hack to force a whitespace display before the colon
-          / ' ' & ':' {
-              var toks = TokenUtils.placeholder('\u00a0', {
-                src: ' ',
-                tsr: tsrOffsets('start'),
-                isDisplayHack: true,
-              }, { tsr: tsrOffsets('end'), isDisplayHack: true });
-              var typeOf = toks[0].getAttribute('typeof');
-              toks[0].setAttribute('typeof', 'mw:DisplaySpace ' + typeOf);
-              return toks;
-          }
-          / & ('__') bs:behavior_switch { return bs; }
-          // About 96% of text_char calls originate here, so inline it for efficiency
-          /  [^-'<~[{\n\r:;\]}|!=]
-        )+
+urltext =
+   (
+      & [/A-Za-z] al:autolink { return al; }
+    / & "&" he:htmlentity { return he; }
+    / & ('__') bs:behavior_switch { return bs; }
+    // About 96% of text_char calls originate here, so inline it for efficiency
+    / [^-'<~[{\n\r:;\]}|!=]
+  )+
 
 raw_htmlentity = encoded:$("&" [#0-9a-zA-Z]+ ";") { return decodeEntity(encoded) }
 

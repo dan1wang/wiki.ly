@@ -167,24 +167,6 @@ const TokenUtils = {
 
     return tokens;
   },
-
-  placeholder: function(content, dataAttribs, endAttribs) {
-    if (content === null) {
-      return [
-        new SelfclosingTagTk('meta', [
-          new KV('typeof', 'mw:Placeholder'),
-        ], dataAttribs),
-      ];
-    } else {
-      return [
-        new TagTk('span', [
-          new KV('typeof', 'mw:Placeholder'),
-        ], dataAttribs),
-        content,
-        new EndTagTk('span', [], endAttribs),
-      ];
-    }
-  },
 };
 
 if (typeof module === 'object') {
