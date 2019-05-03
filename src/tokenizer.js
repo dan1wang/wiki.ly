@@ -135,7 +135,7 @@ PegTokenizer.prototype.compileTokenizer = function() {
     }
     const key = (keyParts.length === 1)
       ? keyParts[0]
-      : `[${keyParts.join(', ')}].join(':')`;
+      : `[${keyParts.join(', ')}].map(String).join(':')`;
 
     const maxVisitCount = 20;
     const cacheBits = {
@@ -160,7 +160,6 @@ PegTokenizer.prototype.compileTokenizer = function() {
 `if (checkCache) {
 cached = peg$cache[bucket][key] = {
   nextPos: ${opts.endPos},
-${opts.storeRefs.length ? '    refs: {},' : ''}
   result: ${opts.result},
 };
 ${opts.storeRefs}
