@@ -52,11 +52,6 @@ const TokenUtils = {
         da.contentOffsets[1] += offset;
       }
 
-      // end offset for pre-tag
-      if (offset && da.endpos) {
-        da.endpos += offset;
-      }
-
       //  Process attributes
       if (t.attribs) {
         for (let j = 0, m = t.attribs.length; j < m; j++) {
