@@ -56,7 +56,7 @@ const HTMLTags = {
 
 const pegIncludes = {
   HTMLTags: HTMLTags,
-  TokenTypes: require('./tokens/TokenTypes.js'),
+  Token: require('./Token.js'),
   TokenUtils: require('./utils/TokenUtils.js').TokenUtils,
   tu: require('./tokenizer.utils.js'),
   Util: Util,
