@@ -1,0 +1,291 @@
+{"type":"TagTk","name":"table","attribs":[{"k":"class","v":"wikitable","srcOffsets":[3,8,10,19],"vsrc":"wikitable"},{"k":"style","v":"text-align: center; color: green;","srcOffsets":[21,26,28,61],"vsrc":"text-align: center; color: green;"}],"dataAttribs":{"tsr":[0,62]}}
+{"type":"NlTk","dataAttribs":{"tsr":[62,63]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[63,64],"tmp":{"noAttrs":true}}}
+" Orange"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[71,71]}}
+{"type":"NlTk","dataAttribs":{"tsr":[71,72]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[72,73],"tmp":{"noAttrs":true}}}
+" Apple"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[79,79]}}
+{"type":"NlTk","dataAttribs":{"tsr":[79,80]}}
+{"type":"TagTk","name":"td","attribs":[{"k":"style","v":"text-align:right;","srcOffsets":[82,87,89,106],"vsrc":"text-align:right;"}],"dataAttribs":{"tsr":[80,109]}}
+" 12,333.00"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[119,119]}}
+{"type":"NlTk","dataAttribs":{"tsr":[119,120]}}
+{"type":"TagTk","name":"tr","attribs":[],"dataAttribs":{"tsr":[120,122],"startTagSrc":"|-"}}
+{"type":"NlTk","dataAttribs":{"tsr":[122,123]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[123,124],"tmp":{"noAttrs":true}}}
+" Bread"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[130,130]}}
+{"type":"NlTk","dataAttribs":{"tsr":[130,131]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[131,132],"tmp":{"noAttrs":true}}}
+" Pie"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[136,136]}}
+{"type":"NlTk","dataAttribs":{"tsr":[136,137]}}
+{"type":"TagTk","name":"td","attribs":[{"k":"style","v":"text-align:right;","srcOffsets":[139,144,146,163],"vsrc":"text-align:right;"}],"dataAttribs":{"tsr":[137,166]}}
+" 500.00"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[173,173]}}
+{"type":"NlTk","dataAttribs":{"tsr":[173,174]}}
+{"type":"TagTk","name":"tr","attribs":[],"dataAttribs":{"tsr":[174,176],"startTagSrc":"|-"}}
+{"type":"NlTk","dataAttribs":{"tsr":[176,177]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[177,178],"tmp":{"noAttrs":true}}}
+" Butter"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[185,185]}}
+{"type":"NlTk","dataAttribs":{"tsr":[185,186]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[186,187],"tmp":{"noAttrs":true}}}
+" Ice cream"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[197,197]}}
+{"type":"NlTk","dataAttribs":{"tsr":[197,198]}}
+{"type":"TagTk","name":"td","attribs":[{"k":"style","v":"text-align:right;","srcOffsets":[200,205,207,224],"vsrc":"text-align:right;"}],"dataAttribs":{"tsr":[198,227]}}
+" 1.00"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[232,232]}}
+{"type":"NlTk","dataAttribs":{"tsr":[232,233]}}
+{"type":"EndTagTk","name":"table","attribs":[],"dataAttribs":{"tsr":[233,235]}}
+{"type":"NlTk","dataAttribs":{"tsr":[235,236]}}
+{"type":"NlTk","dataAttribs":{"tsr":[236,237]}}
+{"type":"TagTk","name":"table","attribs":[{"k":"class","v":"wikitable","srcOffsets":[240,245,247,256],"vsrc":"wikitable"}],"dataAttribs":{"tsr":[237,257]}}
+{"type":"NlTk","dataAttribs":{"tsr":[257,258]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[258,259],"tmp":{"noAttrs":true}}}
+" Orange "
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[267,267]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[267,269],"tmp":{"noAttrs":true},"stx":"row"}}
+" Apple     "
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[280,280]}}
+{"type":"TagTk","name":"td","attribs":[{"k":"style","v":"text-align:right;","srcOffsets":[283,288,290,307],"vsrc":"text-align:right;"}],"dataAttribs":{"tsr":[280,310],"stx":"row"}}
+" 12,333.00"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[320,320]}}
+{"type":"NlTk","dataAttribs":{"tsr":[320,321]}}
+{"type":"TagTk","name":"tr","attribs":[],"dataAttribs":{"tsr":[321,323],"startTagSrc":"|-"}}
+{"type":"NlTk","dataAttribs":{"tsr":[323,324]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[324,325],"tmp":{"noAttrs":true}}}
+" Bread "
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[332,332]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[332,334],"tmp":{"noAttrs":true},"stx":"row"}}
+" Pie       "
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[345,345]}}
+{"type":"TagTk","name":"td","attribs":[{"k":"style","v":"text-align:right;","srcOffsets":[348,353,355,372],"vsrc":"text-align:right;"}],"dataAttribs":{"tsr":[345,375],"stx":"row"}}
+" 500.00"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[382,382]}}
+{"type":"NlTk","dataAttribs":{"tsr":[382,383]}}
+{"type":"TagTk","name":"tr","attribs":[],"dataAttribs":{"tsr":[383,385],"startTagSrc":"|-"}}
+{"type":"NlTk","dataAttribs":{"tsr":[385,386]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[386,387],"tmp":{"noAttrs":true}}}
+" Butter "
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[395,395]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[395,397],"tmp":{"noAttrs":true},"stx":"row"}}
+" Ice cream "
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[408,408]}}
+{"type":"TagTk","name":"td","attribs":[{"k":"style","v":"text-align:right;","srcOffsets":[411,416,418,435],"vsrc":"text-align:right;"}],"dataAttribs":{"tsr":[408,438],"stx":"row"}}
+" 1.00"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[443,443]}}
+{"type":"NlTk","dataAttribs":{"tsr":[443,444]}}
+{"type":"EndTagTk","name":"table","attribs":[],"dataAttribs":{"tsr":[444,446]}}
+{"type":"NlTk","dataAttribs":{"tsr":[446,447]}}
+{"type":"NlTk","dataAttribs":{"tsr":[447,448]}}
+{"type":"TagTk","name":"table","attribs":[{"k":"class","v":"wikitable","srcOffsets":[451,456,458,467],"vsrc":"wikitable"}],"dataAttribs":{"tsr":[448,468]}}
+{"type":"NlTk","dataAttribs":{"tsr":[468,469]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[469,470],"tmp":{"noAttrs":true}}}
+" Orange"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[477,477]}}
+{"type":"NlTk","dataAttribs":{"tsr":[477,478]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[478,479],"tmp":{"noAttrs":true}}}
+" Apple"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[485,485]}}
+{"type":"NlTk","dataAttribs":{"tsr":[485,486]}}
+{"type":"TagTk","name":"td","attribs":[{"k":"style","v":"text-align:right;","srcOffsets":[488,493,495,512],"vsrc":"text-align:right;"}],"dataAttribs":{"tsr":[486,514]}}
+" 12,333.00"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[524,524]}}
+{"type":"NlTk","dataAttribs":{"tsr":[524,525]}}
+{"type":"TagTk","name":"tr","attribs":[],"dataAttribs":{"tsr":[525,527],"startTagSrc":"|-"}}
+{"type":"NlTk","dataAttribs":{"tsr":[527,528]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[528,529],"tmp":{"noAttrs":true}}}
+" Bread"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[535,535]}}
+{"type":"NlTk","dataAttribs":{"tsr":[535,536]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[536,537],"tmp":{"noAttrs":true}}}
+" Pie"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[541,541]}}
+{"type":"NlTk","dataAttribs":{"tsr":[541,542]}}
+{"type":"TagTk","name":"td","attribs":[{"k":"style","v":"text-align:right;","srcOffsets":[544,549,551,568],"vsrc":"text-align:right;"}],"dataAttribs":{"tsr":[542,570]}}
+" 500.00"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[577,577]}}
+{"type":"NlTk","dataAttribs":{"tsr":[577,578]}}
+{"type":"TagTk","name":"tr","attribs":[{"k":"style","v":"font-style: italic; color: green;","srcOffsets":[581,586,588,621],"vsrc":"font-style: italic; color: green;"}],"dataAttribs":{"tsr":[578,622],"startTagSrc":"|-"}}
+{"type":"NlTk","dataAttribs":{"tsr":[622,623]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[623,624],"tmp":{"noAttrs":true}}}
+" Butter"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[631,631]}}
+{"type":"NlTk","dataAttribs":{"tsr":[631,632]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[632,633],"tmp":{"noAttrs":true}}}
+" Ice cream"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[643,643]}}
+{"type":"NlTk","dataAttribs":{"tsr":[643,644]}}
+{"type":"TagTk","name":"td","attribs":[{"k":"style","v":"text-align:right;","srcOffsets":[646,651,653,670],"vsrc":"text-align:right;"}],"dataAttribs":{"tsr":[644,672]}}
+" 1.00"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[677,677]}}
+{"type":"NlTk","dataAttribs":{"tsr":[677,678]}}
+{"type":"EndTagTk","name":"table","attribs":[],"dataAttribs":{"tsr":[678,680]}}
+{"type":"NlTk","dataAttribs":{"tsr":[680,681]}}
+{"type":"NlTk","dataAttribs":{"tsr":[681,682]}}
+{"type":"TagTk","name":"table","attribs":[{"k":"class","v":"wikitable","srcOffsets":[685,690,692,701],"vsrc":"wikitable"}],"dataAttribs":{"tsr":[682,702]}}
+{"type":"NlTk","dataAttribs":{"tsr":[702,703]}}
+{"type":"TagTk","name":"tr","attribs":[],"dataAttribs":{"tsr":[703,705],"startTagSrc":"|-"}}
+{"type":"NlTk","dataAttribs":{"tsr":[705,706]}}
+{"type":"TagTk","name":"th","attribs":[{"k":"scope","v":"col","srcOffsets":[708,713,715,718],"vsrc":"col"}],"dataAttribs":{"tsr":[706,720]}}
+" Item"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"th"}],"dataAttribs":{"tsr":[725,725]}}
+{"type":"NlTk","dataAttribs":{"tsr":[725,726]}}
+{"type":"TagTk","name":"th","attribs":[{"k":"scope","v":"col","srcOffsets":[728,733,735,738],"vsrc":"col"}],"dataAttribs":{"tsr":[726,740]}}
+" Quantity"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"th"}],"dataAttribs":{"tsr":[749,749]}}
+{"type":"NlTk","dataAttribs":{"tsr":[749,750]}}
+{"type":"TagTk","name":"th","attribs":[{"k":"scope","v":"col","srcOffsets":[752,757,759,762],"vsrc":"col"}],"dataAttribs":{"tsr":[750,764]}}
+" Price"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"th"}],"dataAttribs":{"tsr":[770,770]}}
+{"type":"NlTk","dataAttribs":{"tsr":[770,771]}}
+{"type":"TagTk","name":"tr","attribs":[],"dataAttribs":{"tsr":[771,773],"startTagSrc":"|-"}}
+{"type":"NlTk","dataAttribs":{"tsr":[773,774]}}
+{"type":"TagTk","name":"th","attribs":[{"k":"scope","v":"row","srcOffsets":[776,781,783,786],"vsrc":"row"}],"dataAttribs":{"tsr":[774,788]}}
+" Bread"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"th"}],"dataAttribs":{"tsr":[794,794]}}
+{"type":"NlTk","dataAttribs":{"tsr":[794,795]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[795,796],"tmp":{"noAttrs":true}}}
+" 0.3 kg"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[803,803]}}
+{"type":"NlTk","dataAttribs":{"tsr":[803,804]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[804,805],"tmp":{"noAttrs":true}}}
+" $0.65"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[811,811]}}
+{"type":"NlTk","dataAttribs":{"tsr":[811,812]}}
+{"type":"TagTk","name":"tr","attribs":[],"dataAttribs":{"tsr":[812,814],"startTagSrc":"|-"}}
+{"type":"NlTk","dataAttribs":{"tsr":[814,815]}}
+{"type":"TagTk","name":"th","attribs":[{"k":"scope","v":"row","srcOffsets":[817,822,824,827],"vsrc":"row"}],"dataAttribs":{"tsr":[815,829]}}
+" Butter"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"th"}],"dataAttribs":{"tsr":[836,836]}}
+{"type":"NlTk","dataAttribs":{"tsr":[836,837]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[837,838],"tmp":{"noAttrs":true}}}
+" 0.125 kg"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[847,847]}}
+{"type":"NlTk","dataAttribs":{"tsr":[847,848]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[848,849],"tmp":{"noAttrs":true}}}
+" $1.25"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[855,855]}}
+{"type":"NlTk","dataAttribs":{"tsr":[855,856]}}
+{"type":"TagTk","name":"tr","attribs":[],"dataAttribs":{"tsr":[856,858],"startTagSrc":"|-"}}
+{"type":"NlTk","dataAttribs":{"tsr":[858,859]}}
+{"type":"TagTk","name":"th","attribs":[{"k":"scope","v":"row","srcOffsets":[861,866,868,871],"vsrc":"row"},{"k":"colspan","v":"2","srcOffsets":[873,880,882,883],"vsrc":"2"}],"dataAttribs":{"tsr":[859,885]}}
+" Total"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"th"}],"dataAttribs":{"tsr":[891,891]}}
+{"type":"NlTk","dataAttribs":{"tsr":[891,892]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[892,893],"tmp":{"noAttrs":true}}}
+" $1.90"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[899,899]}}
+{"type":"NlTk","dataAttribs":{"tsr":[899,900]}}
+{"type":"EndTagTk","name":"table","attribs":[],"dataAttribs":{"tsr":[900,902]}}
+{"type":"NlTk","dataAttribs":{"tsr":[902,903]}}
+{"type":"NlTk","dataAttribs":{"tsr":[903,904]}}
+{"type":"TagTk","name":"table","attribs":[{"k":"class","v":"wikitable","srcOffsets":[907,912,914,923],"vsrc":"wikitable"}],"dataAttribs":{"tsr":[904,924]}}
+{"type":"NlTk","dataAttribs":{"tsr":[924,925]}}
+{"type":"TagTk","name":"th","attribs":[],"dataAttribs":{"tsr":[925,926],"tmp":{"noAttrs":true}}}
+"Header text"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"th"}],"dataAttribs":{"tsr":[937,937]}}
+{"type":"NlTk","dataAttribs":{"tsr":[937,938]}}
+{"type":"TagTk","name":"th","attribs":[],"dataAttribs":{"tsr":[938,939],"tmp":{"noAttrs":true}}}
+"Header text"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"th"}],"dataAttribs":{"tsr":[950,950]}}
+{"type":"NlTk","dataAttribs":{"tsr":[950,951]}}
+{"type":"TagTk","name":"th","attribs":[],"dataAttribs":{"tsr":[951,952],"tmp":{"noAttrs":true}}}
+"Header text"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"th"}],"dataAttribs":{"tsr":[963,963]}}
+{"type":"NlTk","dataAttribs":{"tsr":[963,964]}}
+{"type":"TagTk","name":"tr","attribs":[],"dataAttribs":{"tsr":[964,966],"startTagSrc":"|-"}}
+{"type":"NlTk","dataAttribs":{"tsr":[966,967]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[967,968],"tmp":{"noAttrs":true}}}
+{"type":"NlTk","dataAttribs":{"tsr":[968,969]}}
+{"type":"TagTk","name":"table","attribs":[{"k":"class","v":"wikitable","srcOffsets":[972,977,979,988],"vsrc":"wikitable"}],"dataAttribs":{"tsr":[969,989]}}
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[989,989]}}
+{"type":"NlTk","dataAttribs":{"tsr":[989,990]}}
+{"type":"TagTk","name":"caption","attribs":[],"dataAttribs":{"tsr":[990,992]}}
+{"type":"EndTagTk","name":"caption","attribs":[],"dataAttribs":{"tsr":[992,992]}}
+{"type":"NlTk","dataAttribs":{"tsr":[992,993]}}
+{"type":"TagTk","name":"th","attribs":[],"dataAttribs":{"tsr":[993,994],"tmp":{"noAttrs":true}}}
+"A"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"th"}],"dataAttribs":{"tsr":[995,995]}}
+{"type":"NlTk","dataAttribs":{"tsr":[995,996]}}
+{"type":"TagTk","name":"th","attribs":[],"dataAttribs":{"tsr":[996,997],"tmp":{"noAttrs":true}}}
+"B"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"th"}],"dataAttribs":{"tsr":[998,998]}}
+{"type":"NlTk","dataAttribs":{"tsr":[998,999]}}
+{"type":"TagTk","name":"th","attribs":[],"dataAttribs":{"tsr":[999,1000],"tmp":{"noAttrs":true}}}
+"C"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"th"}],"dataAttribs":{"tsr":[1001,1001]}}
+{"type":"NlTk","dataAttribs":{"tsr":[1001,1002]}}
+{"type":"TagTk","name":"tr","attribs":[],"dataAttribs":{"tsr":[1002,1004],"startTagSrc":"|-"}}
+{"type":"NlTk","dataAttribs":{"tsr":[1004,1005]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[1005,1006],"tmp":{"noAttrs":true}}}
+"1"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[1007,1007]}}
+{"type":"NlTk","dataAttribs":{"tsr":[1007,1008]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[1008,1009],"tmp":{"noAttrs":true}}}
+"2"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[1010,1010]}}
+{"type":"NlTk","dataAttribs":{"tsr":[1010,1011]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[1011,1012],"tmp":{"noAttrs":true}}}
+"3"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[1013,1013]}}
+{"type":"NlTk","dataAttribs":{"tsr":[1013,1014]}}
+{"type":"TagTk","name":"tr","attribs":[],"dataAttribs":{"tsr":[1014,1016],"startTagSrc":"|-"}}
+{"type":"NlTk","dataAttribs":{"tsr":[1016,1017]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[1017,1018],"tmp":{"noAttrs":true}}}
+"4"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[1019,1019]}}
+{"type":"NlTk","dataAttribs":{"tsr":[1019,1020]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[1020,1021],"tmp":{"noAttrs":true}}}
+"5"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[1022,1022]}}
+{"type":"NlTk","dataAttribs":{"tsr":[1022,1023]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[1023,1024],"tmp":{"noAttrs":true}}}
+"6"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[1025,1025]}}
+{"type":"NlTk","dataAttribs":{"tsr":[1025,1026]}}
+{"type":"EndTagTk","name":"table","attribs":[],"dataAttribs":{"tsr":[1026,1028]}}
+{"type":"NlTk","dataAttribs":{"tsr":[1028,1029]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[1029,1030],"tmp":{"noAttrs":true}}}
+"Example"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[1037,1037]}}
+{"type":"NlTk","dataAttribs":{"tsr":[1037,1038]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[1038,1039],"tmp":{"noAttrs":true}}}
+"Example"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[1046,1046]}}
+{"type":"NlTk","dataAttribs":{"tsr":[1046,1047]}}
+{"type":"TagTk","name":"tr","attribs":[],"dataAttribs":{"tsr":[1047,1049],"startTagSrc":"|-"}}
+{"type":"NlTk","dataAttribs":{"tsr":[1049,1050]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[1050,1051],"tmp":{"noAttrs":true}}}
+"Example"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[1058,1058]}}
+{"type":"NlTk","dataAttribs":{"tsr":[1058,1059]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[1059,1060],"tmp":{"noAttrs":true}}}
+"Example"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[1067,1067]}}
+{"type":"NlTk","dataAttribs":{"tsr":[1067,1068]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[1068,1069],"tmp":{"noAttrs":true}}}
+"Example"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[1076,1076]}}
+{"type":"NlTk","dataAttribs":{"tsr":[1076,1077]}}
+{"type":"TagTk","name":"tr","attribs":[],"dataAttribs":{"tsr":[1077,1079],"startTagSrc":"|-"}}
+{"type":"NlTk","dataAttribs":{"tsr":[1079,1080]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[1080,1081],"tmp":{"noAttrs":true}}}
+"Example"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[1088,1088]}}
+{"type":"NlTk","dataAttribs":{"tsr":[1088,1089]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[1089,1090],"tmp":{"noAttrs":true}}}
+"Example"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[1097,1097]}}
+{"type":"NlTk","dataAttribs":{"tsr":[1097,1098]}}
+{"type":"TagTk","name":"td","attribs":[],"dataAttribs":{"tsr":[1098,1099],"tmp":{"noAttrs":true}}}
+"Example"
+{"type":"SelfclosingTagTk","name":"meta","attribs":[{"k":"typeof","v":"mw:TSRMarker"},{"k":"data-etag","v":"td"}],"dataAttribs":{"tsr":[1106,1106]}}
+{"type":"NlTk","dataAttribs":{"tsr":[1106,1107]}}
+{"type":"EndTagTk","name":"table","attribs":[],"dataAttribs":{"tsr":[1107,1109]}}
+{"type":"NlTk","dataAttribs":{"tsr":[1109,1110]}}
+{"type":"EOFTk"}
