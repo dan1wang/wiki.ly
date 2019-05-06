@@ -1,19 +1,21 @@
-{"type":"SelfclosingTagTk","name":"extlink","attribs":[{"k":"href","v":[{"type":"SelfclosingTagTk","name":"template","attribs":[{"k":"1x","v":"","srcOffsets":[3,5]},{"k":"","v":[{"type":"SelfclosingTagTk","name":"urllink","attribs":[{"k":"href","v":["http://example.com"]}],"dataAttribs":{"tsr":[6,24]}}],"srcOffsets":[6,6,6,24]}],"dataAttribs":{"tsr":[1,26],"src":"{{1x|http://example.com}}","tmp":{"leadWS":"","trailWS":""}}}]},{"k":"mw:content","v":["foo"]},{"k":"spaces","v":" "}],"dataAttribs":{"tsr":[0,31],"extLinkContentOffsets":[27,30]}}
-{"type":"NlTk","dataAttribs":{"tsr":[31,32]}}
-{"type":"SelfclosingTagTk","name":"extlink","attribs":[{"k":"href","v":"http://2607:f8b0:4003:c00:60"},{"k":"mw:content","v":["ipv6"]},{"k":"spaces","v":" "}],"dataAttribs":{"tsr":[32,67],"extLinkContentOffsets":[62,66]}}
-{"type":"SelfclosingTagTk","name":"urllink","attribs":[{"k":"href","v":["http://2607:f8b0:4003:c00::60"]}],"dataAttribs":{"tsr":[67,96]}}
-{"type":"NlTk","dataAttribs":{"tsr":[96,97]}}
-{"type":"SelfclosingTagTk","name":"extlink","attribs":[{"k":"href","v":"http://2607:xxxx:xxxx:xxx:60"},{"k":"mw:content","v":["ipv6"]},{"k":"spaces","v":" "}],"dataAttribs":{"tsr":[97,132],"extLinkContentOffsets":[127,131]}}
-{"type":"SelfclosingTagTk","name":"urllink","attribs":[{"k":"href","v":["http://2607:xxxx:xxxx:xxx::60"]}],"dataAttribs":{"tsr":[132,161]}}
-{"type":"NlTk","dataAttribs":{"tsr":[161,162]}}
-{"type":"SelfclosingTagTk","name":"extlink","attribs":[{"k":"href","v":"mailto:mail@address"},{"k":"mw:content","v":["mail"]},{"k":"spaces","v":" "}],"dataAttribs":{"tsr":[162,188],"extLinkContentOffsets":[183,187]}}
-{"type":"SelfclosingTagTk","name":"urllink","attribs":[{"k":"href","v":["mailto:mail@address"]}],"dataAttribs":{"tsr":[188,207]}}
-{"type":"NlTk","dataAttribs":{"tsr":[207,208]}}
-{"type":"SelfclosingTagTk","name":"extlink","attribs":[{"k":"href","v":["ftp://yes.com/",{"type":"SelfclosingTagTk","name":"template","attribs":[{"k":"t","v":"","srcOffsets":[225,226]}],"dataAttribs":{"tsr":[223,228],"src":"{{t}}","tmp":{"leadWS":"","trailWS":""}}}]},{"k":"mw:content","v":["yes"]},{"k":"spaces","v":" "}],"dataAttribs":{"tsr":[208,233],"extLinkContentOffsets":[229,232]}}
-{"type":"SelfclosingTagTk","name":"urllink","attribs":[{"k":"href","v":["ftp://yes.com/",{"type":"SelfclosingTagTk","name":"template","attribs":[{"k":"t","v":"","srcOffsets":[249,250]}],"dataAttribs":{"tsr":[247,252],"src":"{{t}}","tmp":{"leadWS":"","trailWS":""}}}]}],"dataAttribs":{"tsr":[233,252]}}
-{"type":"NlTk","dataAttribs":{"tsr":[252,253]}}
-{"type":"SelfclosingTagTk","name":"extlink","attribs":[{"k":"href","v":["ptf://no.com/",{"type":"SelfclosingTagTk","name":"template","attribs":[{"k":"t","v":"","srcOffsets":[269,270]}],"dataAttribs":{"tsr":[267,272],"src":"{{t}}","tmp":{"leadWS":"","trailWS":""}}}]},{"k":"mw:content","v":["no"]},{"k":"spaces","v":" "}],"dataAttribs":{"tsr":[253,276],"extLinkContentOffsets":[273,275]}}
+{"type":"SelfclosingTagTk","name":"extlink","attribs":[{"k":"href","v":"http://2607:f8b0:4003:c00:60"},{"k":"mw:content","v":["ipv6"]},{"k":"spaces","v":" "}],"dataAttribs":{"tsr":[0,35],"extLinkContentOffsets":[30,34]}}
+{"type":"SelfclosingTagTk","name":"urllink","attribs":[{"k":"href","v":["http://2607:f8b0:4003:c00::60"]}],"dataAttribs":{"tsr":[35,64]}}
+{"type":"NlTk","dataAttribs":{"tsr":[64,65]}}
+{"type":"SelfclosingTagTk","name":"extlink","attribs":[{"k":"href","v":"http://2607:xxxx:xxxx:xxx:60"},{"k":"mw:content","v":["ipv6"]},{"k":"spaces","v":" "}],"dataAttribs":{"tsr":[65,100],"extLinkContentOffsets":[95,99]}}
+{"type":"SelfclosingTagTk","name":"urllink","attribs":[{"k":"href","v":["http://2607:xxxx:xxxx:xxx::60"]}],"dataAttribs":{"tsr":[100,129]}}
+{"type":"NlTk","dataAttribs":{"tsr":[129,130]}}
+{"type":"SelfclosingTagTk","name":"extlink","attribs":[{"k":"href","v":"mailto:mail@address"},{"k":"mw:content","v":["mail"]},{"k":"spaces","v":" "}],"dataAttribs":{"tsr":[130,156],"extLinkContentOffsets":[151,155]}}
+{"type":"SelfclosingTagTk","name":"urllink","attribs":[{"k":"href","v":["mailto:mail@address"]}],"dataAttribs":{"tsr":[156,175]}}
+{"type":"NlTk","dataAttribs":{"tsr":[175,176]}}
+{"type":"SelfclosingTagTk","name":"extlink","attribs":[{"k":"href","v":["ftp://yes.com/",{"type":"SelfclosingTagTk","name":"template","attribs":[{"k":"t","v":"","srcOffsets":[193,194]}],"dataAttribs":{"tsr":[191,196],"src":"{{t}}","tmp":{"leadWS":"","trailWS":""}}}]},{"k":"mw:content","v":["yes"]},{"k":"spaces","v":" "}],"dataAttribs":{"tsr":[176,201],"extLinkContentOffsets":[197,200]}}
+{"type":"SelfclosingTagTk","name":"urllink","attribs":[{"k":"href","v":["ftp://yes.com/",{"type":"SelfclosingTagTk","name":"template","attribs":[{"k":"t","v":"","srcOffsets":[217,218]}],"dataAttribs":{"tsr":[215,220],"src":"{{t}}","tmp":{"leadWS":"","trailWS":""}}}]}],"dataAttribs":{"tsr":[201,220]}}
+{"type":"NlTk","dataAttribs":{"tsr":[220,221]}}
+{"type":"SelfclosingTagTk","name":"extlink","attribs":[{"k":"href","v":["ptf://no.com/",{"type":"SelfclosingTagTk","name":"template","attribs":[{"k":"t","v":"","srcOffsets":[237,238]}],"dataAttribs":{"tsr":[235,240],"src":"{{t}}","tmp":{"leadWS":"","trailWS":""}}}]},{"k":"mw:content","v":["no"]},{"k":"spaces","v":" "}],"dataAttribs":{"tsr":[221,244],"extLinkContentOffsets":[241,243]}}
 "ptf://no.com/"
-{"type":"SelfclosingTagTk","name":"template","attribs":[{"k":"t","v":"","srcOffsets":[291,292]}],"dataAttribs":{"tsr":[289,294],"src":"{{t}}","tmp":{"leadWS":"","trailWS":""}}}
-{"type":"NlTk","dataAttribs":{"tsr":[294,295]}}
+{"type":"SelfclosingTagTk","name":"template","attribs":[{"k":"t","v":"","srcOffsets":[259,260]}],"dataAttribs":{"tsr":[257,262],"src":"{{t}}","tmp":{"leadWS":"","trailWS":""}}}
+{"type":"NlTk","dataAttribs":{"tsr":[262,263]}}
+{"type":"SelfclosingTagTk","name":"extlink","attribs":[{"k":"href","v":[{"type":"SelfclosingTagTk","name":"template","attribs":[{"k":"1x","v":"","srcOffsets":[266,268]},{"k":"","v":[{"type":"SelfclosingTagTk","name":"urllink","attribs":[{"k":"href","v":["http://example.com"]}],"dataAttribs":{"tsr":[269,287]}}],"srcOffsets":[269,269,269,287]}],"dataAttribs":{"tsr":[264,289],"src":"{{1x|http://example.com}}","tmp":{"leadWS":"","trailWS":""}}}]},{"k":"mw:content","v":[":foo"]},{"k":"spaces","v":" "}],"dataAttribs":{"tsr":[263,295],"extLinkContentOffsets":[290,294]}}
+{"type":"NlTk","dataAttribs":{"tsr":[295,296]}}
+"test     :    test"
+{"type":"NlTk","dataAttribs":{"tsr":[314,315]}}
 {"type":"EOFTk"}

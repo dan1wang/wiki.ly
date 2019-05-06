@@ -3,4 +3,5 @@
 [mailto:mail@address mail]mailto:mail@address
 [ftp://yes.com/{{t}} yes]ftp://yes.com/{{t}}
 [ptf://no.com/{{t}} no]ptf://no.com/{{t}}
-[{{1x|http://example.com}} foo]
+[{{1x|http://example.com}} :foo]
+test     :    test
