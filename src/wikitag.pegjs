@@ -127,32 +127,6 @@ generic_newline_attribute
     return res;
 }
 
-// A single-line attribute.
-table_attribute
-  = s:optionalSpaceToken
-    namePos0:("" { return endOffset(); })
-    name:table_attribute_name
-    namePos:("" { return endOffset(); })
-    vd:(optionalSpaceToken "=" v:table_att_value? { return v; })?
-{
-    // NB: Keep in sync w/ generic_newline_attribute
-    var res;
-    // Encapsulate protected attributes.
-    if (typeof name === 'string') {
-        name = tu.protectAttrs(name);
-    }
-    if (vd !== null) {
-        res = new KV(name, vd.value, [namePos0, namePos, vd.srcOffsets[0], vd.srcOffsets[1]]);
-        res.vsrc = input.substring(vd.srcOffsets[0], vd.srcOffsets[1]);
-    } else {
-        res = new KV(name, '', [namePos0, namePos, namePos, namePos]);
-    }
-    if (Array.isArray(name)) {
-        res.ksrc = input.substring(namePos0, namePos);
-    }
-    return res;
-}
-
 // The php parser's Sanitizer::removeHTMLtags explodes on < so that it can't
 // be found anywhere in xmlish tags.  This is a divergence from html5 tokenizing
 // which happily permits it in attribute positions.  Extension tags being the
@@ -171,15 +145,13 @@ generic_attribute_name
     r:( $[^ \t\r\n\0/=><&{}\-!|]+
         / !inline_breaks
           // \0/=> is the html5 attribute name set we do not want.
-          t:( directive / less_than / $( !( space_or_newline / [\0/=><] ) . )
-        ) { return t; }
+          ( directive
+            / less_than
+            / $( !( space_or_newline / [\0/=><] ) . )
+          )
     )*
     & { return r.length > 0 || q.length > 0; }
   { return tu.flattenString([q].concat(r)); }
-
-// Also accept these chars in a wikitext table or tr attribute name position.
-// They are normally not matched by the table_attribute_name.
-broken_table_attribute_name_char = c:[\0/=>] { return new KV(c, ''); }
 
 // Same as generic_attribute_name, except for accepting tags and wikilinks.
 // (That doesn't make sense (ie. match php) in the generic case.)
@@ -189,14 +161,14 @@ table_attribute_name
     r:( $[^ \t\r\n\0/=><&{}\-!|\[]+
         / !inline_breaks
           // \0/=> is the html5 attribute name set we do not want.
-          t:(   $wikilink
-              / directive
-              // Accept insane tags-inside-attributes as attribute names.
-              // The sanitizer will strip and shadow them for roundtripping.
-              // Example: <hiddentext>generated with.. </hiddentext>
-              / &xmlish_tag ill:inlineline { return ill; }
-              / $( !( space_or_newline / [\0/=>] ) . )
-        ) { return t; }
+          ( $wikilink
+            / directive
+            // Accept insane tags-inside-attributes as attribute names.
+            // The sanitizer will strip and shadow them for roundtripping.
+            // Example: <hiddentext>generated with.. </hiddentext>
+            / &xmlish_tag inlineline
+            / $( !( space_or_newline / [\0/=>] ) . )
+          )
     )*
     & { return r.length > 0 || q.length > 0; }
   { return tu.flattenString([q].concat(r)); }

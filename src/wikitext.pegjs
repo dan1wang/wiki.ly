@@ -41,9 +41,9 @@ text_char = [^-'<~[{\n\r:;\]}|!=]
 
 urltext =
    (
-      & [A-Za-z] al:autolink { return al; }
-    / & "&" he:htmlentity { return he; }
-    / & ('__') bs:behavior_switch { return bs; }
+      & [A-Za-z] al:autolink
+    / & "&" htmlentity
+    / & ('__') behavior_switch
     // About 96% of text_char calls originate here, so inline it for efficiency
     / [^-'<~[{\n\r:;\]}|!=]
   )+
@@ -107,7 +107,6 @@ space_or_nbsp
   = space // includes \t
   / unispace
   / he:htmlentity &{ return Array.isArray(he) && /^\u00A0$/.test(he[1]); }
-    { return he; }
 
 // Used within ISBN magic links
 space_or_nbsp_or_dash
@@ -213,15 +212,15 @@ directive
   = comment
   / extension_tag
   / tplarg_or_template
-  / & "-{" v:lang_variant_or_tpl { return v; }
-  / & "&" e:htmlentity { return e; }
+  / & "-{" v:lang_variant_or_tpl
+  / & "&" e:htmlentity
   / include_limits
 
 wikilink_preprocessor_text
   = r:( t:$[^<[{\n\r\t|!\]}{ &\-]+
         // XXX gwicke: any more chars we need to allow here?
-        / !inline_breaks wr:( directive / $( !"]]" ( text_char / [!<\-\}\]\n\r] ) ) )
-        { return wr; }
+        / !inline_breaks
+          wr:( directive / $( !"]]" ( text_char / [!<\-\}\]\n\r] ) ) )
     )+ {
       return tu.flattenStringlist(r);
   }
@@ -236,7 +235,8 @@ extlink_preprocessor_text
 
 extlink_preprocessor_text_parameterized
   = r:( $[^'<~[{\n\r|!\]}\-\t&="' \u00A0\u1680\u180E\u2000-\u200A\u202F\u205F\u3000]+
-    / !inline_breaks s:( directive / no_punctuation_char / [&|{\-] ) { return s; }
+    / !inline_breaks
+      ( directive / no_punctuation_char / [&|{\-] )
     // !inline_breaks no_punctuation_char
     / $([.:,] !(space / eolf))
     / $(['] ![']) // single quotes are ok, double quotes are bad
@@ -255,7 +255,7 @@ attribute_preprocessor_text
   = r:( $[^{}&<\-|/ \t\n\r\x0c>]+
   / !inline_breaks
     !'/>'
-    s:( directive / less_than / [{}&\-|/] ) { return s; }
+    ( directive / less_than / [{}&\-|/] )
   )+ {
     return tu.flattenString(r);
   }
@@ -265,7 +265,7 @@ attribute_preprocessor_text_single
   = r:( $[^{}&<\-|/'>]+
   / !inline_breaks
     !'/>'
-    s:( directive / less_than / [{}&\-|/] ) { return s; }
+    ( directive / less_than / [{}&\-|/] )
   )* {
     return tu.flattenString(r);
   }
@@ -275,7 +275,7 @@ attribute_preprocessor_text_double
   = r:( $[^{}&<\-|/">]+
   / !inline_breaks
     !'/>'
-    s:( directive / less_than / [{}&\-|/] ) { return s; }
+    ( directive / less_than / [{}&\-|/] )
   )* {
     return tu.flattenString(r);
   }
@@ -291,7 +291,8 @@ attribute_preprocessor_text_double
 // The stop set is space_or_newline and | which matches table_att_value.
 table_attribute_preprocessor_text
   = r:( $[^{}&<\-!\[ \t\n\r\x0c|]+
-  / !inline_breaks s:( directive / [{}&<\-!\[] ) { return s; }
+  / !inline_breaks
+    ( directive / [{}&<\-!\[] )
   )+ {
     return tu.flattenString(r);
   }
@@ -299,7 +300,8 @@ table_attribute_preprocessor_text
 // The stop set is '\r\n| which matches table_att_value.
 table_attribute_preprocessor_text_single
   = r:( $[^{}&<\-!\['\r\n|]+
-  / !inline_breaks s:( directive / [{}&<\-!\[] ) { return s; }
+  / !inline_breaks
+    ( directive / [{}&<\-!\[] )
   )* {
     return tu.flattenString(r);
   }
@@ -307,7 +309,8 @@ table_attribute_preprocessor_text_single
 // The stop set is "\r\n| which matches table_att_value.
 table_attribute_preprocessor_text_double
   = r:( $[^{}&<\-!\["\r\n|]+
-  / !inline_breaks s:( directive / [{}&<\-!\[] ) { return s; }
+  / !inline_breaks
+    ( directive / [{}&<\-!\[] )
   )* {
     return tu.flattenString(r);
   }

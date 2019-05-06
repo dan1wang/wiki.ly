@@ -1,4 +1,4 @@
-{| class="wikitable" style="text-align: center; color: green;"
+{| class="wikitable" style="text-align: center; color: green;" / = >
 | Orange
 | Apple
 | style="text-align:right;" | 12,333.00

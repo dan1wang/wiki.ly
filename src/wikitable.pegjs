@@ -268,3 +268,35 @@ row_syntax_table_args
   = as:table_attributes<tableCellArg> s:optional_spaces p:pipe !pipe {
         return [as, s, p];
     }
+
+// A single-line attribute.
+table_attribute
+  = s:optionalSpaceToken
+    namePos0:("" { return endOffset(); })
+    name:table_attribute_name
+    namePos:("" { return endOffset(); })
+    vd:(optionalSpaceToken "=" v:table_att_value? { return v; })?
+{
+    // NB: Keep in sync w/ generic_newline_attribute
+    var res;
+    // Encapsulate protected attributes.
+    if (typeof name === 'string') {
+        name = tu.protectAttrs(name);
+    }
+    if (vd !== null) {
+        res = new KV(name, vd.value, [namePos0, namePos, vd.srcOffsets[0], vd.srcOffsets[1]]);
+        res.vsrc = input.substring(vd.srcOffsets[0], vd.srcOffsets[1]);
+    } else {
+        res = new KV(name, '', [namePos0, namePos, namePos, namePos]);
+    }
+    if (Array.isArray(name)) {
+        res.ksrc = input.substring(namePos0, namePos);
+    }
+    return res;
+}
+
+// Also accept these chars in a wikitext table or tr attribute name position.
+// They are normally not matched by the table_attribute_name.
+broken_table_attribute
+  = optionalSpaceToken
+    c:[\0/=>] { return new KV(c, ''); }

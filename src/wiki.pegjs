@@ -578,7 +578,7 @@ redirect
 // These rules are exposed as start rules.
 generic_newline_attributes "generic_newline_attributes" = generic_newline_attribute*
 table_attributes "table_attributes"
-  = (table_attribute / optionalSpaceToken b:broken_table_attribute_name_char { return b; })*
+  = (table_attribute / broken_table_attribute)*
 
 /* The 'redirect' magic word.
  * The leading whitespace allowed is due to the PHP trim() function.

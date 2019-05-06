@@ -64,8 +64,8 @@ autoref
 isbn
   = 'ISBN' sp:space_or_nbsp+ isbn:(
       [0-9]
-      (s:space_or_nbsp_or_dash &[0-9] { return s; } / [0-9])+
-      ((space_or_nbsp_or_dash / "") [xX] / "")
+      (space_or_nbsp_or_dash? [0-9])+
+      space_or_nbsp_or_dash? [xX]?
     ) isbncode:(
       end_of_word
       {
@@ -103,15 +103,14 @@ url "url"
   = proto:url_protocol
     addr:(IPAddress / "")
     path:(  ( !inline_breaks
-              c:no_punctuation_char
-              { return c; }
+              no_punctuation_char
             )
-            / s:[.:,']  { return s; }
+            / s:[.:,']
             / comment
             / tplarg_or_template
             / ! ( "&" ( [lL][tT] / [gG][tT] ) ";" )
                 r:(
-                    & "&" he:htmlentity { return he; }
+                    & "&" htmlentity
                   / [&%{]
                 )
          )*
@@ -134,8 +133,7 @@ autourl
     proto:url_protocol
     addr:(IPAddress / "")
     path:(  ( !inline_breaks
-             c:no_punctuation_char
-              { return c; }
+             no_punctuation_char
             )
             / [.:,]
             / $(['] ![']) // single quotes are ok, double quotes are bad
@@ -143,7 +141,7 @@ autourl
             / tplarg_or_template
             / ! ( rhe:raw_htmlentity &{ return /^[<>\u00A0]$/.test(rhe); } )
                 r:(
-                    & "&" he:htmlentity { return he; }
+                    & "&" htmlentity
                   / [&%{]
                 )
          )*
