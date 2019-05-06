@@ -206,30 +206,9 @@ PegTokenizer.prototype.initTokenizer = function() {
   PegTokenizer.prototype.tokenizer = new Function('return ' + tokenizerSource)();  // eslint-disable-line
 };
 
-/**
- * Process text.  The text is tokenized in chunks and control
- * is yielded to the event loop after each top-level block is
- * tokenized enabling the tokenized chunks to be processed at
- * the earliest possible opportunity.
- *
- * @param {string} text
- * @param {boolean} sol Whether text should be processed in start-of-line
- *   context.
- */
-PegTokenizer.prototype.process = function(text, sol) {
-  this.tokenizeAsync(text, sol);
-};
-
-
 // Debugging aid: Set pipeline id.
 PegTokenizer.prototype.setPipelineId = function(id) {
   this.pipelineId = id;
-};
-
-// Set start and end offsets of the source that generated this DOM.
-PegTokenizer.prototype.setSourceOffsets = function(start, end) {
-  this.offsets.startOffset = start;
-  this.offsets.endOffset = end;
 };
 
 PegTokenizer.prototype._tokenize = function(text, args) {
@@ -298,7 +277,8 @@ PegTokenizer.prototype.tokenizeAsync = function(text, sol) {
 
 PegTokenizer.prototype.onEnd = function() {
   // Reset source offsets
-  this.setSourceOffsets();
+  this.offsets.startOffset = 0;
+  this.offsets.endOffset = 0;
   this.emit('end');
 };
 
@@ -349,31 +329,6 @@ PegTokenizer.prototype.tokenizeAs = function(text, rule, sol) {
     // console.warn('Stack: ' + e.stack);
     return (e instanceof Error) ? e : new Error(e);
   }
-};
-
-/**
- * Tokenize a URL.
- * @param {string} text
- * @return {boolean}
- */
-PegTokenizer.prototype.tokenizesAsURL = function(text) {
-  const e = this.tokenizeAs(text, 'url', /* sol */true);
-  return !(e instanceof Error);
-};
-
-/**
- * Tokenize an extlink.
- * @param {string} text
- * @param {boolean} sol
- * @return {object}
- */
-PegTokenizer.prototype.tokenizeExtlink = function(text, sol) {
-  return this.tokenizeAs(text, 'extlink', sol);
-};
-
-// Tokenize table cell attributes.
-PegTokenizer.prototype.tokenizeTableCellAttributes = function(text, sol) {
-  return this.tokenizeAs(text, 'row_syntax_table_args', sol);
 };
 
 module.exports = {
