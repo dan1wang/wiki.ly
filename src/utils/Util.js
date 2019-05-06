@@ -1,8 +1,7 @@
 /* eslint-disable no-console, require-jsdoc */
 'use strict';
 
-const Token = require('../tokens/Token.js').Token;
-const KV = require('../tokens/KV.js').KV;
+const {Token, KV} = require('../Token.js');
 
 const Util = {
   // deep clones by default.

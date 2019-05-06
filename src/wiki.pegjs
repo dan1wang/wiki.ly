@@ -15,7 +15,7 @@
     var TokenUtils = pegIncludes.TokenUtils;
     var Util = pegIncludes.Util;
     var PegTokenizer = pegIncludes.PegTokenizer;
-    var TokenTypes = pegIncludes.TokenTypes;
+    const { KV, TagTk, EndTagTk, SelfclosingTagTk, NlTk, EOFTk, CommentTk } = pegIncludes.Token;
     var HTMLTags = pegIncludes.HTMLTags;
     var tu = pegIncludes.tu;
     var NAMED_ENTITIES = {
@@ -310,8 +310,6 @@
       return text.replace(/&[#0-9a-zA-Z]+;/g, decodeEntity);
     }
 
-    // define some constructor shortcuts
-    const { KV, TagTk, EndTagTk, SelfclosingTagTk, NlTk, EOFTk, CommentTk } = TokenTypes;
     var lastItem = function(items) {
       return items[items.length - 1];
     };

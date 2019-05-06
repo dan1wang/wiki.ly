@@ -3,7 +3,7 @@
 
 // const { DOMDataUtils } = require('../utils/DOMDataUtils.js');
 const {KV, TagTk, EndTagTk, SelfclosingTagTk, CommentTk}
-  = require('./tokens/TokenTypes.js');
+  = require('./Token.js');
 
 const tu = module.exports = {
 

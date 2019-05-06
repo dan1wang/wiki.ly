@@ -1,8 +1,8 @@
 /* eslint-disable no-console, require-jsdoc */
 'use strict';
 
-const {KV, TagTk, EndTagTk, SelfclosingTagTk, NlTk, EOFTk, CommentTk} =
-  require('../tokens/TokenTypes.js');
+const {TagTk, EndTagTk, SelfclosingTagTk, NlTk, EOFTk, CommentTk} =
+  require('../Token.js');
 
 const lastItem = (array) => array[array.length - 1];
 
