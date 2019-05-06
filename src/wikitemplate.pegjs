@@ -110,7 +110,7 @@ tplarg_preproc
                     &("|" / "}}}")
                     { return { tokens: v, srcOffsets: [p0, p1] }; }  // empty argument
                     / template_param_value
-                  ) { return r; }
+                  )
             )*
     nl_comment_space*
     inline_breaks "}}}" {
@@ -497,7 +497,7 @@ link_text_parameterized
          (sol (heading / hr / full_table_in_link_caption))
        / urltext
        / (!inline_breaks
-          r:( inline_element / '[' text_char+ ']' $(&(!']' / ']]')) / . ) { return r; }
+          r:( inline_element / '[' text_char+ ']' $(&(!']' / ']]')) / . )
          )
     )+ {
       return tu.flattenStringlist(c);

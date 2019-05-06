@@ -8,12 +8,9 @@ autolink
     ! { return /\w/.test(input[endOffset() - 1] || ''); }
   r:(
       // urllink, inlined
-      target:autourl {
-        var res = [new SelfclosingTagTk('urllink', [new KV('href', target)], { tsr: tsrOffsets() })];
-          return res;
-      }
+      autourl
     / autoref
-    / isbn) { return r; }
+    / isbn)
 
 extlink "extlink"
   = ! <extlink> // extlink cannot be nested
@@ -45,7 +42,7 @@ extlink "extlink"
                 }),
             ];
         }
-    ) { return r; }
+    )
 
 autoref
   = ref:('RFC' / 'PMID') sp:space_or_nbsp+ identifier:$[0-9]+ end_of_word
@@ -116,7 +113,7 @@ url "url"
                 r:(
                     & "&" he:htmlentity { return he; }
                   / [&%{]
-                ) { return r; }
+                )
          )*
          // Must be at least one character after the protocol
          & { return addr.length > 0 || path.length > 0; }
@@ -137,7 +134,7 @@ autourl
     proto:url_protocol
     addr:(IPAddress / "")
     path:(  ( !inline_breaks
-              c:no_punctuation_char
+             c:no_punctuation_char
               { return c; }
             )
             / [.:,]
@@ -148,7 +145,7 @@ autourl
                 r:(
                     & "&" he:htmlentity { return he; }
                   / [&%{]
-                ) { return r; }
+                )
          )*
 {
     // as in Parser.php::makeFreeExternalLink, we're going to
@@ -172,7 +169,10 @@ autourl
     }
     peg$currPos -= trim;
     return url;
-} ) &{ return r !== null; } {return r; }
+} ) &{ return r !== null; }
+{
+  return [new SelfclosingTagTk('urllink', [new KV('href', r)], { tsr: tsrOffsets() })];
+}
 
 IPAddress
   = $( "[" [0-9A-Fa-f:.]+ "]" )

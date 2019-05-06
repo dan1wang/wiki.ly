@@ -41,7 +41,7 @@ text_char = [^-'<~[{\n\r:;\]}|!=]
 
 urltext =
    (
-      & [/A-Za-z] al:autolink { return al; }
+      & [A-Za-z] al:autolink { return al; }
     / & "&" he:htmlentity { return he; }
     / & ('__') bs:behavior_switch { return bs; }
     // About 96% of text_char calls originate here, so inline it for efficiency

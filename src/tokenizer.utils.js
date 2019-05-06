@@ -25,7 +25,7 @@ const tu = module.exports = {
             res.push(v);
           }
         } else {
-          throw new Error('falsy ' + e);
+          // throw new Error('falsy ' + e);
         }
       }
 

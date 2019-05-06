@@ -781,15 +781,15 @@ inlineline
   = c:(
     urltext
     / !inline_breaks
-    r:(inline_element / [^\r\n]) { return r; }
+    r:(inline_element / [^\r\n])
   )+ {
     return tu.flattenStringlist(c);
   }
 
 inline_element
-  =   & '<' r:( xmlish_tag / comment ) { return r; }
-    / & '{' r:tplarg_or_template { return r; }
-    / & "-{" r:lang_variant_or_tpl { return r; }
+  =   & '<' r:( xmlish_tag / comment )
+    / & '{' r:tplarg_or_template
+    / & "-{" r:lang_variant_or_tpl
     // FIXME: The php parser's replaceInternalLinks2 splits on [[, resulting
     // in sequences with odd number of brackets parsing as text, and sequences
     // with even number of brackets having its innermost pair parse as a
@@ -797,8 +797,8 @@ inline_element
     // wikitext, the language, shouldn't be defined by odd tokenizing behaviour
     // in the php parser.  Flagging this for a future cleanup.
     / $('[[' &'[')+
-    / & '[' r:( wikilink / extlink ) { return r; }
-    / & "'" r:quote { return r; }
+    / & '[' r:( wikilink / extlink )
+    / & "'" r:quote
 
 /* Headings  */
 
