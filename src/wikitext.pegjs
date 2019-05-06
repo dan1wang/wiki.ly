@@ -14,7 +14,7 @@
  * clarify this carefully!
  */
 
-text_char = [^-'<~[{\n\r:;\]}|!=]
+// text_char = [^-'<~[{\n\r:;\]}|!=]
 
 /* Legend
  * '    quotes (italic/bold)
@@ -41,10 +41,9 @@ text_char = [^-'<~[{\n\r:;\]}|!=]
 
 urltext =
    (
-      & [A-Za-z] al:autolink
+      & [A-Za-z] autolink
     / & "&" htmlentity
     / & ('__') behavior_switch
-    // About 96% of text_char calls originate here, so inline it for efficiency
     / [^-'<~[{\n\r:;\]}|!=]
   )+
 
@@ -217,10 +216,13 @@ directive
   / include_limits
 
 wikilink_preprocessor_text
-  = r:( t:$[^<[{\n\r\t|!\]}{ &\-]+
+  = r:( t:$[^<[{\n\r\t|!\]} &\-]+
         // XXX gwicke: any more chars we need to allow here?
         / !inline_breaks
-          wr:( directive / $( !"]]" ( text_char / [!<\-\}\]\n\r] ) ) )
+          wr:(
+              directive
+            / $( !"]]" [^'~[{:;|=] )
+          )
     )+ {
       return tu.flattenStringlist(r);
   }
@@ -234,7 +236,7 @@ extlink_preprocessor_text
     extlink_preprocessor_text_parameterized<linkdesc=false>
 
 extlink_preprocessor_text_parameterized
-  = r:( $[^'<~[{\n\r|!\]}\-\t&="' \u00A0\u1680\u180E\u2000-\u200A\u202F\u205F\u3000]+
+  = r:( $[^-<~[\]{}\n\r\t|!&="' \u00A0\u1680\u180E\u2000-\u200A\u202F\u205F\u3000]+
     / !inline_breaks
       ( directive / no_punctuation_char / [&|{\-] )
     // !inline_breaks no_punctuation_char

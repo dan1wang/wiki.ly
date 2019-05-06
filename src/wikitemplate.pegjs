@@ -497,7 +497,7 @@ link_text_parameterized
          (sol (heading / hr / full_table_in_link_caption))
        / urltext
        / (!inline_breaks
-          r:( inline_element / '[' text_char+ ']' $(&(!']' / ']]')) / . )
+          r:( inline_element / '[' [^-'<~[{\n\r:;\]}|!=]+ ']' $(&(!']' / ']]')) / . )
          )
     )+ {
       return tu.flattenStringlist(c);

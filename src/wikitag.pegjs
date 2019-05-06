@@ -39,7 +39,7 @@ tag_name = $([A-Za-z] tag_name_chars*)
 // the inclusion of solidus to match where the spec would ignore those
 // characters.  In particular, it does not belong in between attribute name
 // and value.
-space_or_newline_or_solidus = space_or_newline / (s:"/" !">" { return s; })
+space_or_newline_or_solidus = space_or_newline / "/" !">"
 
 xmlish_tag
   = "<" tag:(xmlish_tag_opened<isBlock=false, extTag> / xmlish_tag_opened<isBlock=false, extTag=false>)
