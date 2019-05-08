@@ -236,11 +236,9 @@ extlink_preprocessor_text
     extlink_preprocessor_text_parameterized<linkdesc=false>
 
 extlink_preprocessor_text_parameterized
-  = r:( $[^-<~[\]{}\n\r\t|!&="' \u00A0\u1680\u180E\u2000-\u200A\u202F\u205F\u3000]+
-    / !inline_breaks
-      ( directive / no_punctuation_char / [&|{\-] )
-    // !inline_breaks no_punctuation_char
-    / $([.:,] !(space / eolf))
+  = r:(
+      $[^|[\]{!\n\r\-}~\t<&="'\u180E \u00A0\u1680\u2000-\u200A\u202F\u205F\u3000]+ // ⇔ $([^|[\]{!\n\r\-}~\t<&="'\u180E] / unispace)+
+    / !inline_breaks s:( directive / [-{}|!=] ) { return s; }
     / $(['] ![']) // single quotes are ok, double quotes are bad
     )+ {
         return tu.flattenString(r);
