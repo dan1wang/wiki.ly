@@ -91,28 +91,23 @@ isbn
 url_protocol =
    "%PROTOCOLS%"
 
-// no punctuation, and '{<' to trigger directives
-no_punctuation_char = [^ :\]\[\r\n"'<>\x00-\x20\x7f,.&%\u00A0\u1680\u180E\u2000-\u200A\u202F\u205F\u3000{]
-
-// this is the general url rule
-// on the PHP side, the path part matches EXT_LINK_URL_CLASS
-// which is '[^][<>"\\x00-\\x20\\x7F\p{Zs}]'
-// the 's' and 'r' pieces below match the characters in
-// EXT_LINK_URL_CLASS which aren't included in no_punctuation_char
+// this is the general url rule on the PHP side
 url "url"
   = proto:url_protocol
     addr:(IPAddress / "")
-    path:(  ( !inline_breaks
-              no_punctuation_char
+    path:(
+            // c = !unispace [^&[\]{<>"\x00-\x20\x7F\uFFFD]
+            //   = PHP's EXT_LINK_URL_CLASS, further excluding "&[]{"
+            // s = ":" or "{"
+            // r = HTML entity or "&"
+            ( !inline_breaks
+              c:[^&[\]{"<>\x00-\x20\x7F\uFFFD \u00A0\u1680\u2000-\u200A\u202F\u205F\u3000]
             )
-            / s:[.:,']
             / comment
             / tplarg_or_template
+            / s:[:{] { return s; }
             / ! ( "&" ( [lL][tT] / [gG][tT] ) ";" )
-                r:(
-                    & "&" htmlentity
-                  / [&%{]
-                )
+                r:(& "&" htmlentity / "&")
          )*
          // Must be at least one character after the protocol
          & { return addr.length > 0 || path.length > 0; }
@@ -125,25 +120,25 @@ url "url"
 // The `path` portion matches EXT_LINK_URL_CLASS, as in the general
 // url rule.  As in PHP, we do some fancy fixup to yank out
 // trailing punctuation, perhaps including parentheses.
-// The 's' and 'r' pieces match the characters in EXT_LINK_URL_CLASS
-// which aren't included in no_punctuation_char
 autourl
   = ! '//' // protocol-relative autolinks not allowed (T32269)
     r:(
     proto:url_protocol
     addr:(IPAddress / "")
-    path:(  ( !inline_breaks
-             no_punctuation_char
+    path:(
+            // c = !unispace [^&[\]{<>"\x00-\x20\x7F\uFFFD]
+            //   = PHP's EXT_LINK_URL_CLASS, further excluding "&[]{" and "'"
+            // s = ":" or "{"
+            // r = HTML entity or "&"
+            ( !inline_breaks
+              c:[^&[\]{'"<>\x00-\x20\x7F\uFFFD \u00A0\u1680\u2000-\u200A\u202F\u205F\u3000]
             )
-            / [.:,]
             / $(['] ![']) // single quotes are ok, double quotes are bad
             / comment
             / tplarg_or_template
+            / s:$([:{])
             / ! ( rhe:raw_htmlentity &{ return /^[<>\u00A0]$/.test(rhe); } )
-                r:(
-                    & "&" htmlentity
-                  / [&%{]
-                )
+                r:( & "&" htmlentity / "&")
          )*
 {
     // as in Parser.php::makeFreeExternalLink, we're going to
