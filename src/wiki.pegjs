@@ -554,7 +554,10 @@ start "start"
  * WikitextContent::getRedirectTarget()
  */
 redirect
-  = rw:redirect_word
+  =
+    // The 'redirect' magic word.
+    // The leading whitespace allowed is due to the PHP trim() function.
+    rw:$([ \t\n\r\0\x0b]* "%REDIRECTS%")
     sp:$space_or_newline*
     c:$(":" space_or_newline*)?
     wl:wikilink & {
@@ -564,27 +567,22 @@ redirect
     if (sp) { rw += sp; }
     if (c) { rw += c; }
     // Build a redirect token
-    var redirect = new SelfclosingTagTk('mw:redirect',
-            // Put 'href' into attributes so it gets template-expanded
-            [KV.lookupKV(link.attribs, 'href')],
-            {
-                src: rw,
-                tsr: tsrOffsets(),
-                linkTk: link,
-            });
-    return redirect;
+    return new SelfclosingTagTk(
+        'mw:redirect',
+        // Put 'href' into attributes so it gets template-expanded
+        [KV.lookupKV(link.attribs, 'href')],
+        {
+          src: rw,
+          tsr: tsrOffsets(),
+          linkTk: link,
+        }
+      );
 }
 
 // These rules are exposed as start rules.
 generic_newline_attributes "generic_newline_attributes" = generic_newline_attribute*
 table_attributes "table_attributes"
   = (table_attribute / broken_table_attribute)*
-
-/* The 'redirect' magic word.
- * The leading whitespace allowed is due to the PHP trim() function.
- */
-redirect_word
-  = $([ \t\n\r\0\x0b]* ("%REDIRECTS%"))
 
 /*
  * This rule exists to support tokenizing the document in chunks.
