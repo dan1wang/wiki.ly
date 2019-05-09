@@ -127,44 +127,44 @@ PegTokenizer.prototype.compileTokenizer = function() {
   };
 
   function jsCacheRuleHook(opts) {
-    let keyParts = [
-      opts.variantIndex + opts.variantCount * (opts.ruleIndex + opts.ruleCount),
-    ];
+    let key = opts.variantIndex + opts.variantCount * opts.ruleIndex;
     if (opts.params.length) {
-      keyParts = keyParts.concat(opts.params);
+      key = `[${key},${opts.params.join(',')}].map(String).join(':')`;
     }
-    const key = (keyParts.length === 1)
-      ? keyParts[0]
-      : `[${keyParts.join(', ')}].map(String).join(':')`;
-
     const maxVisitCount = 20;
-    const cacheBits = {
-      start:
-  `const checkCache = visitCounts[${opts.startPos}] > ${maxVisitCount};
-  let cached, bucket, key;
-  if (checkCache) {
-    key = ${key};
-    bucket = ${opts.startPos};
-    if ( !peg$cache[bucket] ) { peg$cache[bucket] = {}; }
-    cached = peg$cache[bucket][key];
-    if (cached) {
-      peg$currPos = cached.nextPos;
-          ${opts.loadRefs}
-      return cached.result;
-    }
-      ${opts.saveRefs}
-  } else {
-    visitCounts[${opts.startPos}]++;
-  }`,
-      store:
-`if (checkCache) {
-cached = peg$cache[bucket][key] = {
-  nextPos: ${opts.endPos},
-  result: ${opts.result},
-};
-${opts.storeRefs}
-}`,
-    };
+    const cacheBits = {};
+    cacheBits.start = [
+      `var checkCache = visitCounts[${opts.startPos}] > ${maxVisitCount};`,
+      'var cached, bucket, key;',
+      'if (checkCache) {',
+      `  key = ${key};`,
+      `  bucket = ${opts.startPos};`,
+      '  if ( !peg$cache[bucket] ) {',
+      '    peg$cache[bucket] = {};',
+      '  } else {',
+      '    cached = peg$cache[bucket][key];',
+      '    if (cached) {',
+      '      peg$currPos = cached.nextPos;',
+      `      ${opts.loadRefs}`,
+      '      return cached.result;',
+      '    }',
+      '  }',
+      `  ${opts.saveRefs}`,
+      '} else {',
+      `  visitCounts[${opts.startPos}]++;`,
+      '}'
+    ].join('\n');
+
+    cacheBits.store = [
+      'if (checkCache) {',
+      '  cached = peg$cache[bucket][key] = {',
+      `    nextPos: ${opts.endPos},`,
+      `    result: ${opts.result},`,
+      '  };',
+      opts.storeRefs,
+      '}'
+    ].join('\n');
+
     return cacheBits;
   }
 
@@ -203,6 +203,7 @@ ${opts.storeRefs}
 
 PegTokenizer.prototype.initTokenizer = function() {
   const tokenizerSource = this.compileTokenizer();
+  fs.writeFileSync('PegTokenizer.compiled', tokenizerSource);
   PegTokenizer.prototype.tokenizer = new Function('return ' + tokenizerSource)();  // eslint-disable-line
 };
 
