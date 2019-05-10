@@ -106,7 +106,7 @@ url "url"
             / comment
             / tplarg_or_template
             / s:[:{] { return s; }
-            / ! ( "&" ( [lL][tT] / [gG][tT] ) ";" )
+            / ! ( "&lt;"i / "&gt;"i )
                 r:(& "&" htmlentity / "&")
          )*
          // Must be at least one character after the protocol
