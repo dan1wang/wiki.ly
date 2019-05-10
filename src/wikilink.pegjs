@@ -133,7 +133,7 @@ autourl
             ( !inline_breaks
               c:[^&[\]{'"<>\x00-\x20\x7F\uFFFD \u00A0\u1680\u2000-\u200A\u202F\u205F\u3000]
             )
-            / $(['] ![']) // single quotes are ok, double quotes are bad
+            / $("'" !"'") // single quotes are ok, double quotes are bad
             / comment
             / tplarg_or_template
             / s:$([:{])

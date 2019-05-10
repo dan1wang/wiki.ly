@@ -239,7 +239,7 @@ extlink_preprocessor_text_parameterized
   = r:(
       $[^{|!=&[\]'"<>\x00-\x20\x7F\uFFFD \u00A0\u1680\u2000-\u200A\u202F\u205F\u3000]+
     / !inline_breaks s:( directive / [{|!=] ) { return s; }
-    / $(['] ![']) // single quotes are ok, double quotes are bad
+    / $("'" !"'") // single quotes are ok, double quotes are bad
     )+ {
         return tu.flattenString(r);
     }
