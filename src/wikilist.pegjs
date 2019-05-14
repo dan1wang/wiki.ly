@@ -38,7 +38,10 @@ hacky_dl_uses
   }
 
 dtdd
-  = bullets:(!(";" !list_char) lc:list_char { return lc; })*
+  = bullets:(
+      !?(";" !list_char)
+      list_char
+    )*
     ";"
     c:inlineline_break_on_colon?
     cpos:(":" { return endOffset(); })
@@ -64,4 +67,3 @@ list_char = [*#:;]
 
 inlineline_break_on_colon
   = ill:inlineline<colon>
-    { return ill; }

@@ -640,21 +640,21 @@ block
       // has to be first alternative; otherwise gets parsed as a <ol>
     = &sof r:redirect cil:comment_or_includes bl:block_line? { return [r].concat(cil, bl || []); }
     / block_lines
-    / & '<' rs:( c:comment &eolf { return c; }
+    / &? '<' ( comment &?eolf
             // avoid a paragraph if we know that the line starts with a block tag
-            / bt:block_tag
-            ) { return rs; }
+            / block_tag
+            )
     / paragraph
     // Inlineline includes generic tags; wrapped into paragraphs in token
     // transform and DOM postprocessor
     / inlineline
-    / s:sol !inline_breaks { return s; }
+    / sol !?inline_breaks
 
 /*
  * A block nested in other constructs. Avoid eating end delimiters for other
  * constructs by checking against inline_breaks first.
  */
-nested_block = !inline_breaks b:block { return b; }
+nested_block = !?inline_breaks block
 
 /*
  * The same, but suitable for use inside a table construct.
@@ -711,10 +711,14 @@ block_line
   / list_item
   / hr
   / st:optionalSpaceToken
-    r:( & [ <{}|!] tl:table_line { return tl; }
+    r:( &? [ <{}|!] table_line
       // tag-only lines should not trigger pre either
-      / bts:(bt:block_tag stl:optionalSpaceToken { return bt.concat(stl); })+
-        &eolf { return bts; }
+      / bts:(
+          bt:block_tag
+          stl:optionalSpaceToken
+          { return bt.concat(stl); }
+        )+
+        &?eolf
       ) {
           return st.concat(r);
       }
@@ -798,7 +802,8 @@ inline_element
 
 /* Headings  */
 
-heading = & "=" // guard, to make sure '='+ will match.
+heading =
+    &? "=" // guard, to make sure '='+ will match.
           // XXX: Also check to end to avoid inline parsing?
     r:(
      s:$'='+ // moved in here to make s accessible to inner action
@@ -864,7 +869,7 @@ heading = & "=" // guard, to make sure '='+ will match.
           spc,
         ]);
       }
-    ) { return r; }
+    )
 
 
 /* Comments */

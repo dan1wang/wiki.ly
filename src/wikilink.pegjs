@@ -105,7 +105,7 @@ url "url"
             )
             / comment
             / tplarg_or_template
-            / s:[:{] { return s; }
+            / s:[:{]
             / ! ( "&lt;"i / "&gt;"i )
                 r:(& "&" htmlentity / "&")
          )*

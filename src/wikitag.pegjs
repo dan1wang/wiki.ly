@@ -42,7 +42,11 @@ tag_name = $([A-Za-z] tag_name_chars*)
 space_or_newline_or_solidus = space_or_newline / "/" !">"
 
 xmlish_tag
-  = "<" tag:(xmlish_tag_opened<isBlock=false, extTag> / xmlish_tag_opened<isBlock=false, extTag=false>)
+  = "<"
+    tag:(
+        xmlish_tag_opened<isBlock=false, extTag>
+      / xmlish_tag_opened<isBlock=false, extTag=false>
+    )
     { return tag; }
 
 xmlish_tag_opened
