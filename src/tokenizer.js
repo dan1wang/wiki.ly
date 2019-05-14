@@ -152,7 +152,7 @@ PegTokenizer.prototype.compileTokenizer = function() {
       `  ${opts.saveRefs}`,
       '} else {',
       `  visitCounts[${opts.startPos}]++;`,
-      '}'
+      '}',
     ].join('\n');
 
     cacheBits.store = [
@@ -162,7 +162,7 @@ PegTokenizer.prototype.compileTokenizer = function() {
       `    result: ${opts.result},`,
       '  };',
       opts.storeRefs,
-      '}'
+      '}',
     ].join('\n');
 
     return cacheBits;
