@@ -46,9 +46,11 @@ const Util = {
   },
 
   extractExtBody: function(token) {
-    const src = token.getAttribute('source');
-    const extTagWidths = token.dataAttribs.extTagWidths;
-    return src.substring(extTagWidths[0], src.length - extTagWidths[1]);
+    const extSrc = token.getAttribute('source');
+    const extTagOffsets = token.dataAttribs.extTagOffsets;
+    return extSrc.substring(
+        extTagOffsets[1] - extTagOffsets[0],
+        extTagOffsets[2] - extTagOffsets[0]);
   },
 
 };
